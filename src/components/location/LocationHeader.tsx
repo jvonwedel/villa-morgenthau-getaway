@@ -12,7 +12,7 @@ const LocationHeader = () => {
         <div className="max-w-3xl">
           <div className="inline-flex items-center bg-white/90 px-4 py-2 rounded-sm mb-6">
             <MapPin className="h-5 w-5 text-villa-accent mr-2" />
-            <span className="text-sm font-medium">Perfekte natürliche Umgebung</span>
+            <span className="text-sm font-medium">Zwischen den Meeren</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Einmalige Lage</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl">
