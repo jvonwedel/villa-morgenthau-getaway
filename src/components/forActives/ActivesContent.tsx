@@ -1,11 +1,12 @@
+
 import SectionTitle from '../ui/SectionTitle';
 const ActivesContent = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="ADVENTURE AWAITS">
-              Embrace the Great Outdoors
+            <SectionTitle subtitle="ABENTEUER ERWARTET DICH">
+              Entdecke die Natur
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">Während die Villa Morgenthau einen ruhigen Rückzugsort bietet, ist sie auch der perfekte Ausgangspunkt für Abenteuerlustige, denn es gibt zahlreiche Outdoor-Aktivitäten, die auf euch warten. Die Umgebung ist ein Paradies für Aktive mit Möglichkeiten zum (Watt-)Wandern, Radfahren, Golfen für Wassersport wie Kanuwandern oder Kiten, Segeln, Surfen und vieles andere mehr.</p>

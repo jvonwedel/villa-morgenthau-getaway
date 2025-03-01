@@ -1,3 +1,4 @@
+
 import { Mountain } from 'lucide-react';
 const ActivesHeader = () => {
   return <section className="relative h-[70vh] overflow-hidden">

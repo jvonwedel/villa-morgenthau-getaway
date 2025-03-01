@@ -1,44 +1,45 @@
+
 import { Mountain, Bike, Map, Waves } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 const seasonalActivities = [{
-  season: "Spring",
-  activities: ["Mountain Biking", "Wildflower Hiking", "Birdwatching", "Rock Climbing"]
+  season: "Frühling",
+  activities: ["Mountainbiken", "Wandern zwischen Wildblumen", "Vogelbeobachtung", "Klettern"]
 }, {
-  season: "Summer",
-  activities: ["Swimming in Lakes", "Kayaking & Canoeing", "Fishing", "Trail Running"]
+  season: "Sommer",
+  activities: ["Schwimmen in Seen", "Kajak & Kanu fahren", "Angeln", "Trailrunning"]
 }, {
-  season: "Fall",
-  activities: ["Forest Hiking", "Photography Tours", "Mountain Biking", "Mushroom Foraging"]
+  season: "Herbst",
+  activities: ["Waldwanderungen", "Fototouren", "Mountainbiken", "Pilze sammeln"]
 }, {
   season: "Winter",
-  activities: ["Cross-Country Skiing", "Snowshoeing", "Winter Photography", "Wildlife Tracking"]
+  activities: ["Langlauf", "Schneeschuhwandern", "Winterfotografie", "Tierspuren folgen"]
 }];
 const featuredActivities = [{
   icon: <Mountain className="h-8 w-8 text-villa-accent" />,
-  title: "Mountain Hiking",
-  description: "Explore scenic trails ranging from easy walks to challenging ascents, all within a short drive from the villa.",
-  distance: "5-25 min drive"
+  title: "Wandern",
+  description: "Erkundet malerische Wanderwege von leichten Spaziergängen bis zu anspruchsvollen Touren, alle in kurzer Fahrzeit von der Villa erreichbar.",
+  distance: "5-25 Min. Fahrt"
 }, {
   icon: <Bike className="h-8 w-8 text-villa-accent" />,
-  title: "Cycling Routes",
-  description: "Discover the countryside on dedicated cycling paths suitable for both casual riders and experienced cyclists.",
-  distance: "Directly from villa"
+  title: "Radwege",
+  description: "Entdeckt die Landschaft auf ausgewiesenen Radwegen, die sowohl für Gelegenheitsfahrer als auch für erfahrene Radfahrer geeignet sind.",
+  distance: "Direkt von der Villa"
 }, {
   icon: <Waves className="h-8 w-8 text-villa-accent" />,
-  title: "Water Activities",
-  description: "Enjoy swimming, kayaking, and paddleboarding at nearby lakes and rivers during the warmer months.",
-  distance: "15-30 min drive"
+  title: "Wasseraktivitäten",
+  description: "Genießt Schwimmen, Kajakfahren und Paddeln an nahegelegenen Seen und Flüssen während der wärmeren Monate.",
+  distance: "15-30 Min. Fahrt"
 }, {
   icon: <Map className="h-8 w-8 text-villa-accent" />,
-  title: "Adventure Tours",
-  description: "Join guided excursions for rock climbing, canyoning, or paragliding with experienced local guides.",
-  distance: "30-45 min drive"
+  title: "Abenteuertouren",
+  description: "Nehmt an geführten Ausflügen zum Klettern, Canyoning oder Paragliding mit erfahrenen lokalen Guides teil.",
+  distance: "30-45 Min. Fahrt"
 }];
 const ActivesActivities = () => {
   return <section className="section-padding bg-villa-muted">
       <div className="container-custom">
-        <SectionTitle subtitle="OUTDOOR ADVENTURES" centered>
-          Activities For Every Season
+        <SectionTitle subtitle="OUTDOOR-ABENTEUER" centered>
+          Aktivitäten für jede Jahreszeit
         </SectionTitle>
         
         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">Egal, wann - zu jeder Jahreszeit gibt es gute Gründe, Urlaub in der Villa Morgenthau zu planen und zahlreiche Outdoor-Aktivitäten, die euch die die natürliche Schönheit der Region näherbringen.</p>
@@ -55,8 +56,8 @@ const ActivesActivities = () => {
             </div>)}
         </div>
         
-        <SectionTitle subtitle="FEATURED EXPERIENCES" centered>
-          Popular Activities Nearby
+        <SectionTitle subtitle="BELIEBTE ERLEBNISSE" centered>
+          Beliebte Aktivitäten in der Nähe
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
@@ -73,39 +74,39 @@ const ActivesActivities = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <h3 className="font-serif text-2xl mb-4">Equipment & Recommendations</h3>
+          <h3 className="font-serif text-2xl mb-4">Ausrüstung & Empfehlungen</h3>
           <p className="text-gray-700 max-w-3xl mx-auto mb-6">
-            We're happy to provide recommendations for local guides, equipment rental, and the best times to enjoy specific activities. Some basic equipment is available for guests at the villa, including:
+            Wir geben gerne Empfehlungen für lokale Guides, Ausrüstungsverleih und die besten Zeiten, um bestimmte Aktivitäten zu genießen. Einige Grundausrüstungen stehen den Gästen in der Villa zur Verfügung, darunter:
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <div className="bg-white p-4 rounded-sm">
-              <h4 className="font-medium mb-2">Available at Villa</h4>
+              <h4 className="font-medium mb-2">In der Villa verfügbar</h4>
               <ul className="space-y-1 text-sm text-gray-600">
-                <li>Mountain Bikes (2 adult)</li>
-                <li>Hiking Poles</li>
-                <li>Day Backpacks</li>
-                <li>Maps & Guidebooks</li>
+                <li>Mountainbikes (2 Erwachsene)</li>
+                <li>Wanderstöcke</li>
+                <li>Tagesrucksäcke</li>
+                <li>Karten & Reiseführer</li>
               </ul>
             </div>
             
             <div className="bg-white p-4 rounded-sm">
-              <h4 className="font-medium mb-2">Rentals Nearby</h4>
+              <h4 className="font-medium mb-2">Verleih in der Nähe</h4>
               <ul className="space-y-1 text-sm text-gray-600">
-                <li>Kayaks & Paddleboards</li>
-                <li>Specialized Cycling Gear</li>
-                <li>Climbing Equipment</li>
-                <li>Winter Sports Equipment</li>
+                <li>Kajaks & Paddleboards</li>
+                <li>Spezielle Fahrradausrüstung</li>
+                <li>Kletterausrüstung</li>
+                <li>Wintersportausrüstung</li>
               </ul>
             </div>
             
             <div className="bg-white p-4 rounded-sm">
-              <h4 className="font-medium mb-2">Guided Experiences</h4>
+              <h4 className="font-medium mb-2">Geführte Erlebnisse</h4>
               <ul className="space-y-1 text-sm text-gray-600">
-                <li>Forest Foraging Tours</li>
-                <li>Wildlife Photography</li>
-                <li>Rock Climbing Lessons</li>
-                <li>Mountain Biking Guides</li>
+                <li>Wald-Sammeltouren</li>
+                <li>Wildtier-Fotografie</li>
+                <li>Kletterkurse</li>
+                <li>Mountainbike-Guides</li>
               </ul>
             </div>
           </div>
