@@ -1,15 +1,8 @@
-
 import { Users } from 'lucide-react';
-
 const FamiliesHeader = () => {
-  return (
-    <section className="relative h-[70vh] overflow-hidden">
+  return <section className="relative h-[70vh] overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src="/placeholder.svg" 
-          alt="Family Activities at Villa Morgenthau" 
-          className="w-full h-full object-cover"
-        />
+        <img src="/placeholder.svg" alt="Family Activities at Villa Morgenthau" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
@@ -19,16 +12,12 @@ const FamiliesHeader = () => {
             <Users className="h-5 w-5 text-villa-accent mr-2" />
             <span className="text-sm font-medium">Family-Friendly Experience</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
-            Perfect For Families
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Perfekt für Familien</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl">
             Create lasting memories with your loved ones in the welcoming environment of Villa Morgenthau.
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FamiliesHeader;
