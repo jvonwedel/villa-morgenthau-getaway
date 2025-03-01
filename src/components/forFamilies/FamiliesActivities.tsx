@@ -1,49 +1,50 @@
+
 import { Smile, Trees, Cookie, Star } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const familySpaces = [
   {
-    name: "Spacious Living Room",
-    description: "Comfortable seating for the whole family with entertainment options."
+    name: "Geräumiges Wohnzimmer",
+    description: "Bequeme Sitzgelegenheiten für die ganze Familie mit Unterhaltungsmöglichkeiten."
   },
   {
-    name: "Fully Equipped Kitchen",
-    description: "Perfect for preparing family meals with all necessary appliances."
+    name: "Voll ausgestattete Küche",
+    description: "Perfekt für die Zubereitung von Familienmahlzeiten mit allen notwendigen Geräten."
   },
   {
-    name: "Private Garden",
-    description: "Safe, enclosed outdoor space for children to play and explore."
+    name: "Privater Garten",
+    description: "Sicherer, umzäunter Außenbereich, in dem Kinder spielen und entdecken können."
   },
   {
-    name: "Family Dining Area",
-    description: "Indoor and outdoor dining spaces that accommodate everyone."
+    name: "Familien-Essbereich",
+    description: "Innen- und Außen-Essbereiche, die Platz für alle bieten."
   }
 ];
 
 const familyActivities = [
   {
     icon: <Smile className="h-8 w-8 text-villa-accent" />,
-    title: "Kid-Friendly Fun",
-    description: "Activities at the villa include board games, outdoor games, and a selection of books and toys for different ages.",
-    suitable: "All ages"
+    title: "Kinderfreundlicher Spaß",
+    description: "Aktivitäten in der Villa umfassen Gesellschaftsspiele, Outdoor-Spiele und eine Auswahl an Büchern und Spielzeug für verschiedene Altersgruppen.",
+    suitable: "Alle Altersgruppen"
   },
   {
     icon: <Trees className="h-8 w-8 text-villa-accent" />,
-    title: "Outdoor Adventures",
-    description: "Easy hiking trails, picnic spots, and nature observation points perfect for family exploration.",
-    suitable: "Ages 3+"
+    title: "Outdoor-Abenteuer",
+    description: "Einfache Wanderwege, Picknickplätze und Naturbeobachtungspunkte, perfekt für Familienerkundungen.",
+    suitable: "Ab 3 Jahren"
   },
   {
     icon: <Cookie className="h-8 w-8 text-villa-accent" />,
-    title: "Local Experiences",
-    description: "Visit nearby farms for fruit picking, animal watching, and authentic local food experiences.",
-    suitable: "All ages"
+    title: "Lokale Erlebnisse",
+    description: "Besuchen Sie nahegelegene Bauernhöfe zum Obstpflücken, Tierbeobachten und authentische lokale Essenserlebnisse.",
+    suitable: "Alle Altersgruppen"
   },
   {
     icon: <Star className="h-8 w-8 text-villa-accent" />,
-    title: "Special Attractions",
-    description: "Family-friendly museums, adventure parks, and cultural sites within easy driving distance.",
-    suitable: "Ages 5+"
+    title: "Besondere Attraktionen",
+    description: "Familienfreundliche Museen, Abenteuerparks und kulturelle Stätten in kurzer Fahrzeit erreichbar.",
+    suitable: "Ab 5 Jahren"
   }
 ];
 
@@ -51,17 +52,17 @@ const FamiliesActivities = () => {
   return (
     <section className="section-padding bg-villa-muted">
       <div className="container-custom">
-        <SectionTitle subtitle="FAMILY-FRIENDLY AMENITIES" centered>
-          Designed With Families in Mind
+        <SectionTitle subtitle="FAMILIENFREUNDLICHE ANNEHMLICHKEITEN" centered>
+          Konzipiert mit Familien im Sinn
         </SectionTitle>
         
         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
-          Villa Morgenthau offers spaces and amenities that cater to families, ensuring a comfortable and enjoyable stay for guests of all ages.
+          Die Villa Morgenthau bietet Räume und Annehmlichkeiten, die auf Familien zugeschnitten sind und einen komfortablen und angenehmen Aufenthalt für Gäste jeden Alters gewährleisten.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div>
-            <h3 className="font-serif text-xl mb-6">Family Spaces at the Villa</h3>
+            <h3 className="font-serif text-xl mb-6">Familienbereiche in der Villa</h3>
             <ul className="space-y-4">
               {familySpaces.map((space, index) => (
                 <li key={index} className="bg-white p-4 rounded-sm shadow-md">
@@ -73,53 +74,53 @@ const FamiliesActivities = () => {
           </div>
           
           <div>
-            <h3 className="font-serif text-xl mb-6">Family Conveniences</h3>
+            <h3 className="font-serif text-xl mb-6">Annehmlichkeiten für Familien</h3>
             <div className="bg-white p-6 rounded-sm shadow-md h-full">
-              <h4 className="font-medium mb-4">Available Upon Request:</h4>
+              <h4 className="font-medium mb-4">Auf Anfrage verfügbar:</h4>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>High chairs and booster seats</span>
+                  <span>Hochstühle und Sitzerhöhungen</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Cribs and toddler beds</span>
+                  <span>Kinderbetten und Kleinkinderbetten</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Baby monitors</span>
+                  <span>Babyphones</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Child-proofing equipment</span>
+                  <span>Kindersicherheitsausrüstung</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Children's books and toys</span>
+                  <span>Kinderbücher und Spielzeug</span>
                 </li>
               </ul>
               
-              <h4 className="font-medium mb-4">Services for Families:</h4>
+              <h4 className="font-medium mb-4">Dienstleistungen für Familien:</h4>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Recommendations for family-friendly restaurants</span>
+                  <span>Empfehlungen für familienfreundliche Restaurants</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>Information on local babysitting services</span>
+                  <span>Informationen zu lokalen Babysitter-Diensten</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-villa-accent mr-2">•</span>
-                  <span>First aid kit and medical information</span>
+                  <span>Erste-Hilfe-Kasten und medizinische Informationen</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         
-        <SectionTitle subtitle="FAMILY ACTIVITIES" centered>
-          Adventures For All Ages
+        <SectionTitle subtitle="FAMILIENAKTIVITÄTEN" centered>
+          Abenteuer für alle Altersgruppen
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
@@ -140,52 +141,52 @@ const FamiliesActivities = () => {
         <div className="mt-16 bg-white p-8 rounded-sm shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <h3 className="font-serif text-2xl mb-4">Seasonal Family Activities</h3>
+              <h3 className="font-serif text-2xl mb-4">Saisonale Familienaktivitäten</h3>
               <p className="text-gray-700 mb-6">
-                Each season offers unique family experiences in and around Villa Morgenthau:
+                Jede Jahreszeit bietet einzigartige Familienerlebnisse in und um die Villa Morgenthau:
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <h4 className="font-medium mb-2">Spring & Summer</h4>
+                  <h4 className="font-medium mb-2">Frühling & Sommer</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Berry picking at local farms</span>
+                      <span>Beerenpflücken auf lokalen Bauernhöfen</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Swimming and water play at safe beaches</span>
+                      <span>Schwimmen und Wasserspiele an sicheren Stränden</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Outdoor adventure parks and ziplines</span>
+                      <span>Outdoor-Abenteuerparks und Seilrutschen</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Family-friendly hiking with wildlife spotting</span>
+                      <span>Familienfreundliche Wanderungen mit Wildtierbeobachtung</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h4 className="font-medium mb-2">Fall & Winter</h4>
+                  <h4 className="font-medium mb-2">Herbst & Winter</h4>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Apple orchards and harvest festivals</span>
+                      <span>Apfelplantagen und Erntefeste</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Indoor museums and cultural activities</span>
+                      <span>Indoor-Museen und kulturelle Aktivitäten</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Gentle sledding and snow play areas</span>
+                      <span>Gemütliche Rodelbahnen und Schneespielbereiche</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-villa-accent mr-2">•</span>
-                      <span>Traditional craftmaking workshops</span>
+                      <span>Traditionelle Handwerksworkshops</span>
                     </li>
                   </ul>
                 </div>
@@ -195,7 +196,7 @@ const FamiliesActivities = () => {
             <div>
               <img 
                 src="/placeholder.svg" 
-                alt="Seasonal Family Activities" 
+                alt="Saisonale Familienaktivitäten" 
                 className="w-full h-full object-cover rounded-sm"
               />
             </div>

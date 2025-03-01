@@ -1,8 +1,9 @@
+
 import { Users } from 'lucide-react';
 const FamiliesHeader = () => {
   return <section className="relative h-[70vh] overflow-hidden">
       <div className="absolute inset-0">
-        <img src="/placeholder.svg" alt="Family Activities at Villa Morgenthau" className="w-full h-full object-cover" />
+        <img src="/placeholder.svg" alt="Familienaktivitäten in der Villa Morgenthau" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
@@ -10,11 +11,11 @@ const FamiliesHeader = () => {
         <div className="max-w-3xl">
           <div className="inline-flex items-center bg-white/90 px-4 py-2 rounded-sm mb-6">
             <Users className="h-5 w-5 text-villa-accent mr-2" />
-            <span className="text-sm font-medium">Family-Friendly Experience</span>
+            <span className="text-sm font-medium">Familienfreundliche Erfahrung</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Perfekt für Familien</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl">
-            Create lasting memories with your loved ones in the welcoming environment of Villa Morgenthau.
+            Schaffen Sie bleibende Erinnerungen mit Ihren Liebsten in der einladenden Umgebung der Villa Morgenthau.
           </p>
         </div>
       </div>

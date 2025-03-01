@@ -7,27 +7,27 @@ const FamiliesContent = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="FAMILY VACATION">
-              A Place for Everyone
+            <SectionTitle subtitle="FAMILIENURLAUB">
+              Ein Ort für Jeden
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">
-              Villa Morgenthau welcomes families of all sizes and ages, offering spacious accommodations and amenities designed with everyone in mind. Our villa provides the perfect setting for quality family time while ensuring each member can find their own space to relax and enjoy.
+              Die Villa Morgenthau begrüßt Familien aller Größen und Altersgruppen und bietet geräumige Unterkünfte und Annehmlichkeiten, die für alle konzipiert sind. Unsere Villa bietet den perfekten Rahmen für gemeinsame Familienzeit, während sichergestellt wird, dass jedes Mitglied seinen eigenen Raum zum Entspannen und Genießen finden kann.
             </p>
             
             <p className="text-gray-700 mb-6">
-              The generous layout of the villa means children have room to play while adults can relax in comfort. Our garden and outdoor spaces provide safe areas for exploration and activities, and our location offers easy access to family-friendly attractions and natural wonders.
+              Der großzügige Grundriss der Villa bedeutet, dass Kinder Platz zum Spielen haben, während Erwachsene in Komfort entspannen können. Unser Garten und die Außenbereiche bieten sichere Flächen zum Erkunden und für Aktivitäten, und unsere Lage bietet einfachen Zugang zu familienfreundlichen Attraktionen und Naturwundern.
             </p>
             
             <p className="text-gray-700 mb-8">
-              From board games and books for rainy days to outdoor equipment for sunny adventures, we've thought of everything to make your family stay comfortable, convenient, and memorable.
+              Von Gesellschaftsspielen und Büchern für Regentage bis hin zu Outdoor-Ausrüstung für sonnige Abenteuer - wir haben an alles gedacht, um Ihren Familienaufenthalt komfortabel, bequem und unvergesslich zu gestalten.
             </p>
           </div>
           
           <div>
             <img 
               src="/placeholder.svg" 
-              alt="Family Time at Villa Morgenthau" 
+              alt="Familienzeit in der Villa Morgenthau" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
           </div>
