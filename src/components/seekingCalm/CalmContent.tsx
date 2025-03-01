@@ -7,27 +7,27 @@ const CalmContent = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="RELAXATION & WELLNESS">
-              A Haven for Relaxation
+            <SectionTitle subtitle="ENTSPANNUNG & WOHLBEFINDEN">
+              Ein Zufluchtsort für Erholung
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">
-              In today's fast-paced world, finding moments of tranquility is essential for our wellbeing. Villa Morgenthau has been thoughtfully designed as a sanctuary where you can disconnect from the stresses of everyday life and reconnect with yourself and nature.
+              In unserer hektischen Welt ist es wichtig, Momente der Ruhe zu finden, die essenziell für unser Wohlbefinden sind. Villa Morgenthau wurde als Rückzugsort konzipiert, an dem Sie sich vom Alltagsstress lösen und wieder mit sich selbst und der Natur verbinden können.
             </p>
             
             <p className="text-gray-700 mb-6">
-              The villa's peaceful setting, surrounded by natural beauty, creates the perfect environment for relaxation. From the gentle sounds of nature to the clean, fresh air, every element contributes to a sense of calm and renewal.
+              Die friedliche Lage der Villa, umgeben von natürlicher Schönheit, schafft die perfekte Umgebung für Entspannung. Von den sanften Naturgeräuschen bis zur frischen, klaren Luft trägt jedes Element zu einem Gefühl von Ruhe und Erneuerung bei.
             </p>
             
             <p className="text-gray-700 mb-8">
-              Whether you choose to meditate in our garden, enjoy a book by the fireplace, or simply take in the panoramic views, Villa Morgenthau offers countless opportunities to find your inner peace and return home feeling refreshed and rejuvenated.
+              Ob Sie in unserem Garten meditieren, ein Buch am Kamin genießen oder einfach die Panoramaaussicht bewundern - Villa Morgenthau bietet zahlreiche Gelegenheiten, inneren Frieden zu finden und erfrischt und verjüngt nach Hause zurückzukehren.
             </p>
           </div>
           
           <div>
             <img 
               src="/placeholder.svg" 
-              alt="Peaceful Setting at Villa Morgenthau" 
+              alt="Friedliche Umgebung der Villa Morgenthau" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
           </div>
