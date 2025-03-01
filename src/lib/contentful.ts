@@ -26,7 +26,7 @@ export const fetchGalleryImages = async (): Promise<GalleryImage[]> => {
   try {
     const entries = await contentfulClient.getEntries({
       content_type: 'galleryImage', // This will be the content type ID you create in Contentful
-      order: '-sys.createdAt',
+      order: ['-sys.createdAt'], // Fixed: Wrap in array as required by the type
     });
     
     return entries.items.map(item => item.fields as unknown as GalleryImage);
