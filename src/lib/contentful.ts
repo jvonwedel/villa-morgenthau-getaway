@@ -18,7 +18,7 @@ export interface GalleryImage {
       };
     };
   };
-  category: string;
+  tags?: string[]; // Changed from category to tags
 }
 
 // Helper function to fetch gallery images
@@ -36,17 +36,17 @@ export const fetchGalleryImages = async (): Promise<GalleryImage[]> => {
   }
 };
 
-// Helper function to fetch images by category
-export const fetchGalleryImagesByCategory = async (category: string): Promise<GalleryImage[]> => {
+// Helper function to fetch images by tag
+export const fetchGalleryImagesByTag = async (tag: string): Promise<GalleryImage[]> => {
   try {
     const entries = await contentfulClient.getEntries({
       content_type: 'galleryImage',
-      'fields.category': category,
+      'metadata.tags.sys.id[in]': tag,
     });
     
     return entries.items.map(item => item.fields as unknown as GalleryImage);
   } catch (error) {
-    console.error('Error fetching categorized images from Contentful:', error);
+    console.error('Error fetching tagged images from Contentful:', error);
     return [];
   }
 };

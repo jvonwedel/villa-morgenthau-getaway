@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
-import { fetchGalleryImages, fetchGalleryImagesByCategory, GalleryImage } from '../../lib/contentful';
+import { fetchGalleryImages, GalleryImage } from '../../lib/contentful';
 import { useQuery } from '@tanstack/react-query';
 
 // Fallback placeholder images (will be used until you add content to Contentful)
@@ -25,14 +25,19 @@ const GalleryGrid = () => {
     queryFn: fetchGalleryImages,
   });
 
-  // Filter images by category
+  // Filter images by tag
   const getImagesForCategory = (category: GalleryCategory): string[] => {
     if (!contentfulImages || contentfulImages.length === 0) {
       return placeholderImages[category]; // Return placeholder images if no contentful data
     }
     
     const filteredImages = contentfulImages
-      .filter(image => image.category === category)
+      .filter(image => {
+        // Check if image has tags and if any tag includes the category name
+        return image.tags && image.tags.some(tag => 
+          tag.toLowerCase().includes(category.toLowerCase())
+        );
+      })
       .map(image => image.image?.fields?.file?.url 
         ? `https:${image.image.fields.file.url}` 
         : '/placeholder.svg');

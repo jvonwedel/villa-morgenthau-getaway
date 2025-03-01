@@ -42,19 +42,32 @@ const ContentfulSetup = () => {
               <li><strong>Title</strong> (Short text)</li>
               <li><strong>Description</strong> (Long text, optional)</li>
               <li><strong>Image</strong> (Media, required)</li>
-              <li><strong>Category</strong> (Short text, required) - Use one of: interior, exterior, surroundings, amenities</li>
             </ul>
           </div>
         </div>
         
         <div>
-          <h3 className="text-lg font-medium mb-2">Step 4: Get API Keys</h3>
+          <h3 className="text-lg font-medium mb-2">Step 4: Add Tags to Your Content</h3>
+          <p className="mb-3">When creating entries, add tags to categorize your images. Use these tag names to match your categories:</p>
+          <div className="bg-gray-50 p-4 rounded-md">
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>interior</strong> - For interior spaces of the villa</li>
+              <li><strong>exterior</strong> - For exterior views of the villa</li>
+              <li><strong>surroundings</strong> - For the surrounding environment</li>
+              <li><strong>amenities</strong> - For villa amenities and facilities</li>
+            </ul>
+          </div>
+          <p className="mt-3">You can add multiple tags to each image if needed.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-lg font-medium mb-2">Step 5: Get API Keys</h3>
           <p className="mb-3">In Contentful, go to Settings &gt; API keys &gt; Add API key</p>
           <p className="mb-3">Copy the Space ID and Content Delivery API - access token</p>
         </div>
         
         <div>
-          <h3 className="text-lg font-medium mb-2">Step 5: Update Your Website Configuration</h3>
+          <h3 className="text-lg font-medium mb-2">Step 6: Update Your Website Configuration</h3>
           <p className="mb-3">Update the contentful.ts file with your Space ID and API key:</p>
           <div className="bg-gray-800 text-white p-4 rounded-md font-mono text-sm relative">
             <pre>{`import { createClient } from 'contentful';
@@ -78,8 +91,8 @@ export const contentfulClient = createClient({
         </div>
         
         <div>
-          <h3 className="text-lg font-medium mb-2">Step 6: Add Content</h3>
-          <p>Start adding gallery images in Contentful. They will automatically appear on your website.</p>
+          <h3 className="text-lg font-medium mb-2">Step 7: Add Content</h3>
+          <p>Start adding gallery images in Contentful with appropriate tags. They will automatically appear on your website.</p>
         </div>
       </div>
     </div>
