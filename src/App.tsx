@@ -14,7 +14,7 @@ import ForFamilies from "./pages/ForFamilies";
 import YourStay from "./pages/YourStay";
 import Gallery from "./pages/Gallery";
 import Booking from "./pages/Booking";
-import ContentfulSetup from "./components/contentful/ContentfulSetup";
+import SanitySetup from "./components/contentful/ContentfulSetup";
 
 const queryClient = new QueryClient();
 
@@ -34,7 +34,7 @@ const App = () => (
           <Route path="/your-stay" element={<YourStay />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="/sanity-setup" element={<ContentfulSetup />} />
+          <Route path="/sanity-setup" element={<SanitySetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
