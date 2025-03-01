@@ -24,9 +24,10 @@ const Gallery = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {galleryImages.slice(0, 6).map((image, index) => (
-            <div 
+            <Link 
               key={index}
-              className="aspect-[4/3] relative overflow-hidden group"
+              to="/gallery"
+              className="aspect-[4/3] relative overflow-hidden group block"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -38,7 +39,10 @@ const Gallery = () => {
               <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${
                 hoveredIndex === index ? 'bg-opacity-30' : 'bg-opacity-0'
               }`} />
-            </div>
+              <div className={`absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                <span className="bg-white/90 px-4 py-2 rounded-sm text-sm font-medium">View Gallery</span>
+              </div>
+            </Link>
           ))}
         </div>
         
