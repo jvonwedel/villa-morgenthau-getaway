@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -13,37 +15,50 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const navLinks = [{
-    path: '/',
-    label: 'Home'
-  }, {
-    path: '/about',
-    label: 'About'
-  }, {
-    path: '/location',
-    label: 'Location'
-  }, {
-    path: '/seeking-calm',
-    label: 'Seeking Calm'
-  }, {
-    path: '/for-actives',
-    label: 'For Actives'
-  }, {
-    path: '/for-families',
-    label: 'For Families'
-  }, {
-    path: '/your-stay',
-    label: 'Your Stay'
-  }, {
-    path: '/gallery',
-    label: 'Gallery'
-  }, {
-    path: '/booking',
-    label: 'Booking'
-  }];
+
+  const navLinks = [
+    {
+      path: '/',
+      label: 'Home'
+    },
+    {
+      path: '/about',
+      label: 'About'
+    },
+    {
+      path: '/location',
+      label: 'Location'
+    },
+    {
+      path: '/seeking-calm',
+      label: 'Seeking Calm'
+    },
+    {
+      path: '/for-actives',
+      label: 'For Actives'
+    },
+    {
+      path: '/for-families',
+      label: 'For Families'
+    },
+    {
+      path: '/your-stay',
+      label: 'Your Stay'
+    },
+    {
+      path: '/gallery',
+      label: 'Gallery'
+    },
+    {
+      path: '/booking',
+      label: 'Booking'
+    }
+  ];
+
   return <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="z-50">
@@ -55,7 +70,6 @@ const Navbar = () => {
           {navLinks.map(link => <Link key={link.path} to={link.path} className="">
               {link.label}
             </Link>)}
-          <Link to="/booking" className="ml-3 btn-primary">BUCHEN</Link>
         </nav>
         
         {/* Mobile menu button */}
@@ -77,4 +91,5 @@ const Navbar = () => {
       </div>
     </header>;
 };
+
 export default Navbar;
