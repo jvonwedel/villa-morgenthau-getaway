@@ -1,6 +1,7 @@
 
 import { Mountain, Bike, Map, Waves } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
+
 const seasonalActivities = [{
   season: "Frühling",
   activities: ["Mountainbiken", "Wandern zwischen Wildblumen", "Vogelbeobachtung", "Klettern"]
@@ -14,6 +15,7 @@ const seasonalActivities = [{
   season: "Winter",
   activities: ["Langlauf", "Schneeschuhwandern", "Winterfotografie", "Tierspuren folgen"]
 }];
+
 const featuredActivities = [{
   icon: <Mountain className="h-8 w-8 text-villa-accent" />,
   title: "Wandern",
@@ -35,6 +37,7 @@ const featuredActivities = [{
   description: "Nehmt an geführten Ausflügen zum Klettern, Canyoning oder Paragliding mit erfahrenen lokalen Guides teil.",
   distance: "30-45 Min. Fahrt"
 }];
+
 const ActivesActivities = () => {
   return <section className="section-padding bg-villa-muted">
       <div className="container-custom">
@@ -114,4 +117,5 @@ const ActivesActivities = () => {
       </div>
     </section>;
 };
+
 export default ActivesActivities;

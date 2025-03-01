@@ -1,5 +1,6 @@
 
 import SectionTitle from '../ui/SectionTitle';
+
 const ActivesContent = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -23,4 +24,5 @@ const ActivesContent = () => {
       </div>
     </section>;
 };
+
 export default ActivesContent;
