@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 const heroImages = ['/placeholder.svg', '/placeholder.svg', '/placeholder.svg'];
@@ -25,12 +24,10 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-medium mb-4">
             Villa Morgenthau
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway inmitten der Natur - zwischen den Meeren</p>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway inmitten der Natur & zwischen den Meeren</p>
           <div className="space-x-4">
-            <Link to="/gallery" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-villa-dark">
-              Explore
-            </Link>
-            <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">JETZT BUCHEN</Link>
+            <Link to="/gallery" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-villa-dark">ENTDECKEN</Link>
+            <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">BUCHEN</Link>
           </div>
         </div>
       </div>
