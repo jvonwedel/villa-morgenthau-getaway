@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
-  'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+  '/placeholder.svg',
+  '/placeholder.svg',
+  '/placeholder.svg',
 ];
 
 const Hero = () => {

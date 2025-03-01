@@ -11,7 +11,7 @@ const Location = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                src="/placeholder.svg" 
                 alt="Villa Morgenthau Location" 
                 className="w-full h-auto rounded-sm shadow-lg"
               />

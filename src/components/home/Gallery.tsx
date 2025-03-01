@@ -4,12 +4,12 @@ import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
-  'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
-  'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
-  'https://images.unsplash.com/photo-1472396961693-142e6e269027',
-  'https://images.unsplash.com/photo-1721322800607-8c38375eef04',
+  '/placeholder.svg',
+  '/placeholder.svg',
+  '/placeholder.svg',
+  '/placeholder.svg',
+  '/placeholder.svg',
+  '/placeholder.svg',
 ];
 
 const Gallery = () => {
