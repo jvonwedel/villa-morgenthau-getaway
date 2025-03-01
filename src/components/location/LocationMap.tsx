@@ -4,28 +4,40 @@ import { MapPin } from 'lucide-react';
 
 const attractions = [
   {
-    name: "Historisches Dorf",
-    description: "Erkunden Sie die charmanten Straßen und lokalen Geschäfte",
+    name: "Husum",
+    description: "Erkundet die charmanten Straßen, esst ein Krabbenbrötchen am Hafen und bummelt in den kleinen Geschäften",
     distance: "15 Min. Fahrt",
     coords: { top: "30%", left: "25%" }
   },
   {
-    name: "Bergwanderwege",
-    description: "Perfekt zum Wandern und für Naturfotografie",
+    name: "Kanuwanderwege",
+    description: "Entdeckt Sie die wunderbare und unberührte Flusslandschaft entlang der Treene",
     distance: "10 Min. Fahrt",
     coords: { top: "15%", left: "60%" }
   },
   {
-    name: "Lokales Weingut",
-    description: "Probieren Sie regionale Weine und lokale Küche",
+    name: "Lokale Hofläden",
+    description: "Probiert lokalen Käse bei Backensholz während eure Kinder happy auf dem Spielplatz toben",
     distance: "20 Min. Fahrt",
     coords: { top: "70%", left: "35%" }
   },
   {
-    name: "Seefreizeitmöglichkeiten",
-    description: "Schwimmen, Angeln und Bootfahren",
+    name: "Schlei",
+    description: "Entspannt bei einem Segeltörn auf der Schlei oder entdeckt die historischen Wikingerstätten",
     distance: "25 Min. Fahrt",
     coords: { top: "50%", left: "75%" }
+  },
+  {
+    name: "Friedrichstadt",
+    description: "Spaziert durch \"Klein Amsterdam\" und genießt einen Drink entlang der Grachten",
+    distance: "20 Min. Fahrt",
+    coords: { top: "60%", left: "20%" }
+  },
+  {
+    name: "Wildes Moor Schwabstedt",
+    description: "Entdeckt den Moorlehrpfad und lernt faszinierende Details über unsere Flora und Fauna kennen",
+    distance: "5 Min. Fahrt",
+    coords: { top: "40%", left: "45%" }
   },
 ];
 
@@ -84,7 +96,7 @@ const LocationMap = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {attractions.map((attraction, index) => (
             <div key={index} className="bg-white p-6 rounded-sm shadow-md hover:shadow-lg transition-shadow">
               <h3 className="font-medium mb-2 flex items-center">
