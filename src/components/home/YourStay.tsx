@@ -5,18 +5,14 @@ const amenities = ['Spacious Living Areas', 'Fully Equipped Kitchen', 'Luxury Be
 const YourStay = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
-        <SectionTitle subtitle="AMENITIES & SERVICES" centered>
-          Your Perfect Stay
-        </SectionTitle>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <div className="lg:col-span-3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1">
             <div className="aspect-video relative overflow-hidden rounded-sm shadow-lg">
               <img src="/placeholder.svg" alt="Villa Morgenthau Interior" className="w-full h-full object-cover" />
             </div>
           </div>
           
-          <div className="lg:col-span-2">
+          <div className="order-1 lg:order-2">
             <SectionTitle subtitle="WHERE WE ARE">
               Modern Comfort in Historic Setting
             </SectionTitle>
