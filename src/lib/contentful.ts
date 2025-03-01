@@ -3,7 +3,7 @@ import { createClient } from 'contentful';
 
 // Contentful client setup (use environment variables in production)
 export const contentfulClient = createClient({
-  space: 'YOUR_SPACE_ID', // Replace with your Space ID after creating it in Contentful
+  space: 'jm1ls9z6d70u', // Contentful Space ID
   accessToken: 'dRleEb0_fedUbelD6nH1kAaBLJqgk4nDxmnXuTtAvVs', // Content Delivery API access token
 });
 
