@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return <footer className="bg-villa-dark text-white pt-16 pb-8">
@@ -6,42 +7,42 @@ const Footer = () => {
           <div>
             <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Logo" className="h-16 mb-4 invert" />
             <p className="text-villa-muted mt-4 text-sm">
-              Villa Morgenthau, a historic vacation home since 1867. Experience luxury and serenity in one of the most beautiful natural settings.
+              Villa Morgenthau, ein historisches Ferienhaus seit 1867. Erleben Sie Luxus und Gelassenheit in einer der schönsten natürlichen Umgebungen.
             </p>
           </div>
           
           <div>
-            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Explore</h3>
+            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Entdecken</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-villa-muted hover:text-white transition-colors text-sm">About Villa Morgenthau</Link></li>
-              <li><Link to="/location" className="text-villa-muted hover:text-white transition-colors text-sm">Location</Link></li>
-              <li><Link to="/seeking-calm" className="text-villa-muted hover:text-white transition-colors text-sm">Seeking Calm</Link></li>
-              <li><Link to="/for-actives" className="text-villa-muted hover:text-white transition-colors text-sm">For Actives</Link></li>
-              <li><Link to="/for-families" className="text-villa-muted hover:text-white transition-colors text-sm">For Families</Link></li>
+              <li><Link to="/about" className="text-villa-muted hover:text-white transition-colors text-sm">Über Villa Morgenthau</Link></li>
+              <li><Link to="/location" className="text-villa-muted hover:text-white transition-colors text-sm">Lage</Link></li>
+              <li><Link to="/seeking-calm" className="text-villa-muted hover:text-white transition-colors text-sm">Entspannung</Link></li>
+              <li><Link to="/for-actives" className="text-villa-muted hover:text-white transition-colors text-sm">Für Aktive</Link></li>
+              <li><Link to="/for-families" className="text-villa-muted hover:text-white transition-colors text-sm">Für Familien</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">More</h3>
+            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Mehr</h3>
             <ul className="space-y-2">
-              <li><Link to="/your-stay" className="text-villa-muted hover:text-white transition-colors text-sm">Your Stay</Link></li>
-              <li><Link to="/gallery" className="text-villa-muted hover:text-white transition-colors text-sm">Gallery</Link></li>
-              <li><Link to="/booking" className="text-villa-muted hover:text-white transition-colors text-sm">Prices & Booking</Link></li>
-              <li><Link to="/imprint" className="text-villa-muted hover:text-white transition-colors text-sm">Imprint</Link></li>
-              <li><Link to="/privacy" className="text-villa-muted hover:text-white transition-colors text-sm">Privacy Policy</Link></li>
+              <li><Link to="/your-stay" className="text-villa-muted hover:text-white transition-colors text-sm">Ihr Aufenthalt</Link></li>
+              <li><Link to="/gallery" className="text-villa-muted hover:text-white transition-colors text-sm">Galerie</Link></li>
+              <li><Link to="/booking" className="text-villa-muted hover:text-white transition-colors text-sm">Preise & Buchung</Link></li>
+              <li><Link to="/imprint" className="text-villa-muted hover:text-white transition-colors text-sm">Impressum</Link></li>
+              <li><Link to="/privacy" className="text-villa-muted hover:text-white transition-colors text-sm">Datenschutz</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Contact</h3>
-            <p className="text-villa-muted text-sm mb-2">Email: villamorgenthau@gmail.com</p>
-            <p className="text-villa-muted text-sm mb-2">Phone: +49 179 487 8661</p>
-            <p className="text-villa-muted text-sm">Address: Rott 5, 25872 Ostenfeld, Germany</p>
+            <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Kontakt</h3>
+            <p className="text-villa-muted text-sm mb-2">E-Mail: villamorgenthau@gmail.com</p>
+            <p className="text-villa-muted text-sm mb-2">Telefon: +49 179 487 8661</p>
+            <p className="text-villa-muted text-sm">Adresse: Rott 5, 25872 Ostenfeld, Deutschland</p>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-villa-muted">
-          <p>© {new Date().getFullYear()} Villa Morgenthau. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Villa Morgenthau. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>;

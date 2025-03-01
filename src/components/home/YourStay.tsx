@@ -3,24 +3,24 @@ import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 
 const amenities = [
-  'Spacious Living Areas',
-  'Fully Equipped Kitchen',
-  'Luxury Bedrooms',
-  'Modern Bathrooms',
-  'Private Garden',
-  'Outdoor Dining Area',
-  'Fireplace',
-  'High-Speed WiFi',
-  'Smart TV',
-  'Washing Machine & Dryer'
+  'Geräumige Wohnbereiche',
+  'Voll ausgestattete Küche',
+  'Luxuriöse Schlafzimmer',
+  'Moderne Badezimmer',
+  'Privater Garten',
+  'Außenessbereich',
+  'Kamin',
+  'Highspeed-WLAN',
+  'Smart-TV',
+  'Waschmaschine & Trockner'
 ];
 
 const YourStay = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <SectionTitle subtitle="AMENITIES & SERVICES" centered>
-          Your Perfect Stay
+        <SectionTitle subtitle="ANNEHMLICHKEITEN & SERVICES" centered>
+          Ihr perfekter Aufenthalt
         </SectionTitle>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
@@ -28,20 +28,20 @@ const YourStay = () => {
             <div className="aspect-video relative overflow-hidden rounded-sm shadow-lg">
               <img 
                 src="/placeholder.svg" 
-                alt="Villa Morgenthau Interior" 
+                alt="Villa Morgenthau Innenbereich" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           
           <div className="lg:col-span-2">
-            <h3 className="font-serif text-2xl mb-6">Modern Comfort in Historic Setting</h3>
+            <h3 className="font-serif text-2xl mb-6">Moderner Komfort in historischem Ambiente</h3>
             <p className="text-gray-700 mb-6">
-              Villa Morgenthau combines historic charm with all the modern amenities you need for a comfortable and luxurious stay. Every detail has been carefully considered to ensure your experience is nothing short of exceptional.
+              Villa Morgenthau verbindet historischen Charme mit allen modernen Annehmlichkeiten, die Sie für einen komfortablen und luxuriösen Aufenthalt benötigen. Jedes Detail wurde sorgfältig durchdacht, um sicherzustellen, dass Ihr Erlebnis außergewöhnlich ist.
             </p>
             
             <div className="mb-8">
-              <h4 className="font-medium mb-3">Top Amenities:</h4>
+              <h4 className="font-medium mb-3">Top-Annehmlichkeiten:</h4>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                 {amenities.map((amenity, index) => (
                   <li key={index} className="flex items-center text-gray-700">
@@ -55,7 +55,7 @@ const YourStay = () => {
             </div>
             
             <Link to="/your-stay" className="btn-secondary">
-              Explore Amenities
+              Annehmlichkeiten entdecken
             </Link>
           </div>
         </div>

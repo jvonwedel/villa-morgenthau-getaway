@@ -7,43 +7,43 @@ const About = () => {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-serif mb-8 text-center">About Villa Morgenthau</h1>
+            <h1 className="text-4xl font-serif mb-8 text-center">Über Villa Morgenthau</h1>
             
             <div className="mb-10">
               <img 
                 src="/placeholder.svg" 
-                alt="Villa Morgenthau Historical Photo" 
+                alt="Villa Morgenthau Historisches Foto" 
                 className="w-full h-auto rounded-sm shadow-lg mb-4"
               />
-              <p className="text-sm text-gray-500 italic text-center">Villa Morgenthau circa 1867</p>
+              <p className="text-sm text-gray-500 italic text-center">Villa Morgenthau um 1867</p>
             </div>
             
             <div className="prose prose-lg mx-auto">
-              <h2 className="font-serif text-2xl mb-4">Our History</h2>
+              <h2 className="font-serif text-2xl mb-4">Unsere Geschichte</h2>
               <p className="mb-6">
-                Villa Morgenthau stands as a testament to timeless elegance and historical significance. Built in 1867 by the renowned architect Friedrich Morgenthau, the villa originally served as a summer residence for the Morgenthau family, prominent merchants and patrons of the arts.
+                Villa Morgenthau steht als Zeugnis zeitloser Eleganz und historischer Bedeutung. Erbaut im Jahr 1867 vom renommierten Architekten Friedrich Morgenthau, diente die Villa ursprünglich als Sommerresidenz für die Familie Morgenthau, prominente Kaufleute und Förderer der Künste.
               </p>
               
               <p className="mb-6">
-                Through generations, the villa has witnessed the changing tides of history while maintaining its architectural integrity and cultural importance. After an extensive restoration in 2015, Villa Morgenthau opened its doors as an exclusive vacation property, offering guests a unique opportunity to experience living history with modern comforts.
+                Über Generationen hinweg hat die Villa die wechselnden Zeiten der Geschichte miterlebt und dabei ihre architektonische Integrität und kulturelle Bedeutung bewahrt. Nach einer umfassenden Restaurierung im Jahr 2015 öffnete Villa Morgenthau ihre Türen als exklusives Ferienanwesen und bietet Gästen eine einzigartige Gelegenheit, lebendige Geschichte mit modernem Komfort zu erleben.
               </p>
               
-              <h2 className="font-serif text-2xl mb-4 mt-8">Architecture & Restoration</h2>
+              <h2 className="font-serif text-2xl mb-4 mt-8">Architektur & Restaurierung</h2>
               <p className="mb-6">
-                The villa exemplifies the neo-classical style popular in the mid-19th century, featuring elegant proportions, distinctive columns, and intricate moldings. The recent restoration efforts focused on preserving these historical elements while sensitively introducing modern amenities.
+                Die Villa ist ein Beispiel für den neoklassizistischen Stil, der Mitte des 19. Jahrhunderts populär war, mit eleganten Proportionen, markanten Säulen und aufwendigen Verzierungen. Die jüngsten Restaurierungsarbeiten konzentrierten sich darauf, diese historischen Elemente zu bewahren und gleichzeitig sensibel moderne Annehmlichkeiten einzuführen.
               </p>
               
               <p className="mb-6">
-                Each room has been carefully curated to reflect its original purpose while providing the comfort expected by today's discerning travelers. Original wooden floors have been restored, historical color schemes researched and replicated, and period-appropriate furnishings sourced to create an authentic yet luxurious atmosphere.
+                Jeder Raum wurde sorgfältig gestaltet, um seinen ursprünglichen Zweck widerzuspiegeln und gleichzeitig den Komfort zu bieten, den anspruchsvolle Reisende von heute erwarten. Originale Holzböden wurden restauriert, historische Farbschemata recherchiert und nachgebildet, und zeitgemäße Möbel beschafft, um eine authentische und dennoch luxuriöse Atmosphäre zu schaffen.
               </p>
               
-              <h2 className="font-serif text-2xl mb-4 mt-8">Our Philosophy</h2>
+              <h2 className="font-serif text-2xl mb-4 mt-8">Unsere Philosophie</h2>
               <p className="mb-6">
-                At Villa Morgenthau, we believe in preserving not just a building, but a way of life. We strive to create an environment where guests can disconnect from the hectic pace of modern life and reconnect with a more contemplative, elegant era.
+                In der Villa Morgenthau glauben wir daran, nicht nur ein Gebäude zu erhalten, sondern eine Lebensweise. Wir bemühen uns, eine Umgebung zu schaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und sich mit einer nachdenklicheren, eleganteren Ära wieder verbinden können.
               </p>
               
               <p className="mb-12">
-                Sustainability is at the heart of our operations. From our organic garden that supplies fresh produce for guests to our energy-efficient systems hidden discreetly within the historical structure, we are committed to ensuring Villa Morgenthau stands for generations to come.
+                Nachhaltigkeit steht im Mittelpunkt unserer Aktivitäten. Von unserem biologischen Garten, der frische Produkte für Gäste liefert, bis hin zu unseren energieeffizienten Systemen, die diskret in die historische Struktur integriert sind, setzen wir uns dafür ein, dass Villa Morgenthau für kommende Generationen erhalten bleibt.
               </p>
             </div>
           </div>

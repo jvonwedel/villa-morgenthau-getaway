@@ -4,27 +4,27 @@ import { MapPin } from 'lucide-react';
 
 const attractions = [
   {
-    name: "Historic Village",
-    description: "Explore the charming streets and local shops",
-    distance: "15 min drive",
+    name: "Historisches Dorf",
+    description: "Erkunden Sie die charmanten Straßen und lokalen Geschäfte",
+    distance: "15 Min. Fahrt",
     coords: { top: "30%", left: "25%" }
   },
   {
-    name: "Mountain Trails",
-    description: "Perfect for hiking and nature photography",
-    distance: "10 min drive",
+    name: "Bergwanderwege",
+    description: "Perfekt zum Wandern und für Naturfotografie",
+    distance: "10 Min. Fahrt",
     coords: { top: "15%", left: "60%" }
   },
   {
-    name: "Local Winery",
-    description: "Taste the regional wines and local cuisine",
-    distance: "20 min drive",
+    name: "Lokales Weingut",
+    description: "Probieren Sie regionale Weine und lokale Küche",
+    distance: "20 Min. Fahrt",
     coords: { top: "70%", left: "35%" }
   },
   {
-    name: "Lake Recreation",
-    description: "Swimming, fishing, and boating activities",
-    distance: "25 min drive",
+    name: "Seefreizeitmöglichkeiten",
+    description: "Schwimmen, Angeln und Bootfahren",
+    distance: "25 Min. Fahrt",
     coords: { top: "50%", left: "75%" }
   },
 ];
@@ -33,12 +33,12 @@ const LocationMap = () => {
   return (
     <section className="section-padding bg-villa-muted">
       <div className="container-custom">
-        <SectionTitle subtitle="THINGS TO DO NEARBY" centered>
-          Explore The Surroundings
+        <SectionTitle subtitle="AKTIVITÄTEN IN DER NÄHE" centered>
+          Erkunden Sie die Umgebung
         </SectionTitle>
         
         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
-          Discover the best activities and attractions in the surrounding area of Villa Morgenthau. Our location offers the perfect blend of relaxation and adventure.
+          Entdecken Sie die besten Aktivitäten und Attraktionen in der Umgebung der Villa Morgenthau. Unsere Lage bietet die perfekte Mischung aus Entspannung und Abenteuer.
         </p>
         
         <div className="relative w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden mb-12">
@@ -46,7 +46,7 @@ const LocationMap = () => {
           <div className="absolute inset-0 bg-gray-100">
             <img 
               src="/placeholder.svg" 
-              alt="Map of Villa Morgenthau Area" 
+              alt="Karte der Villa Morgenthau Umgebung" 
               className="w-full h-full object-cover opacity-50"
             />
           </div>
@@ -78,7 +78,7 @@ const LocationMap = () => {
               <div className="h-5 w-5 bg-villa-dark rounded-full border-2 border-white shadow-lg pulse animate-pulse"></div>
               <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-villa-dark p-3 rounded-sm shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                 <h4 className="font-medium text-sm text-white">Villa Morgenthau</h4>
-                <p className="text-xs text-white/80 mt-1">Your perfect vacation retreat</p>
+                <p className="text-xs text-white/80 mt-1">Ihr perfekter Urlaubsrückzugsort</p>
               </div>
             </div>
           </div>

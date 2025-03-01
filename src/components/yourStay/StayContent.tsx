@@ -7,27 +7,27 @@ const StayContent = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="YOUR EXPERIENCE">
-              Exceptional Accommodations
+            <SectionTitle subtitle="IHR ERLEBNIS">
+              Außergewöhnliche Unterkünfte
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">
-              Villa Morgenthau offers a perfect blend of historic charm and modern comfort. Our meticulously restored property retains its original character while providing all the contemporary amenities you need for a relaxing and luxurious stay.
+              Villa Morgenthau bietet eine perfekte Mischung aus historischem Charme und modernem Komfort. Unser sorgfältig restauriertes Anwesen bewahrt seinen ursprünglichen Charakter und bietet gleichzeitig alle modernen Annehmlichkeiten, die Sie für einen entspannten und luxuriösen Aufenthalt benötigen.
             </p>
             
             <p className="text-gray-700 mb-6">
-              Each room in the villa has been thoughtfully designed to create a warm, welcoming atmosphere that feels both elegant and comfortable. High-quality furnishings, premium bedding, and beautiful decor ensure that you'll feel right at home from the moment you arrive.
+              Jeder Raum in der Villa wurde durchdacht gestaltet, um eine warme, einladende Atmosphäre zu schaffen, die sich sowohl elegant als auch komfortabel anfühlt. Hochwertige Möbel, erstklassige Bettwäsche und schöne Dekoration sorgen dafür, dass Sie sich vom ersten Moment an wie zu Hause fühlen.
             </p>
             
             <p className="text-gray-700 mb-8">
-              Whether you're preparing a gourmet meal in our fully equipped kitchen, enjoying a book by the fireplace, or simply taking in the views from our terrace, every aspect of Villa Morgenthau has been designed with your comfort and enjoyment in mind.
+              Ob Sie eine Gourmetmahlzeit in unserer voll ausgestatteten Küche zubereiten, ein Buch am Kamin genießen oder einfach die Aussicht von unserer Terrasse aus betrachten - jeder Aspekt der Villa Morgenthau wurde mit Ihrem Komfort und Genuss im Sinn gestaltet.
             </p>
           </div>
           
           <div>
             <img 
               src="/placeholder.svg" 
-              alt="Villa Morgenthau Interior" 
+              alt="Villa Morgenthau Innenbereich" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
           </div>

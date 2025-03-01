@@ -7,51 +7,51 @@ const LocationContent = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="EXPLORE THE AREA">
-              An Ideal Base for Exploration
+            <SectionTitle subtitle="ERKUNDEN SIE DIE UMGEBUNG">
+              Ein idealer Ausgangspunkt für Erkundungen
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">
-              Villa Morgenthau is situated in one of the most picturesque regions, offering a perfect blend of natural beauty and cultural richness. The villa's location provides easy access to numerous attractions while maintaining the serenity and privacy our guests value.
+              Villa Morgenthau liegt in einer der malerischsten Regionen und bietet eine perfekte Mischung aus natürlicher Schönheit und kulturellem Reichtum. Die Lage der Villa ermöglicht einfachen Zugang zu zahlreichen Attraktionen und bewahrt gleichzeitig die Ruhe und Privatsphäre, die unsere Gäste schätzen.
             </p>
             
             <p className="text-gray-700 mb-6">
-              Within a short drive, you'll find charming villages with local markets, restaurants serving authentic cuisine, and cultural sites that tell the story of this historic region. Nature enthusiasts will appreciate the proximity to hiking trails, lakes, and protected natural areas.
+              In kurzer Fahrzeit finden Sie charmante Dörfer mit lokalen Märkten, Restaurants, die authentische Küche servieren, und kulturelle Stätten, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden die Nähe zu Wanderwegen, Seen und geschützten Naturgebieten zu schätzen wissen.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-villa-muted p-4 rounded-sm">
-                <h3 className="font-medium mb-2">Nearby Attractions</h3>
+                <h3 className="font-medium mb-2">Sehenswürdigkeiten in der Nähe</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Historic Village (15 min)</span>
+                    <span>Historisches Dorf (15 Min.)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Local Wineries (20 min)</span>
+                    <span>Lokale Weingüter (20 Min.)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Mountain Hiking Trails (10 min)</span>
+                    <span>Bergwanderwege (10 Min.)</span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-villa-muted p-4 rounded-sm">
-                <h3 className="font-medium mb-2">Distances</h3>
+                <h3 className="font-medium mb-2">Entfernungen</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Airport (45 min)</span>
+                    <span>Flughafen (45 Min.)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Nearest Town (10 min)</span>
+                    <span>Nächste Stadt (10 Min.)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-villa-accent mr-2">•</span>
-                    <span>Beach (30 min)</span>
+                    <span>Strand (30 Min.)</span>
                   </li>
                 </ul>
               </div>
@@ -61,7 +61,7 @@ const LocationContent = () => {
           <div>
             <img 
               src="/placeholder.svg" 
-              alt="Villa Morgenthau Surroundings" 
+              alt="Villa Morgenthau Umgebung" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
           </div>

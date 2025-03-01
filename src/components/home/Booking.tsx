@@ -7,7 +7,7 @@ const Booking = () => {
       <div className="absolute inset-0">
         <img 
           src="/placeholder.svg" 
-          alt="Villa Morgenthau Booking" 
+          alt="Villa Morgenthau Buchung" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-60" />
@@ -16,16 +16,16 @@ const Booking = () => {
       <div className="container-custom relative">
         <div className="max-w-2xl mx-auto text-center text-white">
           <span className="text-sm uppercase tracking-widest text-villa-accent mb-2 inline-block">
-            RESERVE YOUR DATES
+            RESERVIEREN SIE IHRE DATEN
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
-            Book Your Stay at Villa Morgenthau
+            Buchen Sie Ihren Aufenthalt in der Villa Morgenthau
           </h2>
           <p className="text-lg mb-8">
-            Experience the perfect vacation in our historic villa. Check availability and reserve your dates now for an unforgettable stay.
+            Erleben Sie den perfekten Urlaub in unserer historischen Villa. Prüfen Sie die Verfügbarkeit und reservieren Sie jetzt Ihre Daten für einen unvergesslichen Aufenthalt.
           </p>
           <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">
-            Check Availability
+            Verfügbarkeit prüfen
           </Link>
         </div>
       </div>

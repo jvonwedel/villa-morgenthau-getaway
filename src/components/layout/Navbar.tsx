@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -23,39 +24,39 @@ const Navbar = () => {
   const navLinks = [
     {
       path: '/',
-      label: 'Home'
+      label: 'Startseite'
     },
     {
       path: '/about',
-      label: 'About'
+      label: 'Über uns'
     },
     {
       path: '/location',
-      label: 'Location'
+      label: 'Lage'
     },
     {
       path: '/seeking-calm',
-      label: 'Seeking Calm'
+      label: 'Entspannung'
     },
     {
       path: '/for-actives',
-      label: 'For Actives'
+      label: 'Für Aktive'
     },
     {
       path: '/for-families',
-      label: 'For Families'
+      label: 'Für Familien'
     },
     {
       path: '/your-stay',
-      label: 'Your Stay'
+      label: 'Ihr Aufenthalt'
     },
     {
       path: '/gallery',
-      label: 'Gallery'
+      label: 'Galerie'
     },
     {
       path: '/booking',
-      label: 'Booking'
+      label: 'Buchung'
     }
   ];
 
@@ -84,7 +85,7 @@ const Navbar = () => {
                   {link.label}
                 </Link>)}
               <Link to="/booking" className="mt-4 btn-primary" onClick={() => setIsOpen(false)}>
-                Book Now
+                Jetzt Buchen
               </Link>
             </nav>
           </div>}

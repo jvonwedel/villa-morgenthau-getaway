@@ -30,12 +30,23 @@ const GalleryGrid = () => {
     setLightboxImage(null);
     document.body.style.overflow = 'auto';
   };
+
+  // Translate category names
+  const getCategoryName = (category: GalleryCategory): string => {
+    switch(category) {
+      case 'Interior': return 'Innenbereich';
+      case 'Exterior': return 'Außenbereich';
+      case 'Surroundings': return 'Umgebung';
+      case 'Amenities': return 'Annehmlichkeiten';
+      default: return category;
+    }
+  };
   
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <SectionTitle subtitle="EXPLORE OUR SPACES" centered>
-          Villa Morgenthau Photo Gallery
+        <SectionTitle subtitle="ENTDECKEN SIE UNSERE RÄUME" centered>
+          Villa Morgenthau Fotogalerie
         </SectionTitle>
         
         {/* Gallery Navigation */}
@@ -50,7 +61,7 @@ const GalleryGrid = () => {
                   : 'bg-villa-muted text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {category}
+              {getCategoryName(category)}
             </button>
           ))}
         </div>
@@ -66,7 +77,7 @@ const GalleryGrid = () => {
               <div className="aspect-[4/3] relative overflow-hidden">
                 <img 
                   src={image} 
-                  alt={`Villa Morgenthau ${activeCategory} ${index + 1}`}
+                  alt={`Villa Morgenthau ${getCategoryName(activeCategory)} ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
@@ -84,7 +95,7 @@ const GalleryGrid = () => {
             >
               <img 
                 src={displayImages[0]} 
-                alt="Villa Morgenthau Featured Interior"
+                alt="Villa Morgenthau hervorgehobener Innenbereich"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-20 transition-opacity duration-300" />
@@ -103,7 +114,7 @@ const GalleryGrid = () => {
             </button>
             <img 
               src={lightboxImage} 
-              alt="Gallery Lightbox" 
+              alt="Galerie Lightbox" 
               className="max-w-full max-h-[90vh] object-contain"
             />
           </div>

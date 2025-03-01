@@ -8,28 +8,28 @@ const About = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionTitle subtitle="SINCE 1867">
-              About Villa Morgenthau
+            <SectionTitle subtitle="SEIT 1867">
+              Über Villa Morgenthau
             </SectionTitle>
             <p className="text-gray-700 mb-6">
-              Villa Morgenthau is a historic property dating back to 1867, meticulously restored to preserve its original charm while offering modern luxury. Situated in a breathtaking natural setting, our villa provides the perfect retreat for those seeking tranquility and comfort.
+              Villa Morgenthau ist ein historisches Anwesen aus dem Jahr 1867, das sorgfältig restauriert wurde, um seinen ursprünglichen Charme zu bewahren und gleichzeitig modernen Luxus zu bieten. In einer atemberaubenden natürlichen Umgebung gelegen, bietet unsere Villa den perfekten Rückzugsort für alle, die Ruhe und Komfort suchen.
             </p>
             <p className="text-gray-700 mb-8">
-              With spacious rooms, elegant furnishings, and attention to every detail, Villa Morgenthau creates a harmonious blend of history and contemporary comfort. Each corner of our property tells a story, inviting you to become part of its continuing legacy.
+              Mit geräumigen Zimmern, eleganter Einrichtung und Liebe zum Detail schafft Villa Morgenthau eine harmonische Mischung aus Geschichte und zeitgenössischem Komfort. Jede Ecke unseres Anwesens erzählt eine Geschichte und lädt Sie ein, Teil ihres fortlaufenden Erbes zu werden.
             </p>
             <Link to="/about" className="btn-secondary">
-              Discover Our Story
+              Entdecken Sie unsere Geschichte
             </Link>
           </div>
           
           <div className="relative">
             <img 
               src="/placeholder.svg" 
-              alt="Villa Morgenthau Exterior" 
+              alt="Villa Morgenthau Außenansicht" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
             <div className="absolute -bottom-6 -left-6 bg-villa-accent p-6 rounded-sm shadow-lg hidden md:block">
-              <p className="font-serif text-xl text-white">Over 150 years of history and elegance</p>
+              <p className="font-serif text-xl text-white">Über 150 Jahre Geschichte und Eleganz</p>
             </div>
           </div>
         </div>
