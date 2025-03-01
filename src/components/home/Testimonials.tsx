@@ -4,20 +4,20 @@ import SectionTitle from '../ui/SectionTitle';
 
 const testimonials = [
   {
-    name: 'Emma & Sebastian',
+    name: 'Familie Lindenthal',
     location: 'München, Deutschland',
     text: 'Villa Morgenthau hat alle unsere Erwartungen übertroffen. Die Liebe zum Detail, die wunderschöne Umgebung und die herzliche Gastfreundschaft machten unseren Aufenthalt unvergesslich. Wir werden definitiv wiederkommen!',
     image: '/placeholder.svg'
   },
   {
-    name: 'Familie Johnson',
-    location: 'London, UK',
+    name: 'Familie Haselbeck',
+    location: 'Düsseldorf, Deutschland',
     text: 'Perfekter Familienurlaub! Unsere Kinder liebten es, das Grundstück zu erkunden, und wir schätzten die durchdacht gestalteten Räume. Es ist selten, einen Ort zu finden, der sowohl für Erwachsene als auch für Kinder so gut geeignet ist.',
     image: '/placeholder.svg'
   },
   {
-    name: 'Marie & Pierre',
-    location: 'Paris, Frankreich',
+    name: 'Celine, Lena & Friedi',
+    location: 'Berlin, Deutschland',
     text: 'Ein wahres Juwel! Der historische Charme der Villa in Kombination mit modernen Annehmlichkeiten schuf den perfekten romantischen Rückzugsort. Die Lage ist ideal für Entspannung und Abenteuer zugleich.',
     image: '/placeholder.svg'
   }

@@ -6,19 +6,19 @@ import { Heart, Activity, Users } from 'lucide-react';
 const features = [
   {
     title: 'Für Erholungssuchende',
-    description: 'Entfliehen Sie dem Lärm des Alltags. Die Villa Morgenthau ist ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wälder, Felern, Wiesen und Moor.',
+    description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor.',
     icon: Heart,
     link: '/seeking-calm'
   },
   {
     title: 'Für Aktive',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunden Sie Wanderwege, Wassersport, Fahrradrouten und mehr nur wenige Minuten von der Villa Morgenthau entfernt.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr, alles nur eine kurze Fahrt von der Villa Morgenthau entfernt.',
     icon: Activity,
     link: '/for-actives'
   },
   {
     title: 'Für Familien',
-    description: 'Schaffen Sie bleibende Erinnerungen mit Ihren Liebsten. Die Villa Morgenthau mit ihren nahegelegenen Ausflugszielen bietet unvergessliche Erlebnisse für Groß und Klein.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunde Kanuwanderwege, das Wattenmeer oder die Schlei, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
     icon: Users,
     link: '/for-families'
   }
@@ -26,10 +26,10 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="section-padding pb-12 bg-villa-muted">
+    <section className="section-padding pb-8 bg-villa-muted">
       <div className="container-custom">
         <SectionTitle subtitle="ERLEBNISSE" centered>
-          Finden Sie Ihren perfekten Aufenthalt
+          Dein perfekter Aufenthalt
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -13,8 +13,8 @@ const Gallery = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <SectionTitle subtitle="UNSERE RÄUME" centered>
-          Entdecken Sie Villa Morgenthau
+        <SectionTitle subtitle="GALLERIE" centered>
+          Entdecke die Villa Morgenthau
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

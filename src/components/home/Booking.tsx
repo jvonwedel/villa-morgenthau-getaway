@@ -19,10 +19,10 @@ const Booking = () => {
             JETZT BUCHEN!
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
-            Buchen Sie Ihren Aufenthalt in der Villa Morgenthau
+            Buche jetzt deinen Urlaub in der Villa Morgenthau
           </h2>
           <p className="text-lg mb-8">
-            Erleben Sie den perfekten Urlaub in unserer historischen Villa. Prüfen Sie die Verfügbarkeit und reservieren Sie jetzt Ihre Daten für einen unvergesslichen Aufenthalt.
+            Verbringe eine unvergessliche Zeit in unserer historischen Villa Morgenthau und reserviere deinen Aufenthalt jetzt!
           </p>
           <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">
             Verfügbarkeit prüfen

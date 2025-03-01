@@ -1,7 +1,7 @@
 
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
-const amenities = ['Spacious Living Areas', 'Fully Equipped Kitchen', 'Komfortable Schlafzimmer', 'Modern Bathrooms', 'Private Garden', 'Outdoor Dining Area', 'Fireplace', 'High-Speed WiFi', 'Smart TV', 'Washing Machine & Dryer'];
+const amenities = ['Geräumige Wohnbereiche', 'Voll ausgestattete Küche', 'Komfortable Schlafzimmer', 'Moderne Badezimmer', 'Privater Garten', 'Außensitzbereich', 'Kamin', 'Highspeed WLAN', 'Smart TV', 'Waschmaschine & Trockner'];
 const YourStay = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -13,8 +13,8 @@ const YourStay = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <SectionTitle subtitle="WHERE WE ARE">
-              Entdecken Sie die Villa Morgenthau
+            <SectionTitle subtitle="ALLES FÜR DEN PERFEKTEN AUFENTHALT">
+              Entdecke die Villa Morgenthau
             </SectionTitle>
             <p className="text-gray-700 mb-6">Die Villa Morgenthau verbindet historischen Charme mit allen modernen Annehmlichkeiten, die Sie für einen komfortablen Aufenthalt benötigen. Jedes Detail wurde sorgfältig und mit Liebe durchdacht, um sicherzustellen, dass Ihr Aufenthalt unvergesslich wird.</p>
             
