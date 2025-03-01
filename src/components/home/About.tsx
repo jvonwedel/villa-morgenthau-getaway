@@ -24,7 +24,7 @@ const About = () => {
           
           <div className="relative">
             <img 
-              src="/placeholder.svg" 
+              src="https://images.unsplash.com/photo-1721322800607-8c38375eef04" 
               alt="Villa Morgenthau Exterior" 
               className="w-full h-auto rounded-sm shadow-lg"
             />
