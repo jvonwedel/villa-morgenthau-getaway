@@ -1,17 +1,10 @@
-
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  return (
-    <footer className="bg-villa-dark text-white pt-16 pb-8">
+  return <footer className="bg-villa-dark text-white pt-16 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <img 
-              src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" 
-              alt="Villa Morgenthau Logo" 
-              className="h-16 mb-4 invert" 
-            />
+            <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Logo" className="h-16 mb-4 invert" />
             <p className="text-villa-muted mt-4 text-sm">
               Villa Morgenthau, a historic vacation home since 1867. Experience luxury and serenity in one of the most beautiful natural settings.
             </p>
@@ -41,9 +34,9 @@ const Footer = () => {
           
           <div>
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Contact</h3>
-            <p className="text-villa-muted text-sm mb-2">Email: info@villamorgenthau.com</p>
-            <p className="text-villa-muted text-sm mb-2">Phone: +49 123 456 789</p>
-            <p className="text-villa-muted text-sm">Address: Morgenthau Street 123, 10115 Berlin, Germany</p>
+            <p className="text-villa-muted text-sm mb-2">Email: villamorgenthau@gmail.com</p>
+            <p className="text-villa-muted text-sm mb-2">Phone: +49 179 487 8661</p>
+            <p className="text-villa-muted text-sm">Address: Rott 5, 25872 Ostenfeld, Germany</p>
           </div>
         </div>
         
@@ -51,8 +44,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Villa Morgenthau. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
