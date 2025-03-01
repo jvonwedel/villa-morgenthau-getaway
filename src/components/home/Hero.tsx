@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 const heroImages = ['/placeholder.svg', '/placeholder.svg', '/placeholder.svg'];
@@ -21,6 +22,11 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white">
         <div className="animate-fade-in max-w-3xl mx-auto">
+          <img 
+            src="/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png" 
+            alt="Villa Morgenthau Logo" 
+            className="w-40 h-40 mx-auto mb-6"
+          />
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-medium mb-4">
             Villa Morgenthau
           </h1>
