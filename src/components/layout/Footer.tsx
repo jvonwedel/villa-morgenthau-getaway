@@ -35,7 +35,7 @@ const Footer = () => {
           
           <div>
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Kontakt</h3>
-            <p className="text-villa-muted text-sm mb-2">E-Mail: villamorgenthau@gmail.com</p>
+            <p className="text-villa-muted text-sm mb-2">E-Mail: info@ferien-an-der-nordsee.de</p>
             <p className="text-villa-muted text-sm mb-2">Telefon: 048419041461</p>
           </div>
         </div>

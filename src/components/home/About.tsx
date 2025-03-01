@@ -11,7 +11,7 @@ const About = () => {
             </SectionTitle>
             <p className="text-gray-700 mb-8">Die Villa Morgenthau ist ein historisches Anwesen aus dem Jahr 1867, das sorgfältig restauriert wurde, um seinen ursprünglichen Charme zu bewahren und gleichzeitig modernen Luxus zu bieten. In atemberaubender, unberührter Natur gelegen, bietet die Villa Morgenthau den perfekten Rückzugsort für alle, die Ruhe und Komfort suchen. Aber auch unvergessliche Erlebnisse sind jederzeit möglich, denn die perfekte Lage zwischen den Meeren ermöglich unzählige Ausflüge, wenn der Sinn nach Abenteuer steht.</p>
             <div className="text-center">
-              <Link to="/about" className="btn-secondary">ENTDECKE VILLA MORGENTHAU</Link>
+              <Link to="/about" className="btn-secondary">ENTDECKE DIE VILLA MORGENTHAU</Link>
             </div>
           </div>
           
