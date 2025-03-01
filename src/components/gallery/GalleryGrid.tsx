@@ -1,46 +1,21 @@
+
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
-import { fetchGalleryImages, GalleryImage } from '../../lib/sanity';
-import { useQuery } from '@tanstack/react-query';
+import { fetchGalleryImages, fetchGalleryImagesByTag, GalleryImage } from '../../lib/galleryImages';
 
-// Fallback placeholder images (will be used until you add content to Sanity)
-const placeholderImages = {
-  Interior: Array(6).fill('/placeholder.svg'),
-  Exterior: Array(4).fill('/placeholder.svg'),
-  Surroundings: Array(5).fill('/placeholder.svg'),
-  Amenities: Array(3).fill('/placeholder.svg')
-};
-
-type GalleryCategory = keyof typeof placeholderImages;
+type GalleryCategory = 'Interior' | 'Exterior' | 'Surroundings' | 'Amenities';
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   
-  // Fetch all gallery images from Sanity
-  const { data: sanityImages, isLoading, error } = useQuery({
-    queryKey: ['galleryImages'],
-    queryFn: fetchGalleryImages,
-  });
-
+  // Get images to display
+  const allImages = fetchGalleryImages();
+  
   // Filter images by tag
-  const getImagesForCategory = (category: GalleryCategory): string[] => {
-    if (!sanityImages || sanityImages.length === 0) {
-      return placeholderImages[category]; // Return placeholder images if no Sanity data
-    }
-    
-    const filteredImages = sanityImages
-      .filter(image => {
-        // Check if image has tags and if any tag includes the category name
-        return image.tags && image.tags.some(tag => 
-          tag === category
-        );
-      })
-      .map(image => image.image?.asset?.url || '/placeholder.svg');
-    
-    return filteredImages.length > 0 ? filteredImages : placeholderImages[category];
-  };
+  const displayImages = fetchGalleryImagesByTag(activeCategory)
+    .map(image => image.imageUrl);
   
   const handleCategoryChange = (category: GalleryCategory) => {
     setActiveCategory(category);
@@ -55,8 +30,6 @@ const GalleryGrid = () => {
     setLightboxImage(null);
     document.body.style.overflow = 'auto';
   };
-
-  const displayImages = getImagesForCategory(activeCategory);
   
   return (
     <section className="section-padding bg-white">
@@ -67,10 +40,10 @@ const GalleryGrid = () => {
         
         {/* Gallery Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {Object.keys(placeholderImages).map((category) => (
+          {(['Interior', 'Exterior', 'Surroundings', 'Amenities'] as GalleryCategory[]).map((category) => (
             <button
               key={category}
-              onClick={() => handleCategoryChange(category as GalleryCategory)}
+              onClick={() => handleCategoryChange(category)}
               className={`px-6 py-2 rounded-sm transition-colors ${
                 activeCategory === category 
                   ? 'bg-villa-dark text-white' 
@@ -81,18 +54,6 @@ const GalleryGrid = () => {
             </button>
           ))}
         </div>
-
-        {isLoading && (
-          <div className="text-center py-8">
-            <p>Loading gallery images...</p>
-          </div>
-        )}
-
-        {error && (
-          <div className="text-center text-red-600 py-8">
-            <p>Error loading images. Using placeholder images instead.</p>
-          </div>
-        )}
         
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

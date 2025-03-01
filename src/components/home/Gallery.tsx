@@ -1,34 +1,14 @@
+
 import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
-import { fetchGalleryImages } from '../../lib/sanity';
-
-// Fallback placeholder images
-const placeholderImages = [
-  '/placeholder.svg',
-  '/placeholder.svg',
-  '/placeholder.svg',
-  '/placeholder.svg',
-  '/placeholder.svg',
-  '/placeholder.svg',
-];
+import { fetchGalleryImages } from '../../lib/galleryImages';
 
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
-  // Fetch gallery images from Sanity
-  const { data: sanityImages, isLoading, error } = useQuery({
-    queryKey: ['homeGalleryImages'],
-    queryFn: fetchGalleryImages,
-  });
-
-  // Get images to display (sanity if available, otherwise placeholders)
-  const displayImages = sanityImages && sanityImages.length > 0
-    ? sanityImages.slice(0, 6).map(image => 
-        image.image?.asset?.url || '/placeholder.svg'
-      )
-    : placeholderImages;
+  // Get images to display
+  const images = fetchGalleryImages().slice(0, 6).map(image => image.imageUrl);
   
   return (
     <section className="section-padding bg-white">
@@ -38,7 +18,7 @@ const Gallery = () => {
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {displayImages.slice(0, 6).map((image, index) => (
+          {images.map((image, index) => (
             <Link 
               key={index}
               to="/gallery"
