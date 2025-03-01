@@ -1,3 +1,4 @@
+
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { MapPin } from 'lucide-react';

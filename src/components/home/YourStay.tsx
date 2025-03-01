@@ -17,7 +17,7 @@ const YourStay = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <SectionTitle>
+            <SectionTitle subtitle="WHERE WE ARE">
               Modern Comfort in Historic Setting
             </SectionTitle>
             <p className="text-gray-700 mb-6">Die Villa Morgenthau verbindet historischen Charme mit allen modernen Annehmlichkeiten, die Sie für einen komfortablen Aufenthalt benötigen. Jedes Detail wurde sorgfältig und mit Liebe durchdacht, um sicherzustellen, dass Ihr Aufenthalt unvergesslich wird.</p>
