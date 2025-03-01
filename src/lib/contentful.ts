@@ -4,7 +4,7 @@ import { createClient } from 'contentful';
 // Contentful client setup (use environment variables in production)
 export const contentfulClient = createClient({
   space: 'YOUR_SPACE_ID', // Replace with your Space ID after creating it in Contentful
-  accessToken: 'YOUR_ACCESS_TOKEN', // Replace with your Content Delivery API access token
+  accessToken: 'dRleEb0_fedUbelD6nH1kAaBLJqgk4nDxmnXuTtAvVs', // Content Delivery API access token
 });
 
 // Type definitions for Contentful content models
