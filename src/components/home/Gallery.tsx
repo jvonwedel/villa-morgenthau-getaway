@@ -1,9 +1,8 @@
-
 import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { fetchGalleryImages } from '../../lib/contentful';
+import { fetchGalleryImages } from '../../lib/sanity';
 
 // Fallback placeholder images
 const placeholderImages = [
@@ -18,18 +17,16 @@ const placeholderImages = [
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
-  // Fetch gallery images from Contentful
-  const { data: contentfulImages, isLoading, error } = useQuery({
+  // Fetch gallery images from Sanity
+  const { data: sanityImages, isLoading, error } = useQuery({
     queryKey: ['homeGalleryImages'],
     queryFn: fetchGalleryImages,
   });
 
-  // Get images to display (contentful if available, otherwise placeholders)
-  const displayImages = contentfulImages && contentfulImages.length > 0
-    ? contentfulImages.slice(0, 6).map(image => 
-        image.image?.fields?.file?.url 
-          ? `https:${image.image.fields.file.url}` 
-          : '/placeholder.svg'
+  // Get images to display (sanity if available, otherwise placeholders)
+  const displayImages = sanityImages && sanityImages.length > 0
+    ? sanityImages.slice(0, 6).map(image => 
+        image.image?.asset?.url || '/placeholder.svg'
       )
     : placeholderImages;
   

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
-import { fetchGalleryImages, GalleryImage } from '../../lib/contentful';
+import { fetchGalleryImages, GalleryImage } from '../../lib/sanity';
 import { useQuery } from '@tanstack/react-query';
 
-// Fallback placeholder images (will be used until you add content to Contentful)
+// Fallback placeholder images (will be used until you add content to Sanity)
 const placeholderImages = {
   Interior: Array(6).fill('/placeholder.svg'),
   Exterior: Array(4).fill('/placeholder.svg'),
@@ -18,28 +18,26 @@ const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   
-  // Fetch all gallery images from Contentful
-  const { data: contentfulImages, isLoading, error } = useQuery({
+  // Fetch all gallery images from Sanity
+  const { data: sanityImages, isLoading, error } = useQuery({
     queryKey: ['galleryImages'],
     queryFn: fetchGalleryImages,
   });
 
   // Filter images by tag
   const getImagesForCategory = (category: GalleryCategory): string[] => {
-    if (!contentfulImages || contentfulImages.length === 0) {
-      return placeholderImages[category]; // Return placeholder images if no contentful data
+    if (!sanityImages || sanityImages.length === 0) {
+      return placeholderImages[category]; // Return placeholder images if no Sanity data
     }
     
-    const filteredImages = contentfulImages
+    const filteredImages = sanityImages
       .filter(image => {
         // Check if image has tags and if any tag includes the category name
         return image.tags && image.tags.some(tag => 
-          tag.toLowerCase().includes(category.toLowerCase())
+          tag === category
         );
       })
-      .map(image => image.image?.fields?.file?.url 
-        ? `https:${image.image.fields.file.url}` 
-        : '/placeholder.svg');
+      .map(image => image.image?.asset?.url || '/placeholder.svg');
     
     return filteredImages.length > 0 ? filteredImages : placeholderImages[category];
   };
