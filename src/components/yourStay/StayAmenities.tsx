@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { ChevronDown, Utensils, Wifi, Tv, Coffee, Shower, Car } from 'lucide-react';
+import { ChevronDown, Utensils, Wifi, Tv, Coffee, ShowerHead, Car } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const amenityCategories = [
@@ -46,7 +45,7 @@ const amenityCategories = [
   {
     id: "bathrooms",
     title: "Bathrooms",
-    icon: <Shower className="h-6 w-6 text-villa-accent" />,
+    icon: <ShowerHead className="h-6 w-6 text-villa-accent" />,
     items: [
       "Master en-suite bathroom with bathtub",
       "Second full bathroom with shower",
@@ -59,7 +58,7 @@ const amenityCategories = [
   {
     id: "outdoor",
     title: "Outdoor Areas",
-    icon: <Garden className="h-6 w-6 text-villa-accent" />,
+    icon: <Trees className="h-6 w-6 text-villa-accent" />,
     items: [
       "Private garden with seating area",
       "Outdoor dining table and chairs",
@@ -110,8 +109,7 @@ const amenityCategories = [
   }
 ];
 
-// Missing import for these icons
-import { Bed, Garden, Home } from 'lucide-react';
+import { Bed, Trees, Home } from 'lucide-react';
 
 const StayAmenities = () => {
   const [openCategory, setOpenCategory] = useState<string | null>("living-spaces");

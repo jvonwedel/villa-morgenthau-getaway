@@ -1,5 +1,4 @@
-
-import { Smile, Tree, Cookie, Star } from 'lucide-react';
+import { Smile, Trees, Cookie, Star } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const familySpaces = [
@@ -29,7 +28,7 @@ const familyActivities = [
     suitable: "All ages"
   },
   {
-    icon: <Tree className="h-8 w-8 text-villa-accent" />,
+    icon: <Trees className="h-8 w-8 text-villa-accent" />,
     title: "Outdoor Adventures",
     description: "Easy hiking trails, picnic spots, and nature observation points perfect for family exploration.",
     suitable: "Ages 3+"
