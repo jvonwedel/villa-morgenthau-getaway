@@ -8,19 +8,15 @@ const About = () => {
             <SectionTitle subtitle="SINCE 1867">
               About Villa Morgenthau
             </SectionTitle>
-            <p className="text-gray-700 mb-6">
-              Villa Morgenthau is a historic property dating back to 1867, meticulously restored to preserve its original charm while offering modern luxury. Situated in a breathtaking natural setting, our villa provides the perfect retreat for those seeking tranquility and comfort.
-            </p>
-            <p className="text-gray-700 mb-8">
-              With spacious rooms, elegant furnishings, and attention to every detail, Villa Morgenthau creates a harmonious blend of history and contemporary comfort. Each corner of our property tells a story, inviting you to become part of its continuing legacy.
-            </p>
+            <p className="text-gray-700 mb-6">Die Villa Morgenthau ist ein historisches Anwesen aus dem Jahr 1867, das sorgfältig restauriert wurde, um seinen ursprünglichen Charme zu bewahren und gleichzeitig modernen Luxus zu bieten. In atemberaubender, unberührter Natur gelegen, bietet die Villa Morgenthau den perfekten Rückzugsort für alle, die Ruhe und Komfort suchen. Aber auch unvergessliche Erlebnisse sind jederzeit möglich, denn die perfekte Lage zwischen den Meeren ermöglich unzählige Ausflüge, wenn der Sinn nach Abenteuer steht.</p>
+            <p className="text-gray-700 mb-8">Mit geräumigen Zimmern und Einrichtung mit Liebe zum Detail schafft die Villa Morgenthau eine harmonische Mischung aus Geschichte und zeitgenössischem Komfort. Jede Ecke des Anwesens erzählt eine Geschichte und lädt Sie ein, Teil ihres fortlaufenden Erbes zu werden.</p>
             <Link to="/about" className="btn-secondary">ENTDECKEN SIE DIE GESCHICHTE</Link>
           </div>
           
           <div className="relative">
             <img alt="Villa Morgenthau Exterior" className="w-full h-auto rounded-sm shadow-lg" src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" />
             <div className="absolute -bottom-6 -left-6 bg-villa-accent p-6 rounded-sm shadow-lg hidden md:block">
-              <p className="font-serif text-xl text-white">Over 150 years of history and elegance</p>
+              <p className="font-serif text-xl text-white">Über 150 Jahre Geschichte</p>
             </div>
           </div>
         </div>
