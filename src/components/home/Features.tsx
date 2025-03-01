@@ -5,7 +5,7 @@ import { Heart, Activity, Users } from 'lucide-react';
 
 const features = [
   {
-    title: 'Entspannung',
+    title: 'Für Erholungssuchende',
     description: 'Entfliehen Sie dem Lärm des Alltags. Unsere Villa bietet ruhige Umgebung, Meditationsplätze und natürliche Schönheit für wahre Entspannung.',
     icon: Heart,
     link: '/seeking-calm'

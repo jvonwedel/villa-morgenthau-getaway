@@ -24,7 +24,7 @@ const Navbar = () => {
   const navLinks = [
     {
       path: '/',
-      label: 'Startseite'
+      label: 'Home'
     },
     {
       path: '/about',
@@ -36,7 +36,7 @@ const Navbar = () => {
     },
     {
       path: '/seeking-calm',
-      label: 'Entspannung'
+      label: 'Für Erholungssuchende'
     },
     {
       path: '/for-actives',
