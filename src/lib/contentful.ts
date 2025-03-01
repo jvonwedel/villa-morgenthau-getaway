@@ -41,7 +41,7 @@ export const fetchGalleryImagesByTag = async (tag: string): Promise<GalleryImage
   try {
     const entries = await contentfulClient.getEntries({
       content_type: 'galleryImage',
-      'metadata.tags.sys.id[in]': tag,
+      'metadata.tags.sys.id[in]': [tag], // Fix: Wrapping the tag in an array to satisfy the type requirement
     });
     
     return entries.items.map(item => item.fields as unknown as GalleryImage);
