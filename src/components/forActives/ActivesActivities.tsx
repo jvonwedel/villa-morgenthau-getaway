@@ -1,4 +1,5 @@
-import { Mountain, Bike, Swim, Map } from 'lucide-react';
+
+import { Mountain, Bike, SwimmingPool, Map } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const seasonalActivities = [
@@ -54,7 +55,7 @@ const featuredActivities = [
     distance: "Directly from villa"
   },
   {
-    icon: <Swim className="h-8 w-8 text-villa-accent" />,
+    icon: <SwimmingPool className="h-8 w-8 text-villa-accent" />,
     title: "Water Activities",
     description: "Enjoy swimming, kayaking, and paddleboarding at nearby lakes and rivers during the warmer months.",
     distance: "15-30 min drive"
