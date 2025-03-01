@@ -29,9 +29,7 @@ const Hero = () => {
             <Link to="/gallery" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-villa-dark">
               Explore
             </Link>
-            <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">
-              Book Now
-            </Link>
+            <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">JETZT BUCHEN</Link>
           </div>
         </div>
       </div>
