@@ -1,3 +1,4 @@
+
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 const amenities = ['Spacious Living Areas', 'Fully Equipped Kitchen', 'Luxury Bedrooms', 'Modern Bathrooms', 'Private Garden', 'Outdoor Dining Area', 'Fireplace', 'High-Speed WiFi', 'Smart TV', 'Washing Machine & Dryer'];
@@ -16,7 +17,9 @@ const YourStay = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <h3 className="font-serif text-2xl mb-6">Modern Comfort in Historic Setting</h3>
+            <SectionTitle>
+              Modern Comfort in Historic Setting
+            </SectionTitle>
             <p className="text-gray-700 mb-6">Die Villa Morgenthau verbindet historischen Charme mit allen modernen Annehmlichkeiten, die Sie für einen komfortablen Aufenthalt benötigen. Jedes Detail wurde sorgfältig und mit Liebe durchdacht, um sicherzustellen, dass Ihr Aufenthalt unvergesslich wird.</p>
             
             <div className="mb-8">
