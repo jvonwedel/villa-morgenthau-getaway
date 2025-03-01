@@ -7,7 +7,7 @@ const Footer = () => {
           <div>
             <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Logo" className="h-16 mb-4 invert" />
             <p className="text-villa-muted mt-4 text-sm">
-              Villa Morgenthau, ein historisches Ferienhaus seit 1867. Erleben Sie Luxus und Gelassenheit in einer der schönsten natürlichen Umgebungen.
+              Villa Morgenthau, ein historisches Ferienhaus von 1967. Erleben Sie Ruhe & Komfort in schönster Natur zwischen den Meeren.
             </p>
           </div>
           

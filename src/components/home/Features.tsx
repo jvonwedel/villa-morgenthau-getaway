@@ -6,19 +6,19 @@ import { Heart, Activity, Users } from 'lucide-react';
 const features = [
   {
     title: 'Für Erholungssuchende',
-    description: 'Entfliehen Sie dem Lärm des Alltags. Unsere Villa bietet ruhige Umgebung, Meditationsplätze und natürliche Schönheit für wahre Entspannung.',
+    description: 'Entfliehen Sie dem Lärm des Alltags. Die Villa Morgenthau ist ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wälder, Felern, Wiesen und Moor.',
     icon: Heart,
     link: '/seeking-calm'
   },
   {
     title: 'Für Aktive',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunden Sie Wanderwege, Wassersport, Fahrradrouten und mehr nur wenige Minuten von der Villa entfernt.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunden Sie Wanderwege, Wassersport, Fahrradrouten und mehr nur wenige Minuten von der Villa Morgenthau entfernt.',
     icon: Activity,
     link: '/for-actives'
   },
   {
     title: 'Für Familien',
-    description: 'Schaffen Sie bleibende Erinnerungen mit Ihren Lieben. Kinderfreundliche Annehmlichkeiten, Spiele und nahegelegene Attraktionen für alle Altersgruppen.',
+    description: 'Schaffen Sie bleibende Erinnerungen mit Ihren Liebsten. Die Villa Morgenthau mit ihren nahegelegenen Ausflugszielen bietet unvergessliche Erlebnisse für Groß und Klein.',
     icon: Users,
     link: '/for-families'
   }
@@ -26,7 +26,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="section-padding bg-villa-muted">
+    <section className="section-padding pb-12 bg-villa-muted">
       <div className="container-custom">
         <SectionTitle subtitle="ERLEBNISSE" centered>
           Finden Sie Ihren perfekten Aufenthalt

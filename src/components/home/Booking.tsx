@@ -16,7 +16,7 @@ const Booking = () => {
       <div className="container-custom relative">
         <div className="max-w-2xl mx-auto text-center text-white">
           <span className="text-sm uppercase tracking-widest text-villa-accent mb-2 inline-block">
-            RESERVIEREN SIE IHRE DATEN
+            JETZT BUCHEN!
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
             Buchen Sie Ihren Aufenthalt in der Villa Morgenthau

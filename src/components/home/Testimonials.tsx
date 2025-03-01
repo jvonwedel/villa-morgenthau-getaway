@@ -37,7 +37,7 @@ const Testimonials = () => {
   return (
     <section className="section-padding bg-villa-dark text-white">
       <div className="container-custom">
-        <SectionTitle subtitle="ZUFRIEDENE GÄSTE" centered light>
+        <SectionTitle subtitle="BEGEISTERTE GÄSTE" centered light>
           Was unsere Gäste sagen
         </SectionTitle>
         
