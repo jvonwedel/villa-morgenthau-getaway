@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
@@ -7,16 +6,16 @@ import { useQuery } from '@tanstack/react-query';
 
 // Fallback placeholder images (will be used until you add content to Contentful)
 const placeholderImages = {
-  interior: Array(6).fill('/placeholder.svg'),
-  exterior: Array(4).fill('/placeholder.svg'),
-  surroundings: Array(5).fill('/placeholder.svg'),
-  amenities: Array(3).fill('/placeholder.svg')
+  Interior: Array(6).fill('/placeholder.svg'),
+  Exterior: Array(4).fill('/placeholder.svg'),
+  Surroundings: Array(5).fill('/placeholder.svg'),
+  Amenities: Array(3).fill('/placeholder.svg')
 };
 
 type GalleryCategory = keyof typeof placeholderImages;
 
 const GalleryGrid = () => {
-  const [activeCategory, setActiveCategory] = useState<GalleryCategory>('interior');
+  const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   
   // Fetch all gallery images from Contentful
@@ -80,7 +79,7 @@ const GalleryGrid = () => {
                   : 'bg-villa-muted text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category}
             </button>
           ))}
         </div>
@@ -118,7 +117,7 @@ const GalleryGrid = () => {
         </div>
         
         {/* Featured Large Image */}
-        {activeCategory === 'interior' && displayImages.length > 0 && (
+        {activeCategory === 'Interior' && displayImages.length > 0 && (
           <div className="mt-10">
             <div 
               className="aspect-[16/9] relative overflow-hidden cursor-pointer"

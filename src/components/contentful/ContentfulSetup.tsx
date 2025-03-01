@@ -51,10 +51,10 @@ const ContentfulSetup = () => {
           <p className="mb-3">When creating entries, add tags to categorize your images. Use these tag names to match your categories:</p>
           <div className="bg-gray-50 p-4 rounded-md">
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>interior</strong> - For interior spaces of the villa</li>
-              <li><strong>exterior</strong> - For exterior views of the villa</li>
-              <li><strong>surroundings</strong> - For the surrounding environment</li>
-              <li><strong>amenities</strong> - For villa amenities and facilities</li>
+              <li><strong>Interior</strong> - For interior spaces of the villa</li>
+              <li><strong>Exterior</strong> - For exterior views of the villa</li>
+              <li><strong>Surroundings</strong> - For the surrounding environment</li>
+              <li><strong>Amenities</strong> - For villa amenities and facilities</li>
             </ul>
           </div>
           <p className="mt-3">You can add multiple tags to each image if needed.</p>
