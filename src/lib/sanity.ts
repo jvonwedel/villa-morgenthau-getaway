@@ -59,7 +59,6 @@ export const fetchGalleryImagesByTag = async (tag: string): Promise<GalleryImage
       tags
     }`;
     
-    // Pass the tag parameter as an object
     return await sanityClient.fetch(query, { tag });
   } catch (error) {
     console.error('Error fetching tagged images from Sanity:', error);
