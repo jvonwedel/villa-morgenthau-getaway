@@ -1,21 +1,44 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
+import { fetchGalleryImages, fetchGalleryImagesByCategory, GalleryImage } from '../../lib/contentful';
+import { useQuery } from '@tanstack/react-query';
 
-// Gallery categories and images
-const galleryData = {
+// Fallback placeholder images (will be used until you add content to Contentful)
+const placeholderImages = {
   interior: Array(6).fill('/placeholder.svg'),
   exterior: Array(4).fill('/placeholder.svg'),
   surroundings: Array(5).fill('/placeholder.svg'),
   amenities: Array(3).fill('/placeholder.svg')
 };
 
-type GalleryCategory = keyof typeof galleryData;
+type GalleryCategory = keyof typeof placeholderImages;
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('interior');
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  
+  // Fetch all gallery images from Contentful
+  const { data: contentfulImages, isLoading, error } = useQuery({
+    queryKey: ['galleryImages'],
+    queryFn: fetchGalleryImages,
+  });
+
+  // Filter images by category
+  const getImagesForCategory = (category: GalleryCategory): string[] => {
+    if (!contentfulImages || contentfulImages.length === 0) {
+      return placeholderImages[category]; // Return placeholder images if no contentful data
+    }
+    
+    const filteredImages = contentfulImages
+      .filter(image => image.category === category)
+      .map(image => image.image?.fields?.file?.url 
+        ? `https:${image.image.fields.file.url}` 
+        : '/placeholder.svg');
+    
+    return filteredImages.length > 0 ? filteredImages : placeholderImages[category];
+  };
   
   const handleCategoryChange = (category: GalleryCategory) => {
     setActiveCategory(category);
@@ -30,6 +53,8 @@ const GalleryGrid = () => {
     setLightboxImage(null);
     document.body.style.overflow = 'auto';
   };
+
+  const displayImages = getImagesForCategory(activeCategory);
   
   return (
     <section className="section-padding bg-white">
@@ -40,7 +65,7 @@ const GalleryGrid = () => {
         
         {/* Gallery Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {Object.keys(galleryData).map((category) => (
+          {Object.keys(placeholderImages).map((category) => (
             <button
               key={category}
               onClick={() => handleCategoryChange(category as GalleryCategory)}
@@ -54,10 +79,22 @@ const GalleryGrid = () => {
             </button>
           ))}
         </div>
+
+        {isLoading && (
+          <div className="text-center py-8">
+            <p>Loading gallery images...</p>
+          </div>
+        )}
+
+        {error && (
+          <div className="text-center text-red-600 py-8">
+            <p>Error loading images. Using placeholder images instead.</p>
+          </div>
+        )}
         
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryData[activeCategory].map((image, index) => (
+          {displayImages.map((image, index) => (
             <div 
               key={index} 
               className="cursor-pointer group overflow-hidden"
@@ -76,14 +113,14 @@ const GalleryGrid = () => {
         </div>
         
         {/* Featured Large Image */}
-        {activeCategory === 'interior' && (
+        {activeCategory === 'interior' && displayImages.length > 0 && (
           <div className="mt-10">
             <div 
               className="aspect-[16/9] relative overflow-hidden cursor-pointer"
-              onClick={() => openLightbox('/placeholder.svg')}
+              onClick={() => openLightbox(displayImages[0])}
             >
               <img 
-                src="/placeholder.svg" 
+                src={displayImages[0]} 
                 alt="Villa Morgenthau Featured Interior"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />

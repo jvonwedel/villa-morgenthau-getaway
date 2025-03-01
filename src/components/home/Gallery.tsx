@@ -2,8 +2,11 @@
 import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
+import { fetchGalleryImages } from '../../lib/contentful';
 
-const galleryImages = [
+// Fallback placeholder images
+const placeholderImages = [
   '/placeholder.svg',
   '/placeholder.svg',
   '/placeholder.svg',
@@ -15,6 +18,21 @@ const galleryImages = [
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
+  // Fetch gallery images from Contentful
+  const { data: contentfulImages, isLoading, error } = useQuery({
+    queryKey: ['homeGalleryImages'],
+    queryFn: fetchGalleryImages,
+  });
+
+  // Get images to display (contentful if available, otherwise placeholders)
+  const displayImages = contentfulImages && contentfulImages.length > 0
+    ? contentfulImages.slice(0, 6).map(image => 
+        image.image?.fields?.file?.url 
+          ? `https:${image.image.fields.file.url}` 
+          : '/placeholder.svg'
+      )
+    : placeholderImages;
+  
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
@@ -23,7 +41,7 @@ const Gallery = () => {
         </SectionTitle>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {galleryImages.slice(0, 6).map((image, index) => (
+          {displayImages.slice(0, 6).map((image, index) => (
             <Link 
               key={index}
               to="/gallery"
