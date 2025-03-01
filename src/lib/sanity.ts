@@ -3,7 +3,7 @@ import { createClient } from '@sanity/client';
 
 // Sanity client setup (use environment variables in production)
 export const sanityClient = createClient({
-  projectId: 'your-project-id', // Your Sanity project ID - replace with your actual ID
+  projectId: 'oajgrq59', // Your Sanity project ID
   dataset: 'production', // The dataset you want to use (usually "production")
   apiVersion: '2023-05-03', // Use today's date or any date after 2023-03-20
   useCdn: true, // Use the Sanity CDN for faster image responses
@@ -59,7 +59,7 @@ export const fetchGalleryImagesByTag = async (tag: string): Promise<GalleryImage
       tags
     }`;
     
-    // Fix: Pass the tag as an object with key 'tag'
+    // Pass the tag parameter as an object
     return await sanityClient.fetch(query, { tag });
   } catch (error) {
     console.error('Error fetching tagged images from Sanity:', error);
