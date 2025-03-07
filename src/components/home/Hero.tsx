@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 // Define the media types for the hero section
@@ -30,6 +30,22 @@ const heroMedia: HeroMedia[] = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState<Record<string, boolean>>({});
+  const imagesRef = useRef<HTMLImageElement[]>([]);
+
+  // Preload all images to prevent display issues
+  useEffect(() => {
+    heroMedia.forEach((media) => {
+      const img = new Image();
+      img.src = media.src;
+      img.onload = () => {
+        setImagesLoaded(prev => ({
+          ...prev,
+          [media.src]: true
+        }));
+      };
+    });
+  }, []);
 
   // Auto-rotate through images every 3 seconds
   useEffect(() => {
@@ -52,9 +68,11 @@ const Hero = () => {
             }`}
           >
             <img
+              ref={el => el && (imagesRef.current[index] = el)}
               src={media.src}
               alt={media.alt}
               className="w-full h-full object-cover"
+              onError={(e) => console.error(`Failed to load image: ${media.src}`, e)}
             />
           </div>
         ))}
