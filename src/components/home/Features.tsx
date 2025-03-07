@@ -12,13 +12,13 @@ const features = [
   },
   {
     title: 'Spaß, Sport & Action',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr. Wassersport, im Sand buddeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr. Kiten, Segeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
     icon: Activity,
     link: '/for-actives'
   },
   {
     title: 'Family & Friends',
-    description: 'Im weitläufigen Garten Stockbrot über dem Lagerfeuer brutzeln lassen und ein Tischtennisturnier spielen? Oder Sandburgen bauen oder im Wattenmeer bis zu den Knöcheln im Matsch waten. Und bei schlechtem Wetter lädt die große moderne Küche zu Kochspaß und der Kachelofen zum Runterkommen ein.',
+    description: 'Stockbrot über dem Lagerfeuer oder ein Tischtennisturnier? Sandburgen bauen oder im Wattenmeer bis zu den Knöcheln im Matsch waten? Und bei schlechtem Wetter lädt die große moderne Küche zu Kochspaß und der Kachelofen zum Runterkommen ein.',
     icon: Users,
     link: '/for-families'
   }
