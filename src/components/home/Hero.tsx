@@ -2,22 +2,10 @@
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  // Using just the first image as the static background
-  const backgroundImage = '/lovable-uploads/1be7d73f-dbf7-4981-92f5-80a82a6372d6.png';
-
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Static background image */}
-      <div className="absolute inset-0">
-        <img
-          src={backgroundImage}
-          alt="Villa Morgenthau"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Simple black background */}
+      <div className="absolute inset-0 bg-black" />
       
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center items-center text-center text-white">
