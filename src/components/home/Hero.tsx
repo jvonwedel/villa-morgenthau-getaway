@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { toast } from 'sonner';
 
 // Define the media types for the hero section
 type HeroMedia = {
@@ -31,38 +30,15 @@ const heroMedia: HeroMedia[] = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-
-  // Preload images
-  useEffect(() => {
-    const imagePromises = heroMedia.map((media) => {
-      return new Promise<void>((resolve, reject) => {
-        const img = new Image();
-        img.src = media.src;
-        img.onload = () => resolve();
-        img.onerror = (err) => {
-          console.error(`Failed to load image: ${media.src}`, err);
-          toast.error(`Failed to load image: ${media.src}`);
-          reject(err);
-        };
-      });
-    });
-
-    Promise.all(imagePromises)
-      .then(() => setImagesLoaded(true))
-      .catch((err) => console.error('Error preloading images:', err));
-  }, []);
 
   // Auto-rotate through images every 3 seconds
   useEffect(() => {
-    if (!imagesLoaded) return;
-
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
     }, 3000);
     
     return () => clearInterval(interval);
-  }, [imagesLoaded]);
+  }, []);
 
   return (
     <section className="relative h-screen">
