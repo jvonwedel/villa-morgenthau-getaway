@@ -1,9 +1,6 @@
-
 import { Link } from 'react-router-dom';
-
 const Booking = () => {
-  return (
-    <section className="relative py-24">
+  return <section className="relative py-24">
       <div className="absolute inset-0">
         <div className="w-full h-full bg-villa-dark"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60" />
@@ -14,7 +11,7 @@ const Booking = () => {
           <span className="text-sm uppercase tracking-widest text-villa-accent mb-2 inline-block">
             JETZT BUCHEN!
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
+          <h2 className="text-3xl lg:text-5xl font-serif mb-6 md:text-2xl">
             Buche jetzt deinen Urlaub in der Villa Morgenthau
           </h2>
           <p className="text-lg mb-8">
@@ -25,8 +22,6 @@ const Booking = () => {
           </Link>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Booking;
