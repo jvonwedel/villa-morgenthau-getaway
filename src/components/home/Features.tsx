@@ -6,7 +6,7 @@ import { Heart, Activity, Users } from 'lucide-react';
 const features = [
   {
     title: 'Für Erholungssuchende',
-    description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor.',
+    description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor. Hier sagen sich Fuchs und Pfauen Gute Nacht.',
     icon: Heart,
     link: '/seeking-calm'
   },
