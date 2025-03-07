@@ -61,14 +61,15 @@ const Hero = () => {
             {media.type === 'video' && (
               <video
                 src={media.src}
-                type={media.mimeType}
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
                 loop
                 playsInline
                 onLoadedData={() => setVideoLoaded(true)}
-              />
+              >
+                {media.mimeType && <source src={media.src} type={media.mimeType} />}
+              </video>
             )}
           </div>
         ))}
