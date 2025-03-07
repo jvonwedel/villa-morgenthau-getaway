@@ -4,39 +4,47 @@ import { Link } from 'react-router-dom';
 
 // Define the media types for the hero section
 type HeroMedia = {
-  type: 'image' | 'video';
+  type: 'image';
   src: string;
+  alt: string;
 };
 
-// Media array with both image and YouTube video
+// Media array with the two new images
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
-    src: '/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png'
+    src: '/lovable-uploads/0e14ea53-1504-4102-a4f8-3b83bc3da20c.png',
+    alt: 'Misty field at sunrise with trees in the background'
   },
   {
-    type: 'video',
-    src: 'https://www.youtube.com/embed/tiq_gCtZEEk?autoplay=1&mute=1&loop=1&playlist=tiq_gCtZEEk&controls=0&showinfo=0&playbackRate=0.25'
+    type: 'image',
+    src: '/lovable-uploads/08435397-4540-4c3c-9609-327fe6d3465b.png',
+    alt: 'Villa Morgenthau house with garden'
+  },
+  {
+    type: 'image',
+    src: '/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png',
+    alt: 'Villa Morgenthau aerial view'
   }
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-rotate through images and videos
+  // Auto-rotate through images
   useEffect(() => {
     // Only set up auto-rotation if we have more than one media item
     if (heroMedia.length <= 1) return;
     
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
-    }, 8000); // Longer interval to allow video viewing
+    }, 8000); // 8 second interval
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="relative h-screen">
-      {/* Hero Media (Images and Videos) */}
+      {/* Hero Media (Images) */}
       <div className="absolute inset-0 w-full h-full">
         {heroMedia.map((media, index) => (
           <div
@@ -45,22 +53,11 @@ const Hero = () => {
               index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
-            {media.type === 'image' && (
-              <img
-                src={media.src}
-                alt="Villa Morgenthau aerial view"
-                className="w-full h-full object-cover"
-              />
-            )}
-            {media.type === 'video' && (
-              <iframe
-                src={media.src}
-                title="Villa Morgenthau video"
-                className="w-full h-full object-cover"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            )}
+            <img
+              src={media.src}
+              alt={media.alt}
+              className="w-full h-full object-cover"
+            />
           </div>
         ))}
         <div className="absolute inset-0 bg-black bg-opacity-40 z-20" />
