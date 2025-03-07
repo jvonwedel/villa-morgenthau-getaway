@@ -1,8 +1,10 @@
 
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
+
 const About = () => {
-  return <section className="section-padding bg-white">
+  return (
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -16,13 +18,17 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <img alt="Villa Morgenthau Exterior" className="w-full h-auto rounded-sm shadow-lg" src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" />
+            <div className="w-full h-auto aspect-[4/3] rounded-sm shadow-lg bg-villa-dark flex items-center justify-center text-white">
+              <span>Villa Morgenthau Exterior</span>
+            </div>
             <div className="absolute -bottom-6 -left-6 bg-villa-accent p-6 rounded-sm shadow-lg hidden md:block">
               <p className="font-serif text-xl text-white">Über 150 Jahre Geschichte</p>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

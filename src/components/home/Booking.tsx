@@ -5,11 +5,7 @@ const Booking = () => {
   return (
     <section className="relative py-24">
       <div className="absolute inset-0">
-        <img 
-          src="/placeholder.svg" 
-          alt="Villa Morgenthau Buchung" 
-          className="w-full h-full object-cover"
-        />
+        <div className="w-full h-full bg-villa-dark"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60" />
       </div>
       

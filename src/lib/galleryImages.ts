@@ -8,7 +8,7 @@ export interface GalleryImage {
   tags: string[];
 }
 
-// Collection of placeholder images instead of Unsplash images
+// Collection of placeholder images
 export const galleryImages: GalleryImage[] = [
   {
     id: '1',
