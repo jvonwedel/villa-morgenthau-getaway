@@ -1,6 +1,20 @@
+
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
-const amenities = ['Geräumige Wohnbereiche', 'Voll ausgestattete Küche', 'Komfortable Schlafzimmer', 'Moderne Badezimmer', 'Privater Garten', 'Außensitzbereich', 'Kamin', 'Highspeed WLAN', 'Smart TV', 'Waschmaschine & Trockner'];
+
+const amenities = [
+  'Großzügiger Wohn- und Essbereich', 
+  'Moderne, voll ausgestattete Küche', 
+  'Komfortable Schlafzimmer', 
+  'Moderne Badezimmer', 
+  'Privater Garten', 
+  'Wintergarten & Terasse', 
+  'Kamin', 
+  'Highspeed WLAN', 
+  'Smart TV', 
+  'Waschmaschine & Trockner'
+];
+
 const YourStay = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -37,4 +51,5 @@ const YourStay = () => {
       </div>
     </section>;
 };
+
 export default YourStay;
