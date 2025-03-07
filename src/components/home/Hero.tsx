@@ -1,81 +1,16 @@
 
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-// Define the media types for the hero section
-type HeroMedia = {
-  type: 'image' | 'video';
-  src: string;
-  // Optional mime type for videos
-  mimeType?: string;
-};
-
-// Adding multiple images to rotate between
-const heroMedia: HeroMedia[] = [
-  {
-    type: 'image',
-    src: '/lovable-uploads/45650d9f-838e-42a8-bf93-cdc7eb20cb2d.png'
-  },
-  {
-    type: 'image',
-    src: '/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg'
-  }
-  // Example of how to add a video (needs to be hosted externally):
-  // { 
-  //   type: 'video', 
-  //   src: 'https://your-video-hosting-url.com/video.mp4',
-  //   mimeType: 'video/mp4'
-  // }
-];
-
 const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
-  // Auto-rotate through images and videos
-  useEffect(() => {
-    // Only set up auto-rotation if we have more than one media item
-    if (heroMedia.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % heroMedia.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative h-screen">
-      {/* Hero Media (Images and Videos) */}
+      {/* Hero Image */}
       <div className="absolute inset-0 w-full h-full">
-        {heroMedia.map((media, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            {media.type === 'image' && (
-              <img
-                src={media.src}
-                alt={`Villa Morgenthau ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            )}
-            {media.type === 'video' && (
-              <video
-                className="w-full h-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                onLoadedData={() => setVideoLoaded(true)}
-              >
-                <source src={media.src} type={media.mimeType || 'video/mp4'} />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
-        ))}
+        <img
+          src="/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png"
+          alt="Villa Morgenthau aerial view"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
       </div>
       
@@ -100,22 +35,6 @@ const Hero = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
-      
-      {/* Media navigation dots - only shown if more than one media item */}
-      {heroMedia.length > 1 && (
-        <div className="absolute bottom-16 left-0 right-0 flex justify-center space-x-2">
-          {heroMedia.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentIndex ? 'bg-white scale-110' : 'bg-white/50'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-      )}
     </section>
   );
 };
