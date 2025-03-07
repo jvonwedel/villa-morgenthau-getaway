@@ -11,7 +11,7 @@ const features = [
     link: '/seeking-calm'
   },
   {
-    title: 'Für Aktive',
+    title: 'Spaß, Sport & Action',
     description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr, alles nur eine kurze Fahrt von der Villa Morgenthau entfernt.',
     icon: Activity,
     link: '/for-actives'
