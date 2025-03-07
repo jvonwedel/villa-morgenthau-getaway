@@ -17,8 +17,8 @@ const Index = () => {
       <Features />
       <Location />
       <YourStay />
-      <Gallery />
       <Testimonials />
+      <Gallery />
       <Booking />
     </Layout>
   );
