@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 type HeroMedia = {
   type: 'image' | 'video';
   src: string;
+  // Optional mime type for videos
+  mimeType?: string;
 };
 
 // Use only the latest uploaded image
@@ -15,14 +17,23 @@ const heroMedia: HeroMedia[] = [
     src: '/lovable-uploads/45650d9f-838e-42a8-bf93-cdc7eb20cb2d.png'
   }
   // Add your video here once uploaded:
-  // { type: 'video', src: '/path/to/your/video.mp4' }
+  // { 
+  //   type: 'video', 
+  //   src: '/path/to/your/video.mp4',
+  //   // Optional: specify mime type for better browser compatibility
+  //   // mimeType: 'video/mp4'
+  // }
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   // Auto-rotate through images and videos
   useEffect(() => {
+    // Only set up auto-rotation if we have more than one media item
+    if (heroMedia.length <= 1) return;
+    
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
     }, 5000);
@@ -50,11 +61,13 @@ const Hero = () => {
             {media.type === 'video' && (
               <video
                 src={media.src}
+                type={media.mimeType}
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
                 loop
                 playsInline
+                onLoadedData={() => setVideoLoaded(true)}
               />
             )}
           </div>
