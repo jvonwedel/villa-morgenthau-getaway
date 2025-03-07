@@ -1,5 +1,7 @@
+
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
+
 const About = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -15,8 +17,12 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="w-full h-auto aspect-[4/3] rounded-sm shadow-lg bg-villa-dark flex items-center justify-center text-white">
-              <span>Villa Morgenthau Exterior</span>
+            <div className="w-full h-auto aspect-[4/3] rounded-sm shadow-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" 
+                alt="Villa Morgenthau Exterior" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-villa-accent p-6 rounded-sm shadow-lg hidden md:block">
               <p className="font-serif text-xl text-white">Über 150 Jahre Geschichte</p>
@@ -26,4 +32,5 @@ const About = () => {
       </div>
     </section>;
 };
+
 export default About;
