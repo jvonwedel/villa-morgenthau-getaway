@@ -1,13 +1,10 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -16,55 +13,41 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navLinks = [
-    {
-      path: '/',
-      label: 'Home'
-    },
-    {
-      path: '/about',
-      label: 'Über'
-    },
-    {
-      path: '/location',
-      label: 'Lage'
-    },
-    {
-      path: '/seeking-calm',
-      label: 'Erholung'
-    },
-    {
-      path: '/for-actives',
-      label: 'Aktiv'
-    },
-    {
-      path: '/for-families',
-      label: 'Familien'
-    },
-    {
-      path: '/your-stay',
-      label: 'Aufenthalt'
-    },
-    {
-      path: '/gallery',
-      label: 'Galerie'
-    },
-    {
-      path: '/booking',
-      label: 'Buchung'
-    }
-  ];
-
+  const navLinks = [{
+    path: '/',
+    label: 'Home'
+  }, {
+    path: '/about',
+    label: 'Über'
+  }, {
+    path: '/location',
+    label: 'Lage'
+  }, {
+    path: '/seeking-calm',
+    label: 'Erholung'
+  }, {
+    path: '/for-actives',
+    label: 'Aktiv'
+  }, {
+    path: '/for-families',
+    label: 'Familien'
+  }, {
+    path: '/your-stay',
+    label: 'Aufenthalt'
+  }, {
+    path: '/gallery',
+    label: 'Galerie'
+  }, {
+    path: '/booking',
+    label: 'Buchung'
+  }];
   return <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="z-50 text-lg font-medium">
-          Villa Morgenthau
-        </Link>
+      </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
@@ -92,5 +75,4 @@ const Navbar = () => {
       </div>
     </header>;
 };
-
 export default Navbar;

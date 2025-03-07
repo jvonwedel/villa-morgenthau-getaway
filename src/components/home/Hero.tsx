@@ -1,9 +1,6 @@
-
 import { Link } from 'react-router-dom';
-
 const Hero = () => {
-  return (
-    <section className="relative h-screen">
+  return <section className="relative h-screen">
       {/* Solid background instead of images */}
       <div className="absolute inset-0 bg-villa-dark z-10" />
       
@@ -13,7 +10,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-medium mb-4">
             Villa Morgenthau
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway inmitten der Natur & zwischen den Meeren</p>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway zwischen den Meeren</p>
           <div className="space-x-4">
             <Link to="/gallery" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-villa-dark">ENTDECKEN</Link>
             <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">BUCHEN</Link>
@@ -28,8 +25,6 @@ const Hero = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
