@@ -28,7 +28,7 @@ const Navbar = () => {
     },
     {
       path: '/about',
-      label: 'Über uns'
+      label: 'Über'
     },
     {
       path: '/location',
@@ -36,19 +36,19 @@ const Navbar = () => {
     },
     {
       path: '/seeking-calm',
-      label: 'Für Erholungssuchende'
+      label: 'Erholung'
     },
     {
       path: '/for-actives',
-      label: 'Für Aktive'
+      label: 'Aktiv'
     },
     {
       path: '/for-families',
-      label: 'Für Familien'
+      label: 'Familien'
     },
     {
       path: '/your-stay',
-      label: 'Ihr Aufenthalt'
+      label: 'Aufenthalt'
     },
     {
       path: '/gallery',
