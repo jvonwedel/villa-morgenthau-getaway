@@ -62,8 +62,8 @@ const Navbar = () => {
 
   return <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
-        <Link to="/" className="z-50">
-          <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Logo" className="h-12 md:h-14 transition-all duration-300" />
+        <Link to="/" className="z-50 text-lg font-medium">
+          Villa Morgenthau
         </Link>
         
         {/* Desktop Nav */}
