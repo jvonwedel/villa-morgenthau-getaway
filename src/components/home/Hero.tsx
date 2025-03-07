@@ -10,18 +10,18 @@ type HeroMedia = {
   mimeType?: string;
 };
 
-// Use only the latest uploaded image
+// Currently using the uploaded image
+// Note: To use videos, you would need to host them elsewhere and add the URL here
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
     src: '/lovable-uploads/45650d9f-838e-42a8-bf93-cdc7eb20cb2d.png'
   }
-  // Add your video here once uploaded:
+  // Example of how to add a video (needs to be hosted externally):
   // { 
   //   type: 'video', 
-  //   src: '/path/to/your/video.mp4',
-  //   // Optional: specify mime type for better browser compatibility
-  //   // mimeType: 'video/mp4'
+  //   src: 'https://your-video-hosting-url.com/video.mp4',
+  //   mimeType: 'video/mp4'
   // }
 ];
 
@@ -60,7 +60,6 @@ const Hero = () => {
             )}
             {media.type === 'video' && (
               <video
-                src={media.src}
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
@@ -68,7 +67,8 @@ const Hero = () => {
                 playsInline
                 onLoadedData={() => setVideoLoaded(true)}
               >
-                {media.mimeType && <source src={media.src} type={media.mimeType} />}
+                <source src={media.src} type={media.mimeType || 'video/mp4'} />
+                Your browser does not support the video tag.
               </video>
             )}
           </div>
