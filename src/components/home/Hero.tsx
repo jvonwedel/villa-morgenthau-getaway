@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="relative h-screen">
       {/* Image carousel */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-10">
         {images.map((image, index) => (
           <div
             key={image}
@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white z-30">
+      <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white z-20">
         <div className="animate-fade-in max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4 max-w-2xl mx-auto">
             Villa Morgenthau
@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-0 right-0 mx-auto flex flex-col items-center animate-bounce w-max z-30">
+      <div className="absolute bottom-8 left-0 right-0 mx-auto flex flex-col items-center animate-bounce w-max z-20">
         <span className="text-white text-sm mb-2">Nach unten scrollen</span>
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
