@@ -10,8 +10,12 @@ const Location = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
-                <span>Standort der Villa Morgenthau</span>
+              <div className="w-full aspect-[4/3] rounded-sm shadow-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/13f904f9-f40c-4e0f-a509-815c2d2221ce.png" 
+                  alt="Standort der Villa Morgenthau" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -top-6 -right-6 bg-white p-5 rounded-sm shadow-lg hidden md:flex items-center">
                 <MapPin className="text-villa-accent mr-2 h-5 w-5" />
