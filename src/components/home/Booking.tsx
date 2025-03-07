@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 const Booking = () => {
   return <section className="relative py-24">
       <div className="absolute inset-0">
@@ -17,11 +18,17 @@ const Booking = () => {
           <p className="text-lg mb-8">
             Verbringe eine unvergessliche Zeit in unserer historischen Villa Morgenthau und reserviere deinen Aufenthalt jetzt!
           </p>
-          <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">
+          <a 
+            href="https://www.airbnb.de/rooms/1305881991709578029" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-primary bg-white text-villa-dark hover:bg-villa-accent"
+          >
             Verfügbarkeit prüfen
-          </Link>
+          </a>
         </div>
       </div>
     </section>;
 };
+
 export default Booking;
