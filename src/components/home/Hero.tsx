@@ -9,7 +9,7 @@ type HeroMedia = {
   alt: string;
 };
 
-// Media array with the two new images
+// Media array with the three images
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
@@ -30,15 +30,32 @@ const heroMedia: HeroMedia[] = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(heroMedia.map(() => false));
 
-  // Auto-rotate through images
+  // Preload images to ensure they're ready before display
+  useEffect(() => {
+    heroMedia.forEach((media, index) => {
+      const img = new Image();
+      img.src = media.src;
+      img.onload = () => {
+        setImagesLoaded(prev => {
+          const newState = [...prev];
+          newState[index] = true;
+          return newState;
+        });
+      };
+    });
+  }, []);
+
+  // Auto-rotate through images every 3 seconds
   useEffect(() => {
     // Only set up auto-rotation if we have more than one media item
     if (heroMedia.length <= 1) return;
     
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
-    }, 8000); // 8 second interval
+    }, 3000); // 3 second interval
+    
     return () => clearInterval(interval);
   }, []);
 
@@ -57,6 +74,7 @@ const Hero = () => {
               src={media.src}
               alt={media.alt}
               className="w-full h-full object-cover"
+              onError={(e) => console.error(`Failed to load image: ${media.src}`, e)}
             />
           </div>
         ))}
