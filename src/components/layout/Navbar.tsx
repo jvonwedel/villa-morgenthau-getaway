@@ -1,10 +1,13 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -16,6 +19,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const navLinks = [{
     path: '/',
     label: 'Home'
@@ -44,16 +48,20 @@ const Navbar = () => {
     path: '/booking',
     label: 'Buchung'
   }];
-  return <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm py-3' : 'bg-transparent py-5'}`}>
+
+  return (
+    <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
-        <Link to="/" className="z-50 text-lg font-medium">
-      </Link>
+        {/* Empty div to maintain spacing where logo was */}
+        <div className="z-50"></div>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
-          {navLinks.map(link => <Link key={link.path} to={link.path} className="navbar-link">
+          {navLinks.map(link => (
+            <Link key={link.path} to={link.path} className="navbar-link">
               {link.label}
-            </Link>)}
+            </Link>
+          ))}
         </nav>
         
         {/* Mobile menu button */}
@@ -62,17 +70,32 @@ const Navbar = () => {
         </button>
         
         {/* Mobile Nav */}
-        {isOpen && <div className="fixed inset-0 bg-white flex flex-col items-center justify-center animate-fade-in">
+        {isOpen && (
+          <div className="fixed inset-0 bg-white flex flex-col items-center justify-center animate-fade-in">
             <nav className="flex flex-col items-center space-y-4">
-              {navLinks.map(link => <Link key={link.path} to={link.path} className={`text-lg ${location.pathname === link.path ? 'text-accent' : 'text-foreground'}`} onClick={() => setIsOpen(false)}>
+              {navLinks.map(link => (
+                <Link 
+                  key={link.path} 
+                  to={link.path} 
+                  className={`text-lg ${location.pathname === link.path ? 'text-accent' : 'text-foreground'}`} 
+                  onClick={() => setIsOpen(false)}
+                >
                   {link.label}
-                </Link>)}
-              <Link to="/booking" className="mt-4 btn-primary" onClick={() => setIsOpen(false)}>
+                </Link>
+              ))}
+              <Link 
+                to="/booking" 
+                className="mt-4 btn-primary" 
+                onClick={() => setIsOpen(false)}
+              >
                 Jetzt Buchen
               </Link>
             </nav>
-          </div>}
+          </div>
+        )}
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Navbar;
