@@ -1,11 +1,45 @@
 
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const images = [
+    '/lovable-uploads/1be7d73f-dbf7-4981-92f5-80a82a6372d6.png',
+    '/lovable-uploads/4d8fd946-7525-49ed-860d-3d8a0f1997bc.png',
+    '/lovable-uploads/1a8ab0d3-13f1-42a9-939c-62d7c5a9458e.png'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative h-screen">
-      {/* Solid background instead of images */}
-      <div className="absolute inset-0 bg-villa-dark z-10" />
+      {/* Image carousel */}
+      <div className="absolute inset-0">
+        {images.map((image, index) => (
+          <div
+            key={image}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Villa Morgenthau ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
       
       {/* Content */}
       <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white z-30">
@@ -21,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll indicator - centered */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-0 right-0 mx-auto flex flex-col items-center animate-bounce w-max z-30">
         <span className="text-white text-sm mb-2">Nach unten scrollen</span>
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
