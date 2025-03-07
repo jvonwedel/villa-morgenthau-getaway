@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white z-30">
         <div className="animate-fade-in max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4 max-w-2xl mx-auto">
+          <h1 className="text-3xl md:text-[2.7rem] lg:text-[3.2rem] font-serif font-medium mb-4 max-w-2xl mx-auto">
             Villa Morgenthau
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway zwischen den Meeren</p>
