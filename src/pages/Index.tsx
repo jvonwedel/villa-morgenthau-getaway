@@ -16,8 +16,8 @@ const Index = () => {
       <About />
       <Features />
       <Location />
-      <Gallery />
       <YourStay />
+      <Gallery />
       <Testimonials />
       <Booking />
     </Layout>
