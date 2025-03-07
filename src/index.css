@@ -61,7 +61,7 @@
   }
 
   .navbar-link {
-    @apply text-foreground hover:text-accent transition-colors duration-300 px-3 py-2 text-sm tracking-wide;
+    @apply text-foreground hover:text-accent transition-colors duration-300 px-4 py-2 text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-accent after:scale-x-0 after:origin-center after:transition-transform hover:after:scale-x-100;
   }
 
   .navbar-link-active {
