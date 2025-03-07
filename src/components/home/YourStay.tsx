@@ -1,4 +1,3 @@
-
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 
@@ -20,9 +19,7 @@ const YourStay = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="aspect-video relative overflow-hidden rounded-sm shadow-lg bg-villa-dark flex items-center justify-center text-white">
-              <span>Villa Morgenthau Interior</span>
-            </div>
+            <div className="aspect-video relative overflow-hidden rounded-sm shadow-lg bg-gray-100" />
           </div>
           
           <div className="order-1 lg:order-2">
