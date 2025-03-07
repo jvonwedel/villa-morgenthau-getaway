@@ -2,26 +2,19 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-// Add the new aerial image to the hero media
+// Define the media types for the hero section
 type HeroMedia = {
   type: 'image' | 'video';
   src: string;
 };
 
+// Use only the latest uploaded image
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
     src: '/lovable-uploads/45650d9f-838e-42a8-bf93-cdc7eb20cb2d.png'
-  },
-  {
-    type: 'image',
-    src: '/placeholder.svg'
-  },
-  {
-    type: 'image',
-    src: '/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg'
   }
-  // You can add video here when it's uploaded:
+  // Add your video here once uploaded:
   // { type: 'video', src: '/path/to/your/video.mp4' }
 ];
 
@@ -91,19 +84,21 @@ const Hero = () => {
         </svg>
       </div>
       
-      {/* Media navigation dots */}
-      <div className="absolute bottom-16 left-0 right-0 flex justify-center space-x-2">
-        {heroMedia.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentIndex ? 'bg-white scale-110' : 'bg-white/50'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+      {/* Media navigation dots - only shown if more than one media item */}
+      {heroMedia.length > 1 && (
+        <div className="absolute bottom-16 left-0 right-0 flex justify-center space-x-2">
+          {heroMedia.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                index === currentIndex ? 'bg-white scale-110' : 'bg-white/50'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 };
