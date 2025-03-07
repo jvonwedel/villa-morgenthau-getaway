@@ -16,7 +16,7 @@ const heroMedia: HeroMedia[] = [
   },
   {
     type: 'video',
-    src: 'https://www.youtube.com/embed/tiq_gCtZEEk?autoplay=1&mute=1&loop=1&playlist=tiq_gCtZEEk&controls=0&showinfo=0'
+    src: 'https://www.youtube.com/embed/tiq_gCtZEEk?autoplay=1&mute=1&loop=1&playlist=tiq_gCtZEEk&controls=0&showinfo=0&playbackRate=0.25'
   }
 ];
 
