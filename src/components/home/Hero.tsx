@@ -1,11 +1,65 @@
 
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 const Hero = () => {
+  const playerRef = useRef<YT.Player | null>(null);
+
+  useEffect(() => {
+    // Load YouTube API if not already loaded
+    if (!window.YT) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+      
+      window.onYouTubeIframeAPIReady = initPlayer;
+    } else {
+      initPlayer();
+    }
+
+    function initPlayer() {
+      playerRef.current = new YT.Player('youtube-player', {
+        videoId: 'tiq_gCtZEEk',
+        playerVars: {
+          autoplay: 1,
+          loop: 1,
+          controls: 0,
+          showinfo: 0,
+          rel: 0,
+          enablejsapi: 1,
+          modestbranding: 1,
+          mute: 1,
+          playsinline: 1,
+          playlist: 'tiq_gCtZEEk', // Required for looping
+        },
+        events: {
+          onReady: (event) => {
+            event.target.setPlaybackRate(0.25); // Set playback speed to 0.25x
+            event.target.playVideo();
+          }
+        }
+      });
+    }
+
+    return () => {
+      if (playerRef.current) {
+        playerRef.current = null;
+      }
+    };
+  }, []);
+
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Simple black background */}
-      <div className="absolute inset-0 bg-black" />
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="w-full h-full">
+          <div id="youtube-player" className="w-full h-full"></div>
+        </div>
+      </div>
+      
+      {/* Dark overlay to improve text legibility */}
+      <div className="absolute inset-0 bg-black/50" />
       
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center items-center text-center text-white">
