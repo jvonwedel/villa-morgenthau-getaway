@@ -13,6 +13,11 @@ type HeroMedia = {
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
+    src: '/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png',
+    alt: 'Villa Morgenthau aerial view'
+  },
+  {
+    type: 'image',
     src: '/lovable-uploads/0e14ea53-1504-4102-a4f8-3b83bc3da20c.png',
     alt: 'Misty field at sunrise with trees in the background'
   },
@@ -20,41 +25,17 @@ const heroMedia: HeroMedia[] = [
     type: 'image',
     src: '/lovable-uploads/08435397-4540-4c3c-9609-327fe6d3465b.png',
     alt: 'Villa Morgenthau house with garden'
-  },
-  {
-    type: 'image',
-    src: '/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png',
-    alt: 'Villa Morgenthau aerial view'
   }
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>(heroMedia.map(() => false));
-
-  // Preload images to ensure they're ready before display
-  useEffect(() => {
-    heroMedia.forEach((media, index) => {
-      const img = new Image();
-      img.src = media.src;
-      img.onload = () => {
-        setImagesLoaded(prev => {
-          const newState = [...prev];
-          newState[index] = true;
-          return newState;
-        });
-      };
-    });
-  }, []);
 
   // Auto-rotate through images every 3 seconds
   useEffect(() => {
-    // Only set up auto-rotation if we have more than one media item
-    if (heroMedia.length <= 1) return;
-    
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
-    }, 3000); // 3 second interval
+    }, 3000);
     
     return () => clearInterval(interval);
   }, []);
@@ -74,7 +55,6 @@ const Hero = () => {
               src={media.src}
               alt={media.alt}
               className="w-full h-full object-cover"
-              onError={(e) => console.error(`Failed to load image: ${media.src}`, e)}
             />
           </div>
         ))}
