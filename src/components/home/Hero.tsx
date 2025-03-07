@@ -1,6 +1,7 @@
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'sonner';
 
 // Define the media types for the hero section
 type HeroMedia = {
@@ -9,7 +10,7 @@ type HeroMedia = {
   alt: string;
 };
 
-// Media array with the three images
+// Media array with the correct paths for all three images
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
@@ -23,38 +24,45 @@ const heroMedia: HeroMedia[] = [
   },
   {
     type: 'image',
-    src: '/lovable-uploads/08435397-4540-4c3c-9609-327fe6d3465b.png',
+    src: '/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg',
     alt: 'Villa Morgenthau house with garden'
   }
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState<Record<string, boolean>>({});
-  const imagesRef = useRef<HTMLImageElement[]>([]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  // Preload all images to prevent display issues
+  // Preload images
   useEffect(() => {
-    heroMedia.forEach((media) => {
-      const img = new Image();
-      img.src = media.src;
-      img.onload = () => {
-        setImagesLoaded(prev => ({
-          ...prev,
-          [media.src]: true
-        }));
-      };
+    const imagePromises = heroMedia.map((media) => {
+      return new Promise<void>((resolve, reject) => {
+        const img = new Image();
+        img.src = media.src;
+        img.onload = () => resolve();
+        img.onerror = (err) => {
+          console.error(`Failed to load image: ${media.src}`, err);
+          toast.error(`Failed to load image: ${media.src}`);
+          reject(err);
+        };
+      });
     });
+
+    Promise.all(imagePromises)
+      .then(() => setImagesLoaded(true))
+      .catch((err) => console.error('Error preloading images:', err));
   }, []);
 
   // Auto-rotate through images every 3 seconds
   useEffect(() => {
+    if (!imagesLoaded) return;
+
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % heroMedia.length);
     }, 3000);
     
     return () => clearInterval(interval);
-  }, []);
+  }, [imagesLoaded]);
 
   return (
     <section className="relative h-screen">
@@ -68,11 +76,9 @@ const Hero = () => {
             }`}
           >
             <img
-              ref={el => el && (imagesRef.current[index] = el)}
               src={media.src}
               alt={media.alt}
               className="w-full h-full object-cover"
-              onError={(e) => console.error(`Failed to load image: ${media.src}`, e)}
             />
           </div>
         ))}
