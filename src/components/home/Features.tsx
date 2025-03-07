@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: 'Family & Friends',
-    description: 'Stockbrot über dem Lagerfeuer oder ein Tischtennisturnier? Sandburgen bauen oder im Wattenmeer bis zu den Knöcheln im Matsch waten? Und bei schlechtem Wetter lädt die große moderne Küche zu Kochspaß und der Kachelofen zum Runterkommen ein.',
+    description: 'Stockbrot über dem Lagerfeuer oder ein Tischtennisturnier, Sandburgen bauen oder im Wattenmeer im Matsch waten. So viele Möglichkeiten. Und bei schlechtem Wetter lädt die große Küche zu Kochspaß und der Kachelofen zum Träumen ein.',
     icon: Users,
     link: '/for-families'
   }
