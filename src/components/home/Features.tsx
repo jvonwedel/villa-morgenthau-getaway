@@ -17,8 +17,8 @@ const features = [
     link: '/for-actives'
   },
   {
-    title: 'Für Familien',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunde Kanuwanderwege, das Wattenmeer oder die Schlei, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
+    title: 'Family & Friends',
+    description: 'Im weitläufigen Garten Stockbrot über dem Lagerfeuer brutzeln lassen und ein Tischtennisturnier spielen? Oder Sandburgen bauen oder im Wattenmeer bis zu den Knöcheln im Matsch waten. Und bei schlechtem Wetter lädt die große moderne Küche zu Kochspaß und der Kachelofen zum Runterkommen ein.',
     icon: Users,
     link: '/for-families'
   }
