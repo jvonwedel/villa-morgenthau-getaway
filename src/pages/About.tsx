@@ -1,3 +1,4 @@
+
 import Layout from '../components/layout/Layout';
 const About = () => {
   return <Layout>
@@ -7,7 +8,9 @@ const About = () => {
             <h1 className="text-4xl font-serif mb-8 text-center">Über die Villa Morgenthau</h1>
             
             <div className="mb-10">
-              <img src="/placeholder.svg" alt="Villa Morgenthau Historical Photo" className="w-full h-auto rounded-sm shadow-lg mb-4" />
+              <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                <span>Villa Morgenthau Historical Photo</span>
+              </div>
               <p className="text-sm text-gray-500 italic text-center">Villa Morgenthau circa 1867</p>
             </div>
             
@@ -25,7 +28,7 @@ const About = () => {
               <h2 className="font-serif text-2xl mb-4 mt-8">Our Philosophy</h2>
               <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können.</p>
               
-              <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
+              <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
 Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob Bärlauch und Beeren im Frühling, Quitten und Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst: der Garten bietet vielfältige Möglichkeiten, lokale Gerichte zuzubereiten.</p>
             </div>
           </div>

@@ -5,11 +5,9 @@ const CalmHeader = () => {
   return (
     <section className="relative h-[70vh] overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src="/placeholder.svg" 
-          alt="Entspannung in der Villa Morgenthau" 
-          className="w-full h-full object-cover"
-        />
+        <div className="w-full h-full bg-villa-dark flex items-center justify-center text-white">
+          <span>Entspannung in der Villa Morgenthau</span>
+        </div>
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
