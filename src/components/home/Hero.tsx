@@ -10,12 +10,15 @@ type HeroMedia = {
   mimeType?: string;
 };
 
-// Currently using the uploaded image
-// Note: To use videos, you would need to host them elsewhere and add the URL here
+// Adding multiple images to rotate between
 const heroMedia: HeroMedia[] = [
   {
     type: 'image',
     src: '/lovable-uploads/45650d9f-838e-42a8-bf93-cdc7eb20cb2d.png'
+  },
+  {
+    type: 'image',
+    src: '/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg'
   }
   // Example of how to add a video (needs to be hosted externally):
   // { 
