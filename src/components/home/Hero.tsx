@@ -70,7 +70,14 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway zwischen den Meeren</p>
           <div className="space-x-4">
             <Link to="/gallery" className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-villa-dark">ENTDECKEN</Link>
-            <Link to="/booking" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">BUCHEN</Link>
+            <a 
+              href="https://www.airbnb.de/rooms/1305881991709578029" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary bg-white text-villa-dark hover:bg-villa-accent"
+            >
+              BUCHEN
+            </a>
           </div>
         </div>
       </div>
