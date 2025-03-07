@@ -1,5 +1,6 @@
+
 import { useState } from 'react';
-import { ChevronDown, Utensils, Wifi, Tv, Coffee, ShowerHead, Car } from 'lucide-react';
+import { ChevronDown, Utensils, Wifi, Tv, Coffee, ShowerHead, Car, Bed, Trees, Home } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 const amenityCategories = [
@@ -109,8 +110,6 @@ const amenityCategories = [
   }
 ];
 
-import { Bed, Trees, Home } from 'lucide-react';
-
 const StayAmenities = () => {
   const [openCategory, setOpenCategory] = useState<string | null>("living-spaces");
   
@@ -131,17 +130,13 @@ const StayAmenities = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
-            <img 
-              src="/placeholder.svg" 
-              alt="Villa Morgenthau Amenities" 
-              className="w-full h-auto rounded-sm shadow-lg mb-6"
-            />
+            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg mb-6 flex items-center justify-center text-white">
+              <span>Villa Morgenthau Amenities</span>
+            </div>
             
-            <img 
-              src="/placeholder.svg" 
-              alt="Villa Morgenthau Interior" 
-              className="w-full h-auto rounded-sm shadow-lg"
-            />
+            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
+              <span>Villa Morgenthau Interior</span>
+            </div>
           </div>
           
           <div className="lg:col-span-2">

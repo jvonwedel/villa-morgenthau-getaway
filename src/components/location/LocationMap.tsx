@@ -55,12 +55,8 @@ const LocationMap = () => {
         
         <div className="relative w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden mb-12">
           {/* Map Placeholder */}
-          <div className="absolute inset-0 bg-gray-100">
-            <img 
-              src="/placeholder.svg" 
-              alt="Karte der Villa Morgenthau Umgebung" 
-              className="w-full h-full object-cover opacity-50"
-            />
+          <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
+            <span className="text-villa-dark">Interaktive Karte der Villa Morgenthau Umgebung</span>
           </div>
           
           {/* Location Pins */}

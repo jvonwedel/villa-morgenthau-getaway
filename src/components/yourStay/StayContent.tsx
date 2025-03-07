@@ -25,11 +25,9 @@ const StayContent = () => {
           </div>
           
           <div>
-            <img 
-              src="/placeholder.svg" 
-              alt="Villa Morgenthau Innenbereich" 
-              className="w-full h-auto rounded-sm shadow-lg"
-            />
+            <div className="w-full h-auto aspect-[4/3] rounded-sm shadow-lg bg-villa-dark flex items-center justify-center text-white">
+              <span>Villa Morgenthau Innenbereich</span>
+            </div>
           </div>
         </div>
       </div>

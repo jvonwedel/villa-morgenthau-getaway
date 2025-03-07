@@ -2,13 +2,17 @@
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { MapPin } from 'lucide-react';
+
 const Location = () => {
-  return <section className="section-padding bg-villa-muted">
+  return (
+    <section className="section-padding bg-villa-muted">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <img src="/placeholder.svg" alt="Villa Morgenthau Location" className="w-full h-auto rounded-sm shadow-lg" />
+              <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
+                <span>Standort der Villa Morgenthau</span>
+              </div>
               <div className="absolute -top-6 -right-6 bg-white p-5 rounded-sm shadow-lg hidden md:flex items-center">
                 <MapPin className="text-villa-accent mr-2 h-5 w-5" />
                 <p className="font-medium text-sm">Zwischen den Meeren</p>
@@ -26,6 +30,8 @@ const Location = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Location;

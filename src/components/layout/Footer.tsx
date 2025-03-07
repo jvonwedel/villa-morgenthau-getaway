@@ -1,10 +1,15 @@
+
 import { Link } from 'react-router-dom';
+
 const Footer = () => {
-  return <footer className="bg-villa-dark text-white pt-16 pb-8">
+  return (
+    <footer className="bg-villa-dark text-white pt-16 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Logo" className="h-16 mb-4 invert" />
+            <div className="h-16 mb-4 flex items-center">
+              <span className="text-2xl font-serif text-white">Villa Morgenthau</span>
+            </div>
             <p className="text-villa-muted mt-4 text-sm">
               Villa Morgenthau - ein historisches Ferienhaus von 1867. Dein Hideaway inmitten der Natur & zwischen den Meeren.
             </p>
@@ -43,6 +48,8 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Villa Morgenthau. Alle Rechte vorbehalten.</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

@@ -4,13 +4,10 @@ import { Home } from 'lucide-react';
 const StayHeader = () => {
   return (
     <section className="relative h-[70vh] overflow-hidden">
-      <div className="absolute inset-0">
-        <img 
-          src="/placeholder.svg" 
-          alt="Ihr Aufenthalt in der Villa Morgenthau" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-villa-dark">
+        <div className="absolute inset-0 flex items-center justify-center text-white/20 text-3xl font-light">
+          Villa Morgenthau
+        </div>
       </div>
       
       <div className="container-custom relative h-full flex flex-col justify-center">

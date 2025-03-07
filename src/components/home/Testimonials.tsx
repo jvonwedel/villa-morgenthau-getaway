@@ -6,20 +6,17 @@ const testimonials = [
   {
     name: 'Familie Lindenthal',
     location: 'München, Deutschland',
-    text: 'Villa Morgenthau hat alle unsere Erwartungen übertroffen. Die Liebe zum Detail, die wunderschöne Umgebung und die herzliche Gastfreundschaft machten unseren Aufenthalt unvergesslich. Wir werden definitiv wiederkommen!',
-    image: '/placeholder.svg'
+    text: 'Villa Morgenthau hat alle unsere Erwartungen übertroffen. Die Liebe zum Detail, die wunderschöne Umgebung und die herzliche Gastfreundschaft machten unseren Aufenthalt unvergesslich. Wir werden definitiv wiederkommen!'
   },
   {
     name: 'Familie Haselbeck',
     location: 'Düsseldorf, Deutschland',
-    text: 'Perfekter Familienurlaub! Unsere Kinder liebten es, das Grundstück zu erkunden, und wir schätzten die durchdacht gestalteten Räume. Es ist selten, einen Ort zu finden, der sowohl für Erwachsene als auch für Kinder so gut geeignet ist.',
-    image: '/placeholder.svg'
+    text: 'Perfekter Familienurlaub! Unsere Kinder liebten es, das Grundstück zu erkunden, und wir schätzten die durchdacht gestalteten Räume. Es ist selten, einen Ort zu finden, der sowohl für Erwachsene als auch für Kinder so gut geeignet ist.'
   },
   {
     name: 'Celine, Lena & Friedi',
     location: 'Berlin, Deutschland',
-    text: 'Ein wahres Juwel! Der historische Charme der Villa in Kombination mit modernen Annehmlichkeiten schuf den perfekten romantischen Rückzugsort. Die Lage ist ideal für Entspannung und Abenteuer zugleich.',
-    image: '/placeholder.svg'
+    text: 'Ein wahres Juwel! Der historische Charme der Villa in Kombination mit modernen Annehmlichkeiten schuf den perfekten romantischen Rückzugsort. Die Lage ist ideal für Entspannung und Abenteuer zugleich.'
   }
 ];
 
@@ -50,11 +47,9 @@ const Testimonials = () => {
               <div key={index} className="w-full flex-shrink-0 px-4">
                 <div className="max-w-3xl mx-auto text-center">
                   <div className="mb-8 flex justify-center">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name} 
-                      className="w-20 h-20 object-cover rounded-full border-2 border-villa-accent"
-                    />
+                    <div className="w-20 h-20 rounded-full border-2 border-villa-accent bg-villa-accent/20 flex items-center justify-center">
+                      <span>{testimonial.name.charAt(0)}</span>
+                    </div>
                   </div>
                   <p className="text-lg md:text-xl italic mb-6 text-villa-muted">
                     "{testimonial.text}"
