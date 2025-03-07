@@ -1,25 +1,21 @@
 
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
-import { Heart, Activity, Users } from 'lucide-react';
 
 const features = [
   {
     title: 'Erholung & Natur',
     description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor. Hier sagen sich Fuchs und Pfauen Gute Nacht.',
-    icon: Heart,
     link: '/seeking-calm'
   },
   {
     title: 'Spaß, Sport & Action',
     description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr. Kiten, Segeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
-    icon: Activity,
     link: '/for-actives'
   },
   {
     title: 'Family & Friends',
     description: 'Stockbrot über dem Lagerfeuer oder ein Tischtennisturnier, Sandburgen bauen oder im Wattenmeer im Matsch waten. So viele Möglichkeiten. Und bei schlechtem Wetter lädt die große Küche zu Kochspaß und der Kachelofen zum Träumen ein.',
-    icon: Users,
     link: '/for-families'
   }
 ];
@@ -35,9 +31,6 @@ const Features = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="feature-card group">
-              <div className="mb-6">
-                <feature.icon className="w-10 h-10 text-villa-accent" />
-              </div>
               <h3 className="text-xl font-serif font-medium mb-3">{feature.title}</h3>
               <p className="text-gray-700 mb-6 flex-grow">{feature.description}</p>
               <Link 
