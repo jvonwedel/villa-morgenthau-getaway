@@ -1,13 +1,16 @@
+
 import { Link } from 'react-router-dom';
+
 const Hero = () => {
-  return <section className="relative h-screen">
+  return (
+    <section className="relative h-screen">
       {/* Solid background instead of images */}
       <div className="absolute inset-0 bg-villa-dark z-10" />
       
       {/* Content */}
       <div className="container-custom relative h-full flex flex-col justify-center items-center text-center text-white z-30">
         <div className="animate-fade-in max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-medium mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4">
             Villa Morgenthau
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Dein Hideaway zwischen den Meeren</p>
@@ -25,6 +28,8 @@ const Hero = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
