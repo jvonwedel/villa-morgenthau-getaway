@@ -1,50 +1,27 @@
 
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  // Define the image paths
-  const images = [
-    '/lovable-uploads/1be7d73f-dbf7-4981-92f5-80a82a6372d6.png',
-    '/lovable-uploads/4d8fd946-7525-49ed-860d-3d8a0f1997bc.png',
-    '/lovable-uploads/1a8ab0d3-13f1-42a9-939c-62d7c5a9458e.png'
-  ];
-
-  // Set up the image rotation interval
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+  // Using just the first image as the static background
+  const backgroundImage = '/lovable-uploads/1be7d73f-dbf7-4981-92f5-80a82a6372d6.png';
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Background images */}
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <img
-            src={image}
-            alt={`Villa Morgenthau ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+      {/* Static background image */}
+      <div className="absolute inset-0">
+        <img
+          src={backgroundImage}
+          alt="Villa Morgenthau"
+          className="w-full h-full object-cover"
+        />
+      </div>
       
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/30" />
       
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center items-center text-center text-white">
-        <div className="animate-fade-in max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4 max-w-2xl mx-auto">
             Villa Morgenthau
           </h1>
