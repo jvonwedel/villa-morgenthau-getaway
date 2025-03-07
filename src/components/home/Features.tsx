@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: 'Spaß, Sport & Action',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr, alles nur eine kurze Fahrt von der Villa Morgenthau entfernt.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wattenmeer oder die Schlei und mehr. Wassersport, im Sand buddeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
     icon: Activity,
     link: '/for-actives'
   },
