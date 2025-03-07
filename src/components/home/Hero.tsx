@@ -19,7 +19,7 @@ const Hero = () => {
     }
 
     function initPlayer() {
-      playerRef.current = new YT.Player('youtube-player', {
+      playerRef.current = new window.YT.Player('youtube-player', {
         videoId: 'tiq_gCtZEEk',
         playerVars: {
           autoplay: 1,
@@ -35,7 +35,7 @@ const Hero = () => {
         },
         events: {
           onReady: (event) => {
-            event.target.setPlaybackRate(0.25); // Set playback speed to 0.25x
+            event.target.setPlaybackRate(0.5); // Changed from 0.25x to 0.5x
             event.target.playVideo();
           }
         }
