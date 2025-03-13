@@ -1,14 +1,36 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { galleryImages } from '@/lib/galleryImages';
 
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [imagesLoaded, setImagesLoaded] = useState<{[key: string]: boolean}>({});
   
   // Get the first 6 images from the galleryImages collection
   const displayImages = galleryImages.slice(0, 6);
+  
+  // Track loaded images
+  useEffect(() => {
+    const preloadImages = () => {
+      displayImages.forEach((image) => {
+        if (image.imageUrl !== '/placeholder.svg') {
+          const img = new Image();
+          img.src = image.imageUrl;
+          img.onload = () => {
+            setImagesLoaded(prev => ({ ...prev, [image.id]: true }));
+          };
+          img.onerror = () => {
+            console.log(`Failed to preload image: ${image.imageUrl}`);
+            setImagesLoaded(prev => ({ ...prev, [image.id]: false }));
+          };
+        }
+      });
+    };
+    
+    preloadImages();
+  }, []);
   
   return (
     <section className="section-padding bg-white">
@@ -27,7 +49,7 @@ const Gallery = () => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="w-full h-full">
-                {image.imageUrl === '/placeholder.svg' ? (
+                {image.imageUrl === '/placeholder.svg' || imagesLoaded[image.id] === false ? (
                   <div className="w-full h-full flex items-center justify-center bg-gray-200">
                     <span className="text-gray-700 font-medium">Bild kommt bald</span>
                   </div>
@@ -39,6 +61,7 @@ const Gallery = () => {
                     onError={(e) => {
                       console.error("Image failed to load:", image.imageUrl);
                       (e.target as HTMLImageElement).src = '/placeholder.svg';
+                      setImagesLoaded(prev => ({ ...prev, [image.id]: false }));
                     }}
                   />
                 )}

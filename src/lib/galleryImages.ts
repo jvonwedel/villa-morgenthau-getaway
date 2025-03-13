@@ -14,42 +14,42 @@ export const galleryImages: GalleryImage[] = [
     id: '1',
     title: 'Essbereich',
     description: 'Heller Essbereich mit Designerlampen und großem Esstisch aus Massivholz',
-    imageUrl: '/lovable-uploads/863a5bef-eaa4-48b3-a387-997dbd5a2b75.png',
+    imageUrl: '/lovable-uploads/8b9bd91c-9180-4a04-a2d7-0d7802bf82eb.png',
     tags: ['Interior', 'Wohnbereich']
   },
   {
     id: '2',
     title: 'Wintergarten',
     description: 'Lichtdurchfluteter Wintergarten mit Blick auf die Natur',
-    imageUrl: '/lovable-uploads/c4ea1cb4-5b7d-426a-8dbe-7fbc14333d6d.png',
+    imageUrl: '/placeholder.svg',
     tags: ['Interior', 'Entspannung']
   },
   {
     id: '3',
     title: 'Kaminbereich',
     description: 'Gemütlicher Kaminbereich mit bequemer Sitzgelegenheit',
-    imageUrl: '/lovable-uploads/6f373559-6d2a-4374-bdb7-9b2c9ea7e6c7.png',
+    imageUrl: '/placeholder.svg',
     tags: ['Interior', 'Wohnbereich']
   },
   {
     id: '4',
     title: 'Küche',
     description: 'Moderne Küche mit eleganter Marmorarbeitsplatte',
-    imageUrl: '/lovable-uploads/d1f7c258-f4ad-438a-9b7a-0ed3d0e66d71.png',
+    imageUrl: '/placeholder.svg',
     tags: ['Interior', 'Küche']
   },
   {
     id: '5',
     title: 'Badezimmer',
     description: 'Elegantes Badezimmer mit begehbarer Dusche und Doppelwaschbecken',
-    imageUrl: '/lovable-uploads/22698746-7971-4d47-98e0-418cfc76c6ad.png',
+    imageUrl: '/placeholder.svg',
     tags: ['Interior', 'Badezimmer']
   },
   {
     id: '6',
     title: 'Schlafzimmer',
     description: 'Helles Schlafzimmer mit modernem Himmelbett',
-    imageUrl: '/lovable-uploads/a8fc63bd-81c0-4687-8fe2-26951d84fb54.png',
+    imageUrl: '/placeholder.svg',
     tags: ['Interior', 'Schlafzimmer']
   },
   {

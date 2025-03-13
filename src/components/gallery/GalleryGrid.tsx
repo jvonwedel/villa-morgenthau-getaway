@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import { fetchGalleryImages, fetchGalleryImagesByTag, GalleryImage } from '../../lib/galleryImages';
@@ -9,12 +9,34 @@ type GalleryCategory = 'Interior' | 'Exterior' | 'Surroundings' | 'Amenities';
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
   const [lightboxImage, setLightboxImage] = useState<GalleryImage | null>(null);
+  const [imagesLoaded, setImagesLoaded] = useState<{[key: string]: boolean}>({});
   
   // Get images to display
   const allImages = fetchGalleryImages();
   
   // Filter images by tag
   const displayImages = fetchGalleryImagesByTag(activeCategory);
+  
+  // Track loaded images
+  useEffect(() => {
+    const preloadImages = () => {
+      displayImages.forEach((image) => {
+        if (image.imageUrl !== '/placeholder.svg') {
+          const img = new Image();
+          img.src = image.imageUrl;
+          img.onload = () => {
+            setImagesLoaded(prev => ({ ...prev, [image.id]: true }));
+          };
+          img.onerror = () => {
+            console.log(`Failed to preload image: ${image.imageUrl}`);
+            setImagesLoaded(prev => ({ ...prev, [image.id]: false }));
+          };
+        }
+      });
+    };
+    
+    preloadImages();
+  }, [displayImages]);
   
   const handleCategoryChange = (category: GalleryCategory) => {
     setActiveCategory(category);
@@ -74,7 +96,7 @@ const GalleryGrid = () => {
               onClick={() => openLightbox(image)}
             >
               <div className="aspect-[4/3] relative overflow-hidden">
-                {image.imageUrl === '/placeholder.svg' ? (
+                {image.imageUrl === '/placeholder.svg' || imagesLoaded[image.id] === false ? (
                   <div className="w-full h-full flex items-center justify-center bg-gray-200">
                     <span className="text-gray-700 font-medium">Bild kommt bald</span>
                   </div>
@@ -86,6 +108,7 @@ const GalleryGrid = () => {
                     onError={(e) => {
                       console.error("Image failed to load:", image.imageUrl);
                       (e.target as HTMLImageElement).src = '/placeholder.svg';
+                      setImagesLoaded(prev => ({ ...prev, [image.id]: false }));
                     }}
                   />
                 )}
@@ -108,7 +131,7 @@ const GalleryGrid = () => {
               className="aspect-[16/9] relative overflow-hidden cursor-pointer"
               onClick={() => openLightbox(displayImages[0])}
             >
-              {displayImages[0].imageUrl === '/placeholder.svg' ? (
+              {displayImages[0].imageUrl === '/placeholder.svg' || imagesLoaded[displayImages[0].id] === false ? (
                 <div className="w-full h-full flex items-center justify-center bg-gray-200">
                   <span className="text-gray-700 font-medium">Bild kommt bald</span>
                 </div>
@@ -120,6 +143,7 @@ const GalleryGrid = () => {
                   onError={(e) => {
                     console.error("Image failed to load:", displayImages[0].imageUrl);
                     (e.target as HTMLImageElement).src = '/placeholder.svg';
+                    setImagesLoaded(prev => ({ ...prev, [displayImages[0].id]: false }));
                   }}
                 />
               )}
@@ -138,7 +162,7 @@ const GalleryGrid = () => {
               <X className="h-8 w-8" />
             </button>
             <div className="max-w-4xl w-full">
-              {lightboxImage.imageUrl === '/placeholder.svg' ? (
+              {lightboxImage.imageUrl === '/placeholder.svg' || imagesLoaded[lightboxImage.id] === false ? (
                 <div className="aspect-[16/9] bg-gray-800 flex items-center justify-center">
                   <span className="text-white font-medium">Bild kommt bald</span>
                 </div>
@@ -150,6 +174,7 @@ const GalleryGrid = () => {
                   onError={(e) => {
                     console.error("Image failed to load in lightbox:", lightboxImage.imageUrl);
                     (e.target as HTMLImageElement).src = '/placeholder.svg';
+                    setImagesLoaded(prev => ({ ...prev, [lightboxImage.id]: false }));
                   }}
                 />
               )}
