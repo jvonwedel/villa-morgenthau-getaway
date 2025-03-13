@@ -12,9 +12,9 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   {
     id: '1',
-    title: 'Esstisch',
-    description: 'Esstisch mit schönen Hängelampen und Blick in den Garten',
-    imageUrl: '/lovable-uploads/77f5b381-22b3-40ec-ab8d-809a786c7d36.png',
+    title: 'Essbereich',
+    description: 'Heller Essbereich mit Designerlampen und großem Esstisch aus Massivholz',
+    imageUrl: '/lovable-uploads/863a5bef-eaa4-48b3-a387-997dbd5a2b75.png',
     tags: ['Interior', 'Wohnbereich']
   },
   {
