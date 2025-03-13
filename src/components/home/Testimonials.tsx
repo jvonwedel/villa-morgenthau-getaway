@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: 'Familie Lindenthal',
     location: 'München, Deutschland',
-    text: 'Villa Morgenthau hat alle unsere Erwartungen übertroffen. Die Liebe zum Detail, die wunderschöne Umgebung und die herzliche Gastfreundschaft machten unseren Aufenthalt unvergesslich. Wir werden definitiv wiederkommen!'
+    text: 'Die Villa Morgenthau hat alle unsere Erwartungen übertroffen. Die Liebe zum Detail, die wunderschöne Umgebung und die herzliche Gastfreundschaft machten unseren Aufenthalt unvergesslich. Wir werden definitiv wiederkommen!'
   },
   {
     name: 'Familie Haselbeck',
     location: 'Düsseldorf, Deutschland',
-    text: 'Perfekter Familienurlaub! Unsere Kinder liebten es, das Grundstück zu erkunden, und wir schätzten die durchdacht gestalteten Räume. Es ist selten, einen Ort zu finden, der sowohl für Erwachsene als auch für Kinder so gut geeignet ist.'
+    text: 'Perfekter Familienurlaub! Die Kinder liebten es, das Grundstück zu erkunden und wir hatten die wunderschönste Zeit. Es ist selten, einen Ort zu finden, der sowohl für Erwachsene als auch für Kinder so gut geeignet ist.'
   },
   {
     name: 'Celine, Lena & Friedi',
     location: 'Berlin, Deutschland',
-    text: 'Ein wahres Juwel! Der historische Charme der Villa in Kombination mit modernen Annehmlichkeiten schuf den perfekten romantischen Rückzugsort. Die Lage ist ideal für Entspannung und Abenteuer zugleich.'
+    text: 'Ein wahres Juwel! Der historische Charme der Villa in Kombination mit dem modernen Interior ist einfach einzigartig. Wir lieben den Wintergarten. Perfekte Lage für Entspannung und Abenteuer zugleich.'
   }
 ];
 
