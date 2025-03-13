@@ -26,11 +26,23 @@ const Gallery = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <img 
-                src={image.imageUrl} 
-                alt={image.description || image.title} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+              <div className="w-full h-full">
+                {image.imageUrl === '/placeholder.svg' ? (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                    <span className="text-gray-700 font-medium">Bild kommt bald</span>
+                  </div>
+                ) : (
+                  <img 
+                    src={image.imageUrl} 
+                    alt={image.description || image.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      console.error("Image failed to load:", image.imageUrl);
+                      (e.target as HTMLImageElement).src = '/placeholder.svg';
+                    }}
+                  />
+                )}
+              </div>
               <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${
                 hoveredIndex === index ? 'bg-opacity-30' : 'bg-opacity-0'
               }`} />

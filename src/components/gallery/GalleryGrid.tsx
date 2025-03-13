@@ -74,11 +74,21 @@ const GalleryGrid = () => {
               onClick={() => openLightbox(image)}
             >
               <div className="aspect-[4/3] relative overflow-hidden">
-                <img 
-                  src={image.imageUrl} 
-                  alt={image.description || image.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                {image.imageUrl === '/placeholder.svg' ? (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                    <span className="text-gray-700 font-medium">Bild kommt bald</span>
+                  </div>
+                ) : (
+                  <img 
+                    src={image.imageUrl} 
+                    alt={image.description || image.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      console.error("Image failed to load:", image.imageUrl);
+                      (e.target as HTMLImageElement).src = '/placeholder.svg';
+                    }}
+                  />
+                )}
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <h3 className="font-medium text-white">{image.title}</h3>
@@ -98,11 +108,21 @@ const GalleryGrid = () => {
               className="aspect-[16/9] relative overflow-hidden cursor-pointer"
               onClick={() => openLightbox(displayImages[0])}
             >
-              <img 
-                src={displayImages[0].imageUrl} 
-                alt={displayImages[0].title}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-              />
+              {displayImages[0].imageUrl === '/placeholder.svg' ? (
+                <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                  <span className="text-gray-700 font-medium">Bild kommt bald</span>
+                </div>
+              ) : (
+                <img 
+                  src={displayImages[0].imageUrl} 
+                  alt={displayImages[0].title}
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  onError={(e) => {
+                    console.error("Image failed to load:", displayImages[0].imageUrl);
+                    (e.target as HTMLImageElement).src = '/placeholder.svg';
+                  }}
+                />
+              )}
               <div className="absolute inset-0 bg-black opacity-0 hover:opacity-20 transition-opacity duration-300" />
             </div>
           </div>
@@ -118,11 +138,21 @@ const GalleryGrid = () => {
               <X className="h-8 w-8" />
             </button>
             <div className="max-w-4xl w-full">
-              <img 
-                src={lightboxImage.imageUrl} 
-                alt={lightboxImage.title}
-                className="max-w-full max-h-[80vh] object-contain mx-auto"
-              />
+              {lightboxImage.imageUrl === '/placeholder.svg' ? (
+                <div className="aspect-[16/9] bg-gray-800 flex items-center justify-center">
+                  <span className="text-white font-medium">Bild kommt bald</span>
+                </div>
+              ) : (
+                <img 
+                  src={lightboxImage.imageUrl} 
+                  alt={lightboxImage.title}
+                  className="max-w-full max-h-[80vh] object-contain mx-auto"
+                  onError={(e) => {
+                    console.error("Image failed to load in lightbox:", lightboxImage.imageUrl);
+                    (e.target as HTMLImageElement).src = '/placeholder.svg';
+                  }}
+                />
+              )}
               <div className="text-white text-center mt-4">
                 <h2 className="text-xl font-semibold">{lightboxImage.title}</h2>
                 {lightboxImage.description && (
