@@ -22,15 +22,13 @@ const Gallery = () => {
             <Link 
               key={image.id}
               to="/gallery"
-              className="aspect-[4/3] relative overflow-hidden group block"
+              className="aspect-[4/3] relative overflow-hidden group block bg-gray-200"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <img 
-                src={image.imageUrl} 
-                alt={image.description || image.title} 
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+              <div className="flex items-center justify-center h-full p-4 text-center">
+                <span className="text-gray-700 font-medium">{image.title}</span>
+              </div>
               <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${
                 hoveredIndex === index ? 'bg-opacity-30' : 'bg-opacity-0'
               }`} />

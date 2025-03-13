@@ -14,15 +14,14 @@ const GalleryGrid = () => {
   const allImages = fetchGalleryImages();
   
   // Filter images by tag
-  const displayImages = fetchGalleryImagesByTag(activeCategory)
-    .map(image => image.imageUrl);
+  const displayImages = fetchGalleryImagesByTag(activeCategory);
   
   const handleCategoryChange = (category: GalleryCategory) => {
     setActiveCategory(category);
   };
   
-  const openLightbox = (image: string) => {
-    setLightboxImage(image);
+  const openLightbox = (image: GalleryImage) => {
+    setLightboxImage(image.title);
     document.body.style.overflow = 'hidden';
   };
   
@@ -74,34 +73,18 @@ const GalleryGrid = () => {
               className="cursor-pointer group overflow-hidden"
               onClick={() => openLightbox(image)}
             >
-              <div className="aspect-[4/3] relative overflow-hidden">
-                <img 
-                  src={image} 
-                  alt={`Villa Morgenthau ${getCategoryName(activeCategory)} ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+              <div className="aspect-[4/3] relative overflow-hidden bg-gray-200 flex items-center justify-center">
+                <div className="p-4 text-center">
+                  <h3 className="font-medium text-gray-700">{image.title}</h3>
+                  {image.description && (
+                    <p className="text-gray-500 text-sm mt-2">{image.description}</p>
+                  )}
+                </div>
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
               </div>
             </div>
           ))}
         </div>
-        
-        {/* Featured Large Image */}
-        {activeCategory === 'Interior' && displayImages.length > 0 && (
-          <div className="mt-10">
-            <div 
-              className="aspect-[16/9] relative overflow-hidden cursor-pointer"
-              onClick={() => openLightbox(displayImages[0])}
-            >
-              <img 
-                src={displayImages[0]} 
-                alt="Villa Morgenthau hervorgehobener Innenbereich"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-20 transition-opacity duration-300" />
-            </div>
-          </div>
-        )}
         
         {/* Lightbox */}
         {lightboxImage && (
@@ -112,11 +95,9 @@ const GalleryGrid = () => {
             >
               <X className="h-8 w-8" />
             </button>
-            <img 
-              src={lightboxImage} 
-              alt="Galerie Lightbox" 
-              className="max-w-full max-h-[90vh] object-contain"
-            />
+            <div className="bg-white p-8 rounded-md max-w-lg">
+              <h2 className="text-xl font-semibold">{lightboxImage}</h2>
+            </div>
           </div>
         )}
       </div>
