@@ -8,7 +8,7 @@ type GalleryCategory = 'Interior' | 'Exterior' | 'Surroundings' | 'Amenities';
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
-  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<GalleryImage | null>(null);
   
   // Get images to display
   const allImages = fetchGalleryImages();
@@ -21,7 +21,7 @@ const GalleryGrid = () => {
   };
   
   const openLightbox = (image: GalleryImage) => {
-    setLightboxImage(image.title);
+    setLightboxImage(image);
     document.body.style.overflow = 'hidden';
   };
   
@@ -73,18 +73,40 @@ const GalleryGrid = () => {
               className="cursor-pointer group overflow-hidden"
               onClick={() => openLightbox(image)}
             >
-              <div className="aspect-[4/3] relative overflow-hidden bg-gray-200 flex items-center justify-center">
-                <div className="p-4 text-center">
-                  <h3 className="font-medium text-gray-700">{image.title}</h3>
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img 
+                  src={image.imageUrl} 
+                  alt={image.description || image.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="font-medium text-white">{image.title}</h3>
                   {image.description && (
-                    <p className="text-gray-500 text-sm mt-2">{image.description}</p>
+                    <p className="text-gray-200 text-sm mt-1">{image.description}</p>
                   )}
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
               </div>
             </div>
           ))}
         </div>
+        
+        {/* Featured Large Image for Interior */}
+        {activeCategory === 'Interior' && displayImages.length > 0 && (
+          <div className="mt-10">
+            <div 
+              className="aspect-[16/9] relative overflow-hidden cursor-pointer"
+              onClick={() => openLightbox(displayImages[0])}
+            >
+              <img 
+                src={displayImages[0].imageUrl} 
+                alt={displayImages[0].title}
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-20 transition-opacity duration-300" />
+            </div>
+          </div>
+        )}
         
         {/* Lightbox */}
         {lightboxImage && (
@@ -95,8 +117,18 @@ const GalleryGrid = () => {
             >
               <X className="h-8 w-8" />
             </button>
-            <div className="bg-white p-8 rounded-md max-w-lg">
-              <h2 className="text-xl font-semibold">{lightboxImage}</h2>
+            <div className="max-w-4xl w-full">
+              <img 
+                src={lightboxImage.imageUrl} 
+                alt={lightboxImage.title}
+                className="max-w-full max-h-[80vh] object-contain mx-auto"
+              />
+              <div className="text-white text-center mt-4">
+                <h2 className="text-xl font-semibold">{lightboxImage.title}</h2>
+                {lightboxImage.description && (
+                  <p className="text-gray-300 mt-2">{lightboxImage.description}</p>
+                )}
+              </div>
             </div>
           </div>
         )}
