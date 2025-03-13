@@ -21,35 +21,35 @@ export const galleryImages: GalleryImage[] = [
     id: '2',
     title: 'Wintergarten',
     description: 'Lichtdurchfluteter Wintergarten mit Blick auf die Natur',
-    imageUrl: '/placeholder.svg',
+    imageUrl: '/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png',
     tags: ['Interior', 'Entspannung']
   },
   {
     id: '3',
     title: 'Kaminbereich',
     description: 'Gemütlicher Kaminbereich mit bequemer Sitzgelegenheit',
-    imageUrl: '/placeholder.svg',
+    imageUrl: '/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png',
     tags: ['Interior', 'Wohnbereich']
   },
   {
     id: '4',
     title: 'Küche',
     description: 'Moderne Küche mit eleganter Marmorarbeitsplatte',
-    imageUrl: '/placeholder.svg',
+    imageUrl: '/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png',
     tags: ['Interior', 'Küche']
   },
   {
     id: '5',
     title: 'Badezimmer',
     description: 'Elegantes Badezimmer mit begehbarer Dusche und Doppelwaschbecken',
-    imageUrl: '/placeholder.svg',
+    imageUrl: '/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png',
     tags: ['Interior', 'Badezimmer']
   },
   {
     id: '6',
     title: 'Schlafzimmer',
     description: 'Helles Schlafzimmer mit modernem Himmelbett',
-    imageUrl: '/placeholder.svg',
+    imageUrl: '/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg',
     tags: ['Interior', 'Schlafzimmer']
   },
   {
