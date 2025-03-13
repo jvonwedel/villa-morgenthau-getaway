@@ -1,4 +1,3 @@
-
 // Type definitions for gallery images
 export interface GalleryImage {
   id: string;
@@ -14,7 +13,7 @@ export const galleryImages: GalleryImage[] = [
     id: '1',
     title: 'Essbereich',
     description: 'Heller Essbereich mit Designerlampen und großem Esstisch aus Massivholz',
-    imageUrl: '/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png',
+    imageUrl: 'http://youtube.com/post/Ugkx2ocsopRI6ZYSs73Xc7FppCdULtwPIxbT?feature=shared',
     tags: ['Interior', 'Wohnbereich']
   },
   {
