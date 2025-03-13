@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
@@ -20,7 +19,7 @@ const Hero = () => {
 
     function initPlayer() {
       playerRef.current = new window.YT.Player('youtube-player', {
-        videoId: 'tiq_gCtZEEk',
+        videoId: 'PUHPuK7RdBs', // Updated video ID from the new URL
         playerVars: {
           autoplay: 1,
           loop: 1,
@@ -31,11 +30,11 @@ const Hero = () => {
           modestbranding: 1,
           mute: 1,
           playsinline: 1,
-          playlist: 'tiq_gCtZEEk', // Required for looping
+          playlist: 'PUHPuK7RdBs', // Also updated here for looping
         },
         events: {
           onReady: (event) => {
-            event.target.setPlaybackRate(0.5); // Changed from 0.25x to 0.5x
+            event.target.setPlaybackRate(0.5); // Kept the same playback rate
             event.target.playVideo();
           }
         }
