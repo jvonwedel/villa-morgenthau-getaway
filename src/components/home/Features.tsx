@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const features = [
   {
     title: 'Erholung & Natur',
-    description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor. Hier sagen sich Fuchs und Pfauen Gute Nacht.',
+    description: 'Entfliehe dem Lärm des Alltags. Die Villa Morgenthau ist super ruhig gelegen in einem Dorf mit nur wenigen Häusern, umgeben von nichts als Wäldern, Feldern, Wiesen und Moor. Stress? Fehlanzeige. Hier sagen sich Fuchs und Pfauen Gute Nacht.',
     link: '/seeking-calm'
   },
   {
