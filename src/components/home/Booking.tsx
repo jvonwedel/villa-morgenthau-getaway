@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 const Booking = () => {
@@ -13,7 +14,7 @@ const Booking = () => {
             JETZT BUCHEN!
           </span>
           <h2 className="text-3xl lg:text-5xl font-serif mb-6 md:text-2xl">
-            Buche jetzt deinen Urlaub in der Villa Morgenthau
+            Reserviere deinen Urlaub in der Villa Morgenthau
           </h2>
           <p className="text-lg mb-8">
             Verbringe eine unvergessliche Zeit in unserer historischen Villa Morgenthau und reserviere deinen Aufenthalt jetzt!
