@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { galleryImages } from '@/lib/galleryImages';
