@@ -10,7 +10,7 @@ const features = [
   },
   {
     title: 'Spaß, Sport & Action',
-    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wilde Moor, das Wattenmeer oder die Schlei und mehr. Kiten, Segeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
+    description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wilde Moor, das Wattenmeer oder die Schlei. Es ist für jeden was dabei. Kiten, Segeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
     link: '/for-actives'
   },
   {
