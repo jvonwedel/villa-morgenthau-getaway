@@ -6,10 +6,19 @@ import { galleryImages } from '@/lib/galleryImages';
 
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   
   // Get the first 6 images from the galleryImages collection
   const displayImages = galleryImages.slice(0, 6);
   
+  const handleImageError = (imageId: string, imageUrl: string) => {
+    console.log(`Image failed to load in home gallery: ${imageUrl}`);
+    setImageErrors(prev => ({
+      ...prev,
+      [imageId]: true
+    }));
+  };
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
@@ -28,13 +37,10 @@ const Gallery = () => {
             >
               <div className="w-full h-full">
                 <img 
-                  src={image.imageUrl} 
+                  src={imageErrors[image.id] ? '/placeholder.svg' : image.imageUrl} 
                   alt={image.description || image.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => {
-                    console.log("Image failed to load:", image.imageUrl);
-                    (e.target as HTMLImageElement).src = '/placeholder.svg';
-                  }}
+                  onError={() => handleImageError(image.id, image.imageUrl)}
                 />
               </div>
               <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${
