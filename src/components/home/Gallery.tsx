@@ -32,7 +32,6 @@ const Gallery = () => {
                   alt={image.description || image.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
-                    console.error("Image failed to load:", image.imageUrl);
                     (e.target as HTMLImageElement).src = '/placeholder.svg';
                   }}
                 />

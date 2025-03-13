@@ -79,7 +79,6 @@ const GalleryGrid = () => {
                   alt={image.description || image.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
-                    console.error("Image failed to load:", image.imageUrl);
                     (e.target as HTMLImageElement).src = '/placeholder.svg';
                   }}
                 />
@@ -107,7 +106,6 @@ const GalleryGrid = () => {
                 alt={displayImages[0].title}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 onError={(e) => {
-                  console.error("Image failed to load:", displayImages[0].imageUrl);
                   (e.target as HTMLImageElement).src = '/placeholder.svg';
                 }}
               />
@@ -131,7 +129,6 @@ const GalleryGrid = () => {
                 alt={lightboxImage.title}
                 className="max-w-full max-h-[80vh] object-contain mx-auto"
                 onError={(e) => {
-                  console.error("Image failed to load in lightbox:", lightboxImage.imageUrl);
                   (e.target as HTMLImageElement).src = '/placeholder.svg';
                 }}
               />
