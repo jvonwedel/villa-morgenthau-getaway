@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <SectionTitle subtitle="GALLERIE" centered>
+        <SectionTitle subtitle="GALERIE" centered>
           Entdecke die Villa Morgenthau
         </SectionTitle>
         
