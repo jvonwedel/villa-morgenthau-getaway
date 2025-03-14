@@ -1,8 +1,15 @@
+
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import { useIsMobile } from '../../hooks/use-mobile';
 
 const Hero = () => {
   const playerRef = useRef<YT.Player | null>(null);
+  const isMobile = useIsMobile();
+  
+  // Different video IDs for desktop and mobile
+  const desktopVideoId = 'PUHPuK7RdBs';
+  const mobileVideoId = 'PUHPuK7RdBs'; // Replace with your mobile-optimized video ID
 
   useEffect(() => {
     // Load YouTube API if not already loaded
@@ -18,8 +25,11 @@ const Hero = () => {
     }
 
     function initPlayer() {
+      // Use different video ID based on device type
+      const videoId = isMobile ? mobileVideoId : desktopVideoId;
+      
       playerRef.current = new window.YT.Player('youtube-player', {
-        videoId: 'PUHPuK7RdBs', // Updated video ID from the new URL
+        videoId: videoId,
         playerVars: {
           autoplay: 1,
           loop: 1,
@@ -30,11 +40,11 @@ const Hero = () => {
           modestbranding: 1,
           mute: 1,
           playsinline: 1,
-          playlist: 'PUHPuK7RdBs', // Also updated here for looping
+          playlist: videoId, // Also updated here for looping
         },
         events: {
           onReady: (event) => {
-            event.target.setPlaybackRate(0.5); // Kept the same playback rate
+            event.target.setPlaybackRate(0.5);
             event.target.playVideo();
           }
         }
@@ -46,7 +56,7 @@ const Hero = () => {
         playerRef.current = null;
       }
     };
-  }, []);
+  }, [isMobile]); // Add isMobile as a dependency to re-initialize when it changes
 
   return (
     <section className="relative h-screen overflow-hidden">
