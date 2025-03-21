@@ -11,11 +11,11 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-serif mb-8 text-center">Über die Villa Morgenthau</h1>
             
-            {/* First photo container as a single banner - keep original proportions */}
+            {/* First photo container as a placeholder */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png" 
+                  src="/placeholder.svg" 
                   alt="Villa Morgenthau Historical Photo"
                   className="w-full h-auto object-contain"
                 />
