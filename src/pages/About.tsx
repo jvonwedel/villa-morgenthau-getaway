@@ -1,13 +1,10 @@
-
 import Layout from '../components/layout/Layout';
-import { Button } from '@/components/ui/button'; 
+import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
@@ -22,8 +19,10 @@ const About = () => {
             </div>
             
             <div className="prose prose-lg mx-auto">
-              <h2 className="font-serif text-2xl mb-4">Die Geschichte</h2>
-              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.</p>
+              <h2 className="font-serif text-2xl mb-4">Ein Ort mit Geschichte</h2>
+              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.
+
+Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
               
               {/* Second photo container with two photos side by side */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -42,7 +41,8 @@ const About = () => {
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
+              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, Friedenseiche,
+            </p>
               
               {/* Gallery button */}
               <div className="flex justify-center my-8">
@@ -51,7 +51,8 @@ const About = () => {
                 </Link>
               </div>
               
-              <h2 className="font-serif text-2xl mb-4 mt-8">Unsere Philosophie</h2>
+              <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie
+            </h2>
               <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können.
 
 Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den modernen Bädern und Schlafzimmern bis hin zur vollausgestattete Küche mit Kücheninsel, die zu geselligen Kochabenden einlädt. Und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist.</p>
@@ -100,8 +101,6 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
