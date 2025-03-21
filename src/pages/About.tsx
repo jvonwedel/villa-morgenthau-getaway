@@ -1,3 +1,4 @@
+
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -19,8 +20,7 @@ const About = () => {
             </div>
             
             <div className="prose prose-lg mx-auto">
-              <h2 className="font-serif text-2xl mb-4">Ein Ort mit Geschichte
-            </h2>
+              <h2 className="font-serif text-2xl mb-4">Ein Ort mit Geschichte</h2>
               <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.</p>
 
               <p className="mb-6">Von der ursprünglichen Architektur sind noch zahlreiche historische Elemente erhalten, die dem Haus seinen besonderen Charakter verleihen.</p>
@@ -44,11 +44,7 @@ const About = () => {
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, 
-
-drinnen und draußen
-
-Friedenseiche,</p>
+              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, drinnen und draußen Friedenseiche,</p>
               
               {/* Gallery button */}
               <div className="flex justify-center my-8">
@@ -57,8 +53,7 @@ Friedenseiche,</p>
                 </Link>
               </div>
               
-              <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie
-            </h2>
+              <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
               <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können.
 
 Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den modernen Bädern und Schlafzimmern bis hin zur vollausgestattete Küche mit Kücheninsel, die zu geselligen Kochabenden einlädt. Und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist.</p>
