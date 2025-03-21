@@ -50,8 +50,8 @@ const About = () => {
               <p className="mb-6 text-base font-normal">Wenn du Vorher-Nachher-Stories magst und mehr über die Renovierung erfahren willst, schau gern auf dem Instagram Kanal der Villa Morgenthau vorbei.
             </p>
               
-              {/* Gallery button */}
-              <div className="flex justify-center my-8">
+              {/* Gallery button - Added more vertical margin */}
+              <div className="flex justify-center my-12">
                 <Link to="/gallery" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM</Link>
               </div>
               
@@ -95,10 +95,13 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
                 </div>
               </div>
               
-              {/* Booking button */}
-              <div className="flex justify-center my-8">
+              {/* Booking and Gallery buttons */}
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-12">
                 <Link to="/booking" className="btn-secondary">
                   JETZT BUCHEN
+                </Link>
+                <Link to="/gallery" className="btn-secondary">
+                  ZUR GALERIE
                 </Link>
               </div>
             </div>
