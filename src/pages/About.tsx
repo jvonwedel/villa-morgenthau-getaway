@@ -1,8 +1,10 @@
+
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+
 const About = () => {
   return <Layout>
       <section className="section-padding bg-white">
