@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -12,16 +11,14 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-serif mb-8 text-center">Über die Villa Morgenthau</h1>
             
-            {/* First photo container as a single banner */}
+            {/* First photo container as a single banner - keep original proportions */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                <AspectRatio ratio={16/9}>
-                  <img 
-                    src="/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png" 
-                    alt="Villa Morgenthau Historical Photo"
-                    className="w-full h-full object-cover"
-                  />
-                </AspectRatio>
+                <img 
+                  src="/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png" 
+                  alt="Villa Morgenthau Historical Photo"
+                  className="w-full h-auto object-contain"
+                />
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
@@ -68,7 +65,6 @@ const About = () => {
               <p className="mb-6 text-base font-normal">Wenn du Vorher-Nachher-Stories magst und mehr über die Renovierung erfahren willst, schau gern auf dem Instagram Kanal der Villa Morgenthau vorbei.
             </p>
               
-              {/* Gallery button - Added more vertical margin */}
               <div className="flex justify-center my-12">
                 <Link to="/gallery" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM</Link>
               </div>
@@ -82,7 +78,6 @@ const About = () => {
               <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
 Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob Bärlauch und Beeren im Frühling, Quitten und Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst: der Garten bietet vielfältige Möglichkeiten, lokale Gerichte zuzubereiten.</p>
 
-              {/* Four additional photos in a grid */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
@@ -137,7 +132,6 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
                 </div>
               </div>
               
-              {/* Booking and Gallery buttons */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-12">
                 <Link to="/booking" className="btn-secondary">
                   JETZT BUCHEN
