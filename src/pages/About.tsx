@@ -1,13 +1,10 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
@@ -22,7 +19,8 @@ const About = () => {
             </div>
             
             <div className="prose prose-lg mx-auto">
-              <h2 className="font-serif text-2xl mb-4">Ein Ort mit Geschichte</h2>
+              <h2 className="font-serif text-2xl mb-4">Auf den Spuren des Königlichen Waldvogts
+            </h2>
               
               <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.</p>
 
@@ -108,8 +106,6 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
