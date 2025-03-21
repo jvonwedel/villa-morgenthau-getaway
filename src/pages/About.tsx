@@ -3,6 +3,7 @@ import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button'; 
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const About = () => {
   return (
@@ -57,6 +58,44 @@ Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den moderne
               
               <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
 Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob Bärlauch und Beeren im Frühling, Quitten und Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst: der Garten bietet vielfältige Möglichkeiten, lokale Gerichte zuzubereiten.</p>
+
+              {/* Four additional photos in a grid */}
+              <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                    <span>Villa Morgenthau Living Room</span>
+                  </div>
+                  <p className="text-sm text-gray-500 italic text-center">Der gemütliche Wohnbereich</p>
+                </div>
+                
+                <div>
+                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                    <span>Villa Morgenthau Kitchen</span>
+                  </div>
+                  <p className="text-sm text-gray-500 italic text-center">Die moderne Küche</p>
+                </div>
+                
+                <div>
+                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                    <span>Villa Morgenthau Bedroom</span>
+                  </div>
+                  <p className="text-sm text-gray-500 italic text-center">Ein komfortables Schlafzimmer</p>
+                </div>
+                
+                <div>
+                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                    <span>Villa Morgenthau Bathroom</span>
+                  </div>
+                  <p className="text-sm text-gray-500 italic text-center">Das moderne Badezimmer</p>
+                </div>
+              </div>
+              
+              {/* Booking button */}
+              <div className="flex justify-center my-8">
+                <Link to="/booking" className="btn-secondary">
+                  JETZT BUCHEN
+                </Link>
+              </div>
             </div>
           </div>
         </div>
