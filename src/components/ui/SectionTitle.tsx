@@ -9,8 +9,8 @@ interface SectionTitleProps {
 }
 
 const SectionTitle = ({ subtitle, children, centered = false, light = false }: SectionTitleProps) => {
-  // If the children is missing and we're in the home page context, use "Entdecke Villa Morgenthau"
-  const titleText = children || "Entdecke Villa Morgenthau";
+  // If the children is missing and we're in the home page context, use "Ein Ort mit Geschichte"
+  const titleText = children || "Ein Ort mit Geschichte";
   
   return (
     <div className={`mb-10 ${centered ? 'text-center' : ''}`}>
