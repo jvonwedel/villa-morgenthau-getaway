@@ -1,5 +1,8 @@
 
 import Layout from '../components/layout/Layout';
+import { Button } from '@/components/ui/button'; 
+import { Link } from 'react-router-dom';
+import { Image } from 'lucide-react';
 
 const About = () => {
   return (
@@ -39,6 +42,16 @@ const About = () => {
               </div>
               
               <p className="mb-6 text-base font-normal">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
+              
+              {/* Gallery button */}
+              <div className="flex justify-center my-8">
+                <Button asChild variant="outline" className="gap-2">
+                  <Link to="/gallery">
+                    <Image className="h-4 w-4" />
+                    Zur Galerie
+                  </Link>
+                </Button>
+              </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Unsere Philosophie</h2>
               <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können.
