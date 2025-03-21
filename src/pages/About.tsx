@@ -20,6 +20,14 @@ const About = () => {
               <h2 className="font-serif text-2xl mb-4">Die Geschichte</h2>
               <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.</p>
               
+              {/* New photo container after first paragraph */}
+              <div className="my-10">
+                <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
+                  <span>Villa Morgenthau Renovation</span>
+                </div>
+                <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
+              </div>
+              
               <p className="mb-6 text-base font-normal">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Unsere Philosophie</h2>
