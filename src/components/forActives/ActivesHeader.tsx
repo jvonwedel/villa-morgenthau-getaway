@@ -10,9 +10,6 @@ const ActivesHeader = () => {
       
       <div className="container-custom relative h-full flex flex-col justify-center">
         <div className="max-w-3xl">
-          <div className="absolute bottom-10 left-10 md:left-16 bg-[#8E9196]/80 px-4 py-2 backdrop-blur-sm">
-            <span className="text-white/90 text-sm font-light tracking-wide">Abenteuer & Ausflüge</span>
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Für Aktive</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl">Entdeckt die zahllosen Aktivitäten und Abenteuer, die die Umgebung zu bieten hat</p>
         </div>
