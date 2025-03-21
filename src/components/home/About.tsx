@@ -1,3 +1,4 @@
+
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 const About = () => {
@@ -6,7 +7,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionTitle subtitle="SEIT 1867">
-              Über die Villa Morgenthau
+              Ein Ort mit Geschichte
             </SectionTitle>
             <p className="text-gray-700 mb-8">Die Villa Morgenthau ist ein historisches Anwesen aus dem Jahr 1867, das mit Liebe restauriert und modernisiert wurde, wobei ganz bewusst der ursprüngliche Charme bewahrt wurde. In unberührter Natur gelegen, bietet die Villa Morgenthau den perfekten Rückzugsort für alle, die Ruhe und eine Auszeit vom trubeligen Alltag suchen. Und wenn der Sinn dann wieder nach Abenteuer steht, erlaubt die perfekte Lage zwischen den Meeren unzählige unvergessliche Erlebnisse.</p>
             <div className="text-center">
