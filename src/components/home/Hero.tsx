@@ -9,7 +9,7 @@ const Hero = () => {
   
   // Different video IDs for desktop and mobile
   const desktopVideoId = 'PUHPuK7RdBs';
-  const mobileVideoId = '7Dm28O-fBBo'; // Updated mobile-optimized video ID
+  const mobileVideoId = 'FDJ-mfKRQgs'; // Updated mobile video ID for YouTube short
 
   useEffect(() => {
     // Load YouTube API if not already loaded
