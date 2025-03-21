@@ -16,7 +16,7 @@ const About = () => {
             
             <div className="prose prose-lg mx-auto">
               <h2 className="font-serif text-2xl mb-4">Die Geschichte</h2>
-              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist. Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert.
+              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.
             </p>
               
               <p className="mb-6 text-base font-normal">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.
