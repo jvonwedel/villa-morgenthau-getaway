@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -9,7 +8,7 @@ const About = () => {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-serif mb-8 text-center">Ein Ort mit Geschichte</h1>
+            <h1 className="text-4xl font-serif mb-8 text-center">Über die Villa Morgenthau</h1>
             
             {/* First photo container as a single banner */}
             <div className="mb-10">
