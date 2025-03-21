@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -44,19 +43,19 @@ const About = () => {
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, drinnen und draußen Friedenseiche,</p>
+              <p className="mb-6 text-base font-normal">Wenn du Vorher-Nachher-Stories magst und mehr über die Renovierung erfahren willst, schau gern auf dem Instagram Kanal der Villa Morgenthau vorbei.
+            </p>
               
               {/* Gallery button */}
               <div className="flex justify-center my-8">
-                <Link to="/gallery" className="btn-secondary">
-                  ZUR GALERIE
-                </Link>
+                <Link to="/gallery" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM
+              </Link>
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
-              <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können.
+              <p className="mb-6">Den einzigartigen Charme durch Kachelofen, Beschläge, drinnen und draußen Friedenseiche,
 
-Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den modernen Bädern und Schlafzimmern bis hin zur vollausgestattete Küche mit Kücheninsel, die zu geselligen Kochabenden einlädt. Und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist.</p>
+Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können. Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den modernen Bädern und Schlafzimmern bis hin zur vollausgestattete Küche mit Kücheninsel, die zu geselligen Kochabenden einlädt. Und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist.</p>
               
               <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
 Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob Bärlauch und Beeren im Frühling, Quitten und Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst: der Garten bietet vielfältige Möglichkeiten, lokale Gerichte zuzubereiten.</p>
