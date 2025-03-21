@@ -4,7 +4,7 @@ import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import { fetchGalleryImages, fetchGalleryImagesByTag, GalleryImage } from '../../lib/galleryImages';
 
-type GalleryCategory = 'Interior' | 'Exterior' | 'Surroundings' | 'Amenities';
+type GalleryCategory = 'Interior' | 'Outdoor' | 'Umgebung' | 'Jahreszeiten';
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>('Interior');
@@ -34,9 +34,9 @@ const GalleryGrid = () => {
   const getCategoryName = (category: GalleryCategory): string => {
     switch(category) {
       case 'Interior': return 'Innenbereich';
-      case 'Exterior': return 'Außenbereich';
-      case 'Surroundings': return 'Umgebung';
-      case 'Amenities': return 'Annehmlichkeiten';
+      case 'Outdoor': return 'Außenbereich';
+      case 'Umgebung': return 'Umgebung';
+      case 'Jahreszeiten': return 'Jahreszeiten';
       default: return category;
     }
   };
@@ -50,7 +50,7 @@ const GalleryGrid = () => {
         
         {/* Gallery Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {(['Interior', 'Exterior', 'Surroundings', 'Amenities'] as GalleryCategory[]).map((category) => (
+          {(['Interior', 'Outdoor', 'Umgebung', 'Jahreszeiten'] as GalleryCategory[]).map((category) => (
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
