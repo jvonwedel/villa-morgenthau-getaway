@@ -14,8 +14,14 @@ const About = () => {
             
             {/* First photo container as a single banner */}
             <div className="mb-10">
-              <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                <span>Villa Morgenthau Historical Photo</span>
+              <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src="/lovable-uploads/3c957d9d-f72f-417e-a5b4-cfd00574909d.png" 
+                    alt="Villa Morgenthau Historical Photo"
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
@@ -33,17 +39,29 @@ const About = () => {
               {/* Second photo container with two photos side by side */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Renovation</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" 
+                        alt="Villa Morgenthau Renovation"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
                 </div>
                 
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Garden View</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png" 
+                        alt="Villa Morgenthau Garden View"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
-                  <p className="text-sm text-gray-500 italic text-center">Der Garten der Villa Morgenthau</p>
+                  <p className="text-sm text-gray-500 italic text-center">Umbau der offenen Küche</p>
                 </div>
               </div>
               
@@ -67,29 +85,53 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
               {/* Four additional photos in a grid */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Living Room</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/13f904f9-f40c-4e0f-a509-815c2d2221ce.png" 
+                        alt="Villa Morgenthau Living Room"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Der gemütliche Wohnbereich</p>
                 </div>
                 
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Kitchen</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" 
+                        alt="Villa Morgenthau Kitchen"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Die moderne Küche</p>
                 </div>
                 
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Bedroom</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" 
+                        alt="Villa Morgenthau Bedroom"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Ein komfortables Schlafzimmer</p>
                 </div>
                 
                 <div>
-                  <div className="w-full h-64 bg-villa-dark rounded-sm shadow-lg mb-4 flex items-center justify-center text-white">
-                    <span>Villa Morgenthau Bathroom</span>
+                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" 
+                        alt="Villa Morgenthau Bathroom"
+                        className="w-full h-full object-cover"
+                      />
+                    </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Das moderne Badezimmer</p>
                 </div>
