@@ -1,3 +1,4 @@
+
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -20,9 +21,11 @@ const About = () => {
             
             <div className="prose prose-lg mx-auto">
               <h2 className="font-serif text-2xl mb-4">Ein Ort mit Geschichte</h2>
-              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.
+              <p className="mb-6">Die Villa Morgenthau wurde ursprünglich als Wohnhaus des Königlichen Waldvogts gebaut und war Teil eines größeren Hofensembles, von dem heute nur noch eine weitere Scheune erhalten ist.</p>
 
-Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
+              <p className="mb-6">Die Villa blickt auf eine bewegte Geschichte zurück und hat im Laufe der Jahrhunderte viele Veränderungen erlebt. Von der ursprünglichen Architektur sind noch zahlreiche historische Elemente erhalten, die dem Haus seinen besonderen Charakter verleihen.</p>
+
+              <p className="mb-6">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
               
               {/* Second photo container with two photos side by side */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -41,7 +44,7 @@ Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der 
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, 
+              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, 
 
 drinnen und draußen
 
