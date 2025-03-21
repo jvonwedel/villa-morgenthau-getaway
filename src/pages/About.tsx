@@ -41,8 +41,11 @@ Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der 
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, Friedenseiche,
-            </p>
+              <p className="mb-6 text-base font-normal">Den einzigartigen Charme durch Kachelofen, Beschläge, 
+
+drinnen und draußen
+
+Friedenseiche,</p>
               
               {/* Gallery button */}
               <div className="flex justify-center my-8">
