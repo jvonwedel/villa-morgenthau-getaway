@@ -1,6 +1,7 @@
 
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
+
 const About = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
@@ -25,4 +26,5 @@ const About = () => {
       </div>
     </section>;
 };
+
 export default About;
