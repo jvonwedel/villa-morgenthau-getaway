@@ -45,12 +45,9 @@ const About = () => {
               
               {/* Gallery button */}
               <div className="flex justify-center my-8">
-                <Button asChild className="gap-2">
-                  <Link to="/gallery">
-                    <Image className="h-4 w-4" />
-                    Zur Galerie
-                  </Link>
-                </Button>
+                <Link to="/gallery" className="btn-secondary">
+                  ZUR GALERIE
+                </Link>
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Unsere Philosophie</h2>
