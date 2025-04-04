@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Location from "./pages/Location";
-import SeekingCalm from "./pages/SeekingCalm";
 import ForActives from "./pages/ForActives";
 import ForFamilies from "./pages/ForFamilies";
 import Gallery from "./pages/Gallery";
@@ -26,7 +25,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/seeking-calm" element={<SeekingCalm />} />
           <Route path="/for-actives" element={<ForActives />} />
           <Route path="/for-families" element={<ForFamilies />} />
           <Route path="/gallery" element={<Gallery />} />

@@ -30,7 +30,7 @@ const Navbar = () => {
     path: '/location',
     label: 'Lage'
   }, {
-    path: '/seeking-calm',
+    path: '/location#erholung',
     label: 'Erholung'
   }, {
     path: '/for-actives',

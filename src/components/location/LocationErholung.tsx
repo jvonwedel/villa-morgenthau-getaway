@@ -24,7 +24,7 @@ const LocationErholung = () => {
   ];
 
   return (
-    <section className="section-padding bg-villa-muted/50">
+    <section id="erholung" className="section-padding bg-villa-muted/50">
       <div className="container-custom">
         <SectionTitle subtitle="ENTSPANNUNG">
           Erholung in der Natur
