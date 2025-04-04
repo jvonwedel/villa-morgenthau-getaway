@@ -104,9 +104,9 @@ const About = () => {
               </div>
               
               <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-12">
-                <Link to="/booking" className="btn-secondary">
+                <a href="https://www.airbnb.de/rooms/1305881991709578029" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   JETZT BUCHEN
-                </Link>
+                </a>
                 <Link to="/gallery" className="btn-secondary">
                   ZUR GALERIE
                 </Link>

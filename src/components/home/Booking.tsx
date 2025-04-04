@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 const Booking = () => {
   return <section className="relative py-24">
