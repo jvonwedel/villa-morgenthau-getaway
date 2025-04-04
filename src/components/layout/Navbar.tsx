@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -20,6 +21,7 @@ const Navbar = () => {
   }, []);
 
   const handleNavLinkClick = (e, path) => {
+    // If we're already on the location page and clicking a hash link
     if (location.pathname === '/location' && path.startsWith('/location#')) {
       e.preventDefault();
       const id = path.split('#')[1];
@@ -35,14 +37,19 @@ const Navbar = () => {
         });
       }
     }
-    if (path === '/') {
-      if (location.pathname === '/') {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
+    
+    // If we're on the same page but clicking a page link without hash 
+    // (e.g. on /about and clicking /about) or clicking the Gallery link
+    if (path === location.pathname || path === '/gallery') {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      // If it's an external path navigation, don't prevent default
+      if (!path.startsWith('/')) return;
+      // Use history push state to update the URL without reloading the page
+      window.history.pushState({}, '', path);
     }
   };
 
