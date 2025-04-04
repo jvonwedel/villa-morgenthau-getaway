@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/home/Hero';
 import About from '../components/home/About';
@@ -10,6 +11,11 @@ import YourStay from '../components/home/YourStay';
 import Booking from '../components/home/Booking';
 
 const Index = () => {
+  useEffect(() => {
+    // Scroll to top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <Layout>
       <Hero />

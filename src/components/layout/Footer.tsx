@@ -30,10 +30,13 @@ const Footer = () => {
       }
     }
     
-    // If we're clicking on the home link, scroll to top
-    if (path === '/') {
-      // If we're already on the home page, scroll to top
-      if (location.pathname === '/') {
+    // If we're clicking a regular page navigation link (without hash)
+    // or we're not already on that page, let the normal navigation happen
+    if (!path.includes('#') || location.pathname !== path.split('#')[0]) {
+      // The default navigation will happen, and we'll handle the scroll in the useEffect of each page
+      
+      // If we're on the same page but clicking the page link (e.g. on /about and clicking /about)
+      if (location.pathname === path) {
         e.preventDefault();
         window.scrollTo({
           top: 0,
@@ -79,8 +82,24 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
-              <li><Link to="/about" className="text-villa-muted hover:text-white transition-colors text-sm">Über die Villa Morgenthau</Link></li>
-              <li><Link to="/location" className="text-villa-muted hover:text-white transition-colors text-sm">Lage</Link></li>
+              <li>
+                <Link 
+                  to="/about" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/about')}
+                >
+                  Über die Villa Morgenthau
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/location" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/location')}
+                >
+                  Lage
+                </Link>
+              </li>
               <li>
                 <Link 
                   to="/location#erholung" 
@@ -114,7 +133,15 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Mehr</h3>
             <ul className="space-y-2">
-              <li><Link to="/gallery" className="text-villa-muted hover:text-white transition-colors text-sm">Galerie</Link></li>
+              <li>
+                <Link 
+                  to="/gallery" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/gallery')}
+                >
+                  Galerie
+                </Link>
+              </li>
               <li>
                 <a 
                   href="https://www.airbnb.de/rooms/1305881991709578029" 
@@ -125,8 +152,24 @@ const Footer = () => {
                   Preise & Buchung
                 </a>
               </li>
-              <li><Link to="/imprint" className="text-villa-muted hover:text-white transition-colors text-sm">Impressum</Link></li>
-              <li><Link to="/privacy" className="text-villa-muted hover:text-white transition-colors text-sm">Datenschutz</Link></li>
+              <li>
+                <Link 
+                  to="/imprint" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/imprint')}
+                >
+                  Impressum
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/privacy" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/privacy')}
+                >
+                  Datenschutz
+                </Link>
+              </li>
             </ul>
           </div>
           
