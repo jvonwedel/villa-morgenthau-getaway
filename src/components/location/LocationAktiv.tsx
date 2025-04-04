@@ -32,10 +32,10 @@ const LocationAktiv = () => {
         
         <div className="mb-8">
           <p className="text-gray-700 mb-6">
-            Die Region um die Villa Morgenthau ist ein wahres Paradies für Aktivurlauber. Erkunden Sie die zahlreichen Wanderwege, die durch Wälder und entlang der Küste führen. Unternehmen Sie ausgedehnte Radtouren durch die malerische Landschaft oder entdecken Sie die Gewässer bei einer Kanutour.
+            Für alle, die im Urlaub nicht nur entspannen, sondern auch was erleben wollen, ist die Villa Morgenthau der perfekte Ausgangspunkt. Die Region bietet eine Fülle an Wassersportmöglichkeiten und Outdoor-Aktivitäten.
           </p>
           <p className="text-gray-700">
-            Für Wassersportbegeisterte bieten die nahe gelegenen Seen und die Ostsee ideale Bedingungen zum Segeln, Kitesurfen und Schwimmen. Die vielfältigen Möglichkeiten für sportliche Aktivitäten machen jeden Tag Ihres Aufenthalts zu einem neuen Abenteuer.
+            Ob Kitesurfen, Windsurfen oder Segeln – sowohl die die Nordsee als auch die Schlei sind echte Paradiese für Wassersportfans. Auch Kajak- und Kanutouren durch die Küstenlandschaft sind ein unvergessliches Erlebnis. Wer lieber an Land aktiv ist, kann die Umgebung per Rad oder Fuß oder Pferd erkunden. Kilometerlange Deiche und malerische Wege laden zu Touren mit frischer Meeresbrise ein.
           </p>
         </div>
         
