@@ -27,15 +27,15 @@ const LocationFamilien = () => {
     <section id="familien" className="section-padding bg-villa-muted/50">
       <div className="container-custom">
         <SectionTitle subtitle="FÜR DIE GANZE FAMILIE">
-          Familienabenteuer erleben
+          Family &amp; Friends
         </SectionTitle>
         
         <div className="mb-8">
           <p className="text-gray-700 mb-6">
-            Die Villa Morgenthau und ihre Umgebung bieten zahlreiche Aktivitäten für Familien mit Kindern jeden Alters. Entdecken Sie gemeinsam die Natur auf kindgerechten Wanderwegen oder besuchen Sie einen der nahegelegenen Tierparks, wo die Kleinen heimische Tiere aus nächster Nähe erleben können.
+            Hier gibt's Platz ohne Ende – für Fußballspiele im Garten, lustige Tischtennis-Matches oder einfach zum Barfuß-Rumrennen. Die Kids können sich austoben, während ihr entspannt in der Hängematte liegt oder gemeinsam den Tag genießt. Alles ganz unkompliziert, so wie es sein soll.
           </p>
           <p className="text-gray-700">
-            Die Strände der Ostsee laden zu Sandburgenbauen und Muschelsuchen ein, während Ausflüge zu historischen Stätten wie dem Wikingermuseum Haithabu Geschichte lebendig werden lassen. Nach einem erlebnisreichen Tag können Sie im großzügigen Garten der Villa entspannen, während die Kinder noch ausreichend Platz zum Spielen haben.
+            Und wenn noch mehr Action gefragt ist: Der Spielplatz vom Hofladen Backensholz ist nur ein paar Minuten entfernt – mit einem riesigen Trampolin, auf dem die Kinder eine Menge Spaß haben, während ihr euren Drink genießt. Und wenn das Wetter mal nicht mitspielt ist auch drinnen genug Platz. Wobei, Wattenmeer bei nordfriesischem Regen ist auch eine unvergessliche Kombi. Wir wünschen euch viel Spaß zusammen!
           </p>
         </div>
         
