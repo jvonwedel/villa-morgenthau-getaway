@@ -1,3 +1,4 @@
+
 import SectionTitle from '../ui/SectionTitle';
 const LocationContent = () => {
   return <section className="section-padding bg-white">
@@ -52,9 +53,11 @@ const LocationContent = () => {
           </div>
           
           <div>
-            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
-              
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
+              alt="Landschaft in der Umgebung"
+              className="w-full h-full object-cover rounded-sm shadow-lg"
+            />
           </div>
         </div>
       </div>
