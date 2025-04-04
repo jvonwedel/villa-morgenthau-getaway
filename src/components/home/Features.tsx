@@ -11,7 +11,7 @@ const features = [
   {
     title: 'Spaß, Sport & Action',
     description: 'Abenteuer wartet an jeder Ecke. Erkunde die Kanuwanderwege, das Wilde Moor, das Wattenmeer oder die Schlei. Es ist für jeden was dabei. Kiten, Segeln oder Radfahren, alles nur einen Steinwurf von der Villa Morgenthau entfernt.',
-    link: '/for-actives'
+    link: '/location#aktiv'
   },
   {
     title: 'Family & Friends',
@@ -30,7 +30,21 @@ const Features = () => {
       const id = path.split('#')[1];
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        // Get the navbar height to offset the scroll position
+        const navbar = document.querySelector('header');
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        
+        // Calculate the element's position relative to the viewport
+        const elementPosition = element.getBoundingClientRect().top;
+        
+        // Calculate the position to scroll to (element position + current scroll - navbar height)
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        
+        // Scroll to the element with the offset
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     }
   };

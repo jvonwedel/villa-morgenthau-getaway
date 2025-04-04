@@ -12,7 +12,21 @@ const Footer = () => {
       const id = path.split('#')[1];
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        // Get the navbar height to offset the scroll position
+        const navbar = document.querySelector('header');
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        
+        // Calculate the element's position relative to the viewport
+        const elementPosition = element.getBoundingClientRect().top;
+        
+        // Calculate the position to scroll to (element position + current scroll - navbar height)
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        
+        // Scroll to the element with the offset
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     }
   };
@@ -55,7 +69,15 @@ const Footer = () => {
                   Entspannung
                 </Link>
               </li>
-              <li><Link to="/for-actives" className="text-villa-muted hover:text-white transition-colors text-sm">Für Aktive</Link></li>
+              <li>
+                <Link 
+                  to="/location#aktiv" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/location#aktiv')}
+                >
+                  Aktiv
+                </Link>
+              </li>
               <li><Link to="/for-families" className="text-villa-muted hover:text-white transition-colors text-sm">Für Familien</Link></li>
             </ul>
           </div>
