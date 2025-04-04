@@ -27,7 +27,7 @@ const LocationAktiv = () => {
     <section id="aktiv" className="section-padding bg-white">
       <div className="container-custom">
         <SectionTitle subtitle="FÜR AKTIVE">
-          Aktiv die Umgebung erkunden
+          Spaß, Sport &amp; Action
         </SectionTitle>
         
         <div className="mb-8">
