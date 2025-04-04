@@ -1,21 +1,19 @@
-
 import SectionTitle from '../ui/SectionTitle';
-
 const LocationContent = () => {
-  return (
-    <section className="section-padding bg-white">
+  return <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionTitle subtitle="ENTDECKE DIE UMGEBUNG">
               Der ideale Ausgangspunkt für Erkundungen
             </SectionTitle>
             
-            <p className="text-gray-700 mb-6">Die Villa Morgenthau liegt in einer der malerischsten Regionen Deutschlands und bietet eine perfekte Mischung aus "Natur pur" und kulturellem Reichtum. Die Lage der Villa Morgenthau ermöglicht Ruhesuchenden die Abgeschiedenheit und Weite, die es braucht, um wirklich runterzufahren, aber auch zahlreiche Sehenswürdigkeiten und Aktivitäten sind unweit der Villa Morgenthau gelegen, so dass wirklich für jeden etwas dabei ist. </p>
+            <p className="text-gray-700 mb-6">Die Villa Morgenthau liegt in einer der malerischsten Regionen Deutschlands und bietet eine perfekte Mischung aus "Natur pur" und ganz viel Abwechslung für die Action Junkies unter euch. Die Lage der Villa Morgenthau ermöglicht es, wirklich runterzufahren aber durch die ganzen Sehenswürdigkeiten und Aktivitäten rundum muss keine Langeweile aufkommen. So ist für jeden was dabei.
+          </p>
             
-            <p className="text-gray-700 mb-6">In kurzer Fahrzeit finden Sie charmante Dörfer mit lokalen Hofläden, Restaurants, die authentische Küche servieren, zahlreiche Wassersportmöglichkeiten, aber auch kulturelle Stätten wie das Wikingermuseum Haithabu, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden darüberhinaus die Nähe zu (Kanu-)Wanderwegen, dem Wattenmeer und dem geschützten Gebietverband Natura2000 zu schätzen wissen.</p>
+            <p className="text-gray-700 mb-6">In kurzer Fahrzeit finden sich charmante Dörfer mit lokalen Hofläden, Restaurants, die nordische Küche servieren, ganz viele Wassersportmöglichkeiten, aber auch kulturelle Stätten wie das Wikingermuseum Haithabu, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden darüberhinaus die Nähe zu (Kanu-)Wanderwegen, dem Wattenmeer und dem geschützten Gebietverband Natura2000 zu schätzen wissen.</p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-villa-muted p-4 rounded-sm">
                 <h3 className="font-medium mb-2">Sehenswürdigkeiten in der Nähe</h3>
                 <ul className="space-y-2">
@@ -53,10 +51,14 @@ const LocationContent = () => {
               </div>
             </div>
           </div>
+          
+          <div>
+            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
+              
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LocationContent;
