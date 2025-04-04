@@ -55,8 +55,12 @@ const LocationContent = () => {
           </div>
           
           <div>
-            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
-              <span>Umgebung der Villa Morgenthau</span>
+            <div className="w-full aspect-[4/3] overflow-hidden rounded-sm shadow-lg">
+              <img 
+                src="https://imgur.com/jr0pTw1.jpg" 
+                alt="Umgebung der Villa Morgenthau" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
             </div>
           </div>
         </div>
