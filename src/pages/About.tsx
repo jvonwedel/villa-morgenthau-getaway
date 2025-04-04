@@ -1,10 +1,8 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-
 const About = () => {
   return <Layout>
       <section className="section-padding bg-white">
@@ -15,11 +13,7 @@ const About = () => {
             {/* First photo container as a placeholder */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img 
-                  src="/placeholder.svg" 
-                  alt="Villa Morgenthau Historical Photo"
-                  className="w-full h-auto object-contain"
-                />
+                <img src="/placeholder.svg" alt="Villa Morgenthau Historical Photo" className="w-full h-auto object-contain" />
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
@@ -38,12 +32,8 @@ const About = () => {
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" 
-                        alt="Villa Morgenthau Renovation"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
@@ -51,12 +41,8 @@ const About = () => {
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png" 
-                        alt="Villa Morgenthau Garden View"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Umbau der offenen Küche</p>
@@ -67,34 +53,25 @@ const About = () => {
             </p>
               
               <div className="flex justify-center my-12">
-                <a 
-                  href="https://www.instagram.com/villamorgenthau/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="btn-secondary"
-                >
+                <a href="https://www.instagram.com/villamorgenthau/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   VILLA MORGENTHAU AUF INSTAGRAM
                 </a>
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
               
-              <p className="mb-6">Den einzigartigen Charme durch Kachelofen, Beschläge, drinnen und draußen Friedenseiche.</p>
+              <p className="mb-6">Hier, mitten in der Natur, ist Platz zum Durchatmen und Abschalten. Drinnen sorgt der Kachelofen für wohlige Wärme und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist. Die Möbel sind mit Liebe ausgewählt – gemütlich, stilvoll, aber nicht überladen.
+            </p>
 
-              <p className="mb-6">Wir haben mit der Villa Morgenthau eine Umgebung geschaffen, in der Gäste vom hektischen Tempo des modernen Lebens abschalten und wieder zu sich finden können. Jeder Raum wurde sorgfältig und mit Liebe zum Detail gestaltet, von den modernen Bädern und Schlafzimmern bis hin zur vollausgestattete Küche mit Kücheninsel, die zu geselligen Kochabenden einlädt. Und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist.</p>
+              <p className="mb-6">Draußen erstreckt sich der große Garten mit alten Bäumen und viel Grün. Ein Ort, an dem man sofort ankommt, an dem die Zeit ein bisschen langsamer läuft und man sich einfach wohlfühlt. Im Liegestuhl in der Sonne ein Buch lesen, währen die Kinder Fussball spielen oder Käfer und Mini-Frösche im Beet entdecken. Oder in der Hängematte liegen und träumen. Alles möglich. Und am Rande der großen Wiese steht die alte Friedenseiche – als wäre sie schon immer da gewesen, um Ruhe zu schenken.</p>
               
-              <p className="mb-12">Nachhaltigkeit steht im Mittelpunkt unseres Bemühens. 
-Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob Bärlauch und Beeren im Frühling, Quitten und Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst: der Garten bietet vielfältige Möglichkeiten, lokale Gerichte zuzubereiten.</p>
+              <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Erne ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
 
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/13f904f9-f40c-4e0f-a509-815c2d2221ce.png" 
-                        alt="Villa Morgenthau Living Room"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/13f904f9-f40c-4e0f-a509-815c2d2221ce.png" alt="Villa Morgenthau Living Room" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Der gemütliche Wohnbereich</p>
@@ -102,12 +79,8 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" 
-                        alt="Villa Morgenthau Kitchen"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" alt="Villa Morgenthau Kitchen" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Die moderne Küche</p>
@@ -115,12 +88,8 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" 
-                        alt="Villa Morgenthau Bedroom"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" alt="Villa Morgenthau Bedroom" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Ein komfortables Schlafzimmer</p>
@@ -128,12 +97,8 @@ Unsere Gäste sind herzlich eingeladen, die Früchte des Gartens zu nutzen. Ob B
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4/3}>
-                      <img 
-                        src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" 
-                        alt="Villa Morgenthau Bathroom"
-                        className="w-full h-full object-cover"
-                      />
+                    <AspectRatio ratio={4 / 3}>
+                      <img src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" alt="Villa Morgenthau Bathroom" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Das moderne Badezimmer</p>
