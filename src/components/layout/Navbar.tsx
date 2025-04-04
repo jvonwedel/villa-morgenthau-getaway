@@ -38,9 +38,24 @@ const Navbar = () => {
       }
     }
     
+    // For Gallery link, ensure we always scroll to top
+    if (path === '/gallery') {
+      e.preventDefault();
+      // First navigate to the page if not already there
+      if (location.pathname !== '/gallery') {
+        window.history.pushState({}, '', path);
+      }
+      // Then scroll to top immediately
+      window.scrollTo({
+        top: 0,
+        behavior: 'auto'  // Changed from 'smooth' to ensure it happens immediately
+      });
+      return;
+    }
+    
     // If we're on the same page but clicking a page link without hash 
-    // (e.g. on /about and clicking /about) or clicking the Gallery link
-    if (path === location.pathname || path === '/gallery') {
+    // (e.g. on /about and clicking /about)
+    if (path === location.pathname) {
       e.preventDefault();
       window.scrollTo({
         top: 0,

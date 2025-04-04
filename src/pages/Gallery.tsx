@@ -5,8 +5,11 @@ import GalleryGrid from '../components/gallery/GalleryGrid';
 
 const Gallery = () => {
   useEffect(() => {
-    // Scroll to top when the Gallery component mounts
-    window.scrollTo(0, 0);
+    // Scroll to top when the Gallery component mounts - using immediate execution
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'  // Changed from 'smooth' to ensure it happens immediately
+    });
   }, []);
 
   return (

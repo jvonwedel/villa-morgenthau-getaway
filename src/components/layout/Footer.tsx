@@ -6,6 +6,21 @@ const Footer = () => {
   const location = useLocation();
 
   const handleNavLinkClick = (e, path) => {
+    // For Gallery links, ensure we always scroll to top
+    if (path === '/gallery') {
+      e.preventDefault();
+      // First navigate to the page if not already there
+      if (location.pathname !== '/gallery') {
+        window.history.pushState({}, '', path);
+      }
+      // Then scroll to top immediately
+      window.scrollTo({
+        top: 0,
+        behavior: 'auto'  // Use 'auto' instead of 'smooth' for immediate scroll
+      });
+      return;
+    }
+    
     // If we're already on the location page and clicking a hash link
     if (location.pathname === '/location' && path.startsWith('/location#')) {
       e.preventDefault();
@@ -30,19 +45,13 @@ const Footer = () => {
       }
     }
     
-    // If we're clicking a regular page navigation link (without hash)
-    // or we're not already on that page, let the normal navigation happen
-    if (!path.includes('#') || location.pathname !== path.split('#')[0]) {
-      // The default navigation will happen, and we'll handle the scroll in the useEffect of each page
-      
-      // If we're on the same page but clicking the page link (e.g. on /about and clicking /about)
-      if (location.pathname === path) {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
+    // If we're on the same page but clicking the page link (e.g. on /about and clicking /about)
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   };
 
