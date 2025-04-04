@@ -1,7 +1,8 @@
 
 import SectionTitle from '../ui/SectionTitle';
 const LocationContent = () => {
-  return <section className="section-padding bg-white">
+  return (
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -51,16 +52,9 @@ const LocationContent = () => {
               </div>
             </div>
           </div>
-          
-          <div>
-            <img 
-              src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
-              alt="Landschaft in der Umgebung"
-              className="w-full h-full object-cover rounded-sm shadow-lg"
-            />
-          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default LocationContent;
