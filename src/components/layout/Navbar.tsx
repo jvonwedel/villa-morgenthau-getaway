@@ -20,6 +20,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavLinkClick = (e, path) => {
+    // If we're already on the location page and clicking a hash link
+    if (location.pathname === '/location' && path.startsWith('/location#')) {
+      e.preventDefault();
+      const id = path.split('#')[1];
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   const navLinks = [{
     path: '/',
     label: 'Home'
@@ -55,7 +67,12 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map(link => (
-            <Link key={link.path} to={link.path} className="navbar-link">
+            <Link 
+              key={link.path} 
+              to={link.path} 
+              className="navbar-link"
+              onClick={(e) => handleNavLinkClick(e, link.path)}
+            >
               {link.label}
             </Link>
           ))}
@@ -75,7 +92,10 @@ const Navbar = () => {
                   key={link.path} 
                   to={link.path} 
                   className={`text-lg ${location.pathname === link.path ? 'text-accent' : 'text-foreground'}`} 
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    handleNavLinkClick(e, link.path);
+                    setIsOpen(false);
+                  }}
                 >
                   {link.label}
                 </Link>

@@ -1,6 +1,6 @@
 
 import SectionTitle from '../ui/SectionTitle';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const features = [
   {
@@ -21,6 +21,20 @@ const features = [
 ];
 
 const Features = () => {
+  const location = useLocation();
+
+  const handleFeatureLinkClick = (e, path) => {
+    // If we're already on the location page and clicking a hash link
+    if (location.pathname === '/location' && path.startsWith('/location#')) {
+      e.preventDefault();
+      const id = path.split('#')[1];
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <section className="section-padding pb-8 bg-villa-muted">
       <div className="container-custom">
@@ -36,6 +50,7 @@ const Features = () => {
               <Link 
                 to={feature.link} 
                 className="text-villa-dark font-medium inline-flex items-center group-hover:text-villa-accent transition-colors"
+                onClick={(e) => handleFeatureLinkClick(e, feature.link)}
               >
                 Mehr entdecken
                 <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -1,8 +1,22 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
 
 const Footer = () => {
+  const location = useLocation();
+
+  const handleNavLinkClick = (e, path) => {
+    // If we're already on the location page and clicking a hash link
+    if (location.pathname === '/location' && path.startsWith('/location#')) {
+      e.preventDefault();
+      const id = path.split('#')[1];
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-villa-dark text-white pt-16 pb-8">
       <div className="container-custom">
@@ -32,7 +46,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-villa-muted hover:text-white transition-colors text-sm">Über die Villa Morgenthau</Link></li>
               <li><Link to="/location" className="text-villa-muted hover:text-white transition-colors text-sm">Lage</Link></li>
-              <li><Link to="/seeking-calm" className="text-villa-muted hover:text-white transition-colors text-sm">Entspannung</Link></li>
+              <li>
+                <Link 
+                  to="/location#erholung" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/location#erholung')}
+                >
+                  Entspannung
+                </Link>
+              </li>
               <li><Link to="/for-actives" className="text-villa-muted hover:text-white transition-colors text-sm">Für Aktive</Link></li>
               <li><Link to="/for-families" className="text-villa-muted hover:text-white transition-colors text-sm">Für Familien</Link></li>
             </ul>
