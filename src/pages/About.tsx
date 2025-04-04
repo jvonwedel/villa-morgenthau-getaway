@@ -50,9 +50,6 @@ const About = () => {
                 </div>
               </div>
               
-              <p className="mb-6 text-base font-normal">Wenn du Vorher-Nachher-Stories magst und mehr über die Renovierung erfahren willst, schau gern auf dem Instagram Kanal der Villa Morgenthau vorbei.
-            </p>
-              
               <div className="flex justify-center my-12">
                 <a href="https://www.instagram.com/villamorgenthau/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   VILLA MORGENTHAU AUF INSTAGRAM
