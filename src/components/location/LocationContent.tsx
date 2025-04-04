@@ -8,7 +8,7 @@ const LocationContent = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionTitle subtitle="ENTDECKE DIE UMGEBUNG">
-              Der ideale Ausgangspunkt für Erkundungen
+              Zwischen Tiefenentspannung und neuen Entdeckungen
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">Die Villa Morgenthau liegt in einer der malerischsten Regionen Deutschlands und bietet eine perfekte Mischung aus "Natur pur" und kulturellem Reichtum. Die Lage der Villa Morgenthau ermöglicht Ruhesuchenden die Abgeschiedenheit und Weite, die es braucht, um wirklich runterzufahren, aber auch zahlreiche Sehenswürdigkeiten und Aktivitäten sind unweit der Villa Morgenthau gelegen, so dass wirklich für jeden etwas dabei ist. </p>
