@@ -41,7 +41,7 @@ const LocationFamilien = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-md">
+            <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
               <AspectRatio ratio={1/1}>
                 <img 
                   src={image.url} 
