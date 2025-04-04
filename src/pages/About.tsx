@@ -34,7 +34,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/5075dc92-2d80-4397-9783-ef683a9b4b1b.png" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/TFcqcQT.jpg" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
@@ -43,7 +43,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/62695490-bf30-44c0-8597-9f167833fab9.png" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/rtYorDY.jpg" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Umbau der offenen Küche</p>
