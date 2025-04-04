@@ -69,37 +69,37 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/13f904f9-f40c-4e0f-a509-815c2d2221ce.png" alt="Villa Morgenthau Living Room" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/cKx6mNe.jpg" alt="Villa Morgenthau Living Room" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
-                  <p className="text-sm text-gray-500 italic text-center">Der gemütliche Wohnbereich</p>
+                  <p className="text-sm text-gray-500 italic text-center">Der gemütliche Kachelofen</p>
                 </div>
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/b738799a-4fa8-4d26-abda-46f6d01759b0.jpg" alt="Villa Morgenthau Kitchen" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/rOnWSwD.jpg" alt="Villa Morgenthau Kitchen" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
-                  <p className="text-sm text-gray-500 italic text-center">Die moderne Küche</p>
+                  <p className="text-sm text-gray-500 italic text-center">Die offene Küche</p>
                 </div>
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" alt="Villa Morgenthau Bedroom" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/6zbk18W.jpg" alt="Villa Morgenthau Bedroom" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
-                  <p className="text-sm text-gray-500 italic text-center">Ein komfortables Schlafzimmer</p>
+                  <p className="text-sm text-gray-500 italic text-center">Ein Schlafzimmer</p>
                 </div>
                 
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/lovable-uploads/71dbca85-9bcc-455e-a5f0-d3f2805eec03.png" alt="Villa Morgenthau Bathroom" className="w-full h-full object-cover" />
+                      <img src="https://i.imgur.com/peeM1qe.jpg" alt="Villa Morgenthau Bathroom" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
-                  <p className="text-sm text-gray-500 italic text-center">Das moderne Badezimmer</p>
+                  <p className="text-sm text-gray-500 italic text-center">Die Bibliothek</p>
                 </div>
               </div>
               
