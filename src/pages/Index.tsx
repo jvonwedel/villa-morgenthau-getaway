@@ -6,6 +6,7 @@ import Features from '../components/home/Features';
 import Gallery from '../components/home/Gallery';
 import Testimonials from '../components/home/Testimonials';
 import Location from '../components/home/Location';
+import YourStay from '../components/home/YourStay';
 import Booking from '../components/home/Booking';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <About />
       <Features />
       <Location />
+      <YourStay />
       <Testimonials />
       <Gallery />
       <Booking />
