@@ -14,7 +14,7 @@ const LocationContent = () => {
             
             <p className="text-gray-700 mb-6">In kurzer Fahrzeit finden sich charmante Dörfer mit lokalen Hofläden, Restaurants, die nordische Küche servieren, ganz viele Wassersportmöglichkeiten, aber auch kulturelle Stätten wie das Wikingermuseum Haithabu, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden darüberhinaus die Nähe zu (Kanu-)Wanderwegen, dem Wattenmeer und dem geschützten Gebietverband Natura 2000 zu schätzen wissen.</p>
 
-            <p className="text-gray-700 mb-12">Sylt ist mit dem Zug von Husum in einer Stunde erreichbar, Sankt Peter Ording ist auch immer einen Ausflug wert und auch Tønder und Rømø bieten sich für einen (Tages-)Ausflug an.</p>
+            <p className="text-gray-700 mb-12">Sylt ist mit dem Zug von Husum in knapp einer Stunde erreichbar, Sankt Peter-Ording ist sowieso immer einen Ausflug wert und die Halligen (allen voran die Hamburger Hallig) legen wir euch auch ans Herz. Wir ihr seht: viel zu tun.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div className="bg-villa-muted p-4 rounded-sm">
