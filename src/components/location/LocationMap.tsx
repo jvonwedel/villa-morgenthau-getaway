@@ -46,53 +46,10 @@ const LocationMap = () => {
     <section className="section-padding bg-villa-muted">
       <div className="container-custom">
         <SectionTitle subtitle="AKTIVITÄTEN IN DER NÄHE" centered>
-          Erkunden Sie die Umgebung
+          So viel zu entdecken
         </SectionTitle>
         
-        <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
-          Entdecken Sie die besten Aktivitäten und Attraktionen in der Umgebung der Villa Morgenthau. Unsere Lage bietet die perfekte Mischung aus Entspannung und Abenteuer.
-        </p>
-        
-        <div className="relative w-full aspect-[16/9] bg-white rounded-lg shadow-lg overflow-hidden mb-12">
-          {/* Map Placeholder */}
-          <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-            <span className="text-villa-dark">Interaktive Karte der Villa Morgenthau Umgebung</span>
-          </div>
-          
-          {/* Location Pins */}
-          {attractions.map((attraction, index) => (
-            <div 
-              key={index}
-              className="absolute group cursor-pointer transition-transform hover:scale-105"
-              style={{ 
-                top: attraction.coords.top, 
-                left: attraction.coords.left 
-              }}
-            >
-              <div className="relative">
-                <MapPin className="h-8 w-8 text-villa-accent drop-shadow-md" />
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-white p-3 rounded-sm shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                  <h4 className="font-medium text-sm">{attraction.name}</h4>
-                  <p className="text-xs text-gray-600 mt-1">{attraction.description}</p>
-                  <p className="text-xs font-medium text-villa-accent mt-1">{attraction.distance}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-          
-          {/* Villa Location */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-            <div className="relative group">
-              <div className="h-5 w-5 bg-villa-dark rounded-full border-2 border-white shadow-lg pulse animate-pulse"></div>
-              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-villa-dark p-3 rounded-sm shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                <h4 className="font-medium text-sm text-white">Villa Morgenthau</h4>
-                <p className="text-xs text-white/80 mt-1">Ihr perfekter Urlaubsrückzugsort</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {attractions.map((attraction, index) => (
             <div key={index} className="bg-white p-6 rounded-sm shadow-md hover:shadow-lg transition-shadow">
               <h3 className="font-medium mb-2 flex items-center">
