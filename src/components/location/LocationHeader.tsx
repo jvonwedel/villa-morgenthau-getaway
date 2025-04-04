@@ -17,7 +17,7 @@ const LocationHeader = () => {
       
       <div className="container-custom relative h-full flex flex-col justify-center">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Einmalige Lage</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Zwischen Tiefenentspannung und neuen Entdeckungen</h1>
         </div>
       </div>
     </section>;

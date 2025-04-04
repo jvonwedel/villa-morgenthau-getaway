@@ -1,3 +1,4 @@
+
 import SectionTitle from '../ui/SectionTitle';
 const LocationContent = () => {
   return <section className="section-padding bg-white">
@@ -5,7 +6,7 @@ const LocationContent = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionTitle subtitle="ENTDECKE DIE UMGEBUNG">
-              Der ideale Ausgangspunkt für Erkundungen
+              Einmalige Lage
             </SectionTitle>
             
             <p className="text-gray-700 mb-6">Die Villa Morgenthau liegt in einer der malerischsten Regionen Deutschlands und bietet eine perfekte Mischung aus "Natur pur" und ganz viel Abwechslung für die Action Junkies unter euch. Die Lage der Villa Morgenthau ermöglicht es, wirklich runterzufahren aber durch die ganzen Sehenswürdigkeiten und Aktivitäten rundum muss keine Langeweile aufkommen. So ist für jeden was dabei.
