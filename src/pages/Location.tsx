@@ -11,10 +11,10 @@ const Location = () => {
   return (
     <Layout>
       <LocationContent />
+      <LocationMap />
       <LocationErholung />
       <LocationAktiv />
       <LocationFamilien />
-      <LocationMap />
       <LocationGallery />
     </Layout>
   );
