@@ -66,7 +66,14 @@ const About = () => {
             </p>
               
               <div className="flex justify-center my-12">
-                <a href="https://www.instagram.com/villamorgenthau/" target="_blank" rel="noopener noreferrer" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM</a>
+                <a 
+                  href="https://www.instagram.com/villamorgenthau/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2"
+                >
+                  VILLA MORGENTHAU AUF INSTAGRAM
+                </a>
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
