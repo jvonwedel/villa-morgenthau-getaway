@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom';
-import { Camera } from 'lucide-react';
 import { Button } from '../ui/button';
 import SectionTitle from '../ui/SectionTitle';
 
@@ -49,9 +48,10 @@ const LocationGallery = () => {
         
         <div className="text-center mt-10">
           <Link to="/gallery">
-            <Button variant="outline" size="lg" className="border-villa-dark text-villa-dark hover:bg-villa-dark hover:text-white">
-              <Camera className="mr-2" />
-              Zur Galerie "Umgebung"
+            <Button 
+              className="btn-secondary"
+            >
+              Zeig mir mehr
             </Button>
           </Link>
         </div>
