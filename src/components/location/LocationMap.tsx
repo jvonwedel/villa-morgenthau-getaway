@@ -43,13 +43,13 @@ const attractions = [
 
 const LocationMap = () => {
   return (
-    <section className="section-padding bg-villa-muted">
+    <section className="section-padding bg-villa-muted py-10">
       <div className="container-custom">
         <SectionTitle subtitle="AKTIVITÄTEN IN DER NÄHE" centered>
           So viel zu entdecken
         </SectionTitle>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {attractions.map((attraction, index) => (
             <div key={index} className="bg-white p-6 rounded-sm shadow-md hover:shadow-lg transition-shadow">
               <h3 className="font-medium mb-2 flex items-center">

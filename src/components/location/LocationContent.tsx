@@ -15,7 +15,7 @@ const LocationContent = () => {
             
             <p className="text-gray-700 mb-6">In kurzer Fahrzeit finden Sie charmante Dörfer mit lokalen Hofläden, Restaurants, die authentische Küche servieren, zahlreiche Wassersportmöglichkeiten, aber auch kulturelle Stätten wie das Wikingermuseum Haithabu, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden darüberhinaus die Nähe zu (Kanu-)Wanderwegen, dem Wattenmeer und dem geschützten Gebietverband Natura2000 zu schätzen wissen.</p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
               <div className="bg-villa-muted p-4 rounded-sm">
                 <h3 className="font-medium mb-2">Sehenswürdigkeiten in der Nähe</h3>
                 <ul className="space-y-2">
