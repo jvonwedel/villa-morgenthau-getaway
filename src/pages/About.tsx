@@ -66,7 +66,7 @@ const About = () => {
             </p>
               
               <div className="flex justify-center my-12">
-                <Link to="/gallery" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM</Link>
+                <a href="https://www.instagram.com/villamorgenthau/" target="_blank" rel="noopener noreferrer" className="btn-secondary">VILLA MORGENTHAU AUF INSTAGRAM</a>
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>

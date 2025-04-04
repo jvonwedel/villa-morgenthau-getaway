@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,6 +14,17 @@ const Footer = () => {
             <p className="text-villa-muted mt-4 text-sm">
               Villa Morgenthau - ein historisches Ferienhaus von 1867. Dein Hideaway inmitten der Natur & zwischen den Meeren.
             </p>
+            <div className="mt-4">
+              <a 
+                href="https://www.instagram.com/villamorgenthau/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-villa-muted hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <Instagram size={20} />
+                <span className="text-sm">Instagram</span>
+              </a>
+            </div>
           </div>
           
           <div>
