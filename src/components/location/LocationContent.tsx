@@ -1,9 +1,10 @@
 
 import SectionTitle from '../ui/SectionTitle';
+
 const LocationContent = () => {
   return <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 gap-12 items-center">
           <div>
             <SectionTitle subtitle="ENTDECKE DIE UMGEBUNG">
               Einmalige Lage
@@ -52,14 +53,9 @@ const LocationContent = () => {
               </div>
             </div>
           </div>
-          
-          <div>
-            <div className="w-full aspect-[4/3] bg-villa-dark rounded-sm shadow-lg flex items-center justify-center text-white">
-              
-            </div>
-          </div>
         </div>
       </div>
     </section>;
 };
+
 export default LocationContent;
