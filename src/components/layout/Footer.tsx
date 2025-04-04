@@ -52,7 +52,7 @@ const Footer = () => {
               <span className="text-2xl font-serif text-white">Villa Morgenthau</span>
             </div>
             <p className="text-villa-muted mt-4 text-sm">
-              Villa Morgenthau - ein historisches Ferienhaus von 1867. Dein Hideaway inmitten der Natur & zwischen den Meeren.
+              Villa Morgenthau - Dein Hideaway zwischen den Meeren.
             </p>
             <div className="mt-4">
               <a 
