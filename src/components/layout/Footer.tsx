@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
 
@@ -78,7 +77,15 @@ const Footer = () => {
                   Aktiv
                 </Link>
               </li>
-              <li><Link to="/for-families" className="text-villa-muted hover:text-white transition-colors text-sm">Für Familien</Link></li>
+              <li>
+                <Link 
+                  to="/location#familien" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/location#familien')}
+                >
+                  Für Familien
+                </Link>
+              </li>
             </ul>
           </div>
           

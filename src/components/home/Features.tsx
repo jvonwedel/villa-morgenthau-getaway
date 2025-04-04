@@ -16,7 +16,7 @@ const features = [
   {
     title: 'Family & Friends',
     description: 'Stockbrot über dem Lagerfeuer, ein Tischtennisturnier oder im Wattenmeer im Matsch waten. So viele Möglichkeiten. Und bei schlechtem Wetter lädt die große Küche zu Kochspaß, die Tafel zu Mensch-ärger-dich-nicht und der Kachelofen zum Träumen ein.',
-    link: '/for-families'
+    link: '/location#familien'
   }
 ];
 

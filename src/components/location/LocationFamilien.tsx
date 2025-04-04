@@ -24,7 +24,7 @@ const LocationFamilien = () => {
   ];
 
   return (
-    <section className="section-padding bg-villa-muted/50">
+    <section id="familien" className="section-padding bg-villa-muted/50">
       <div className="container-custom">
         <SectionTitle subtitle="FÜR DIE GANZE FAMILIE">
           Familienabenteuer erleben
