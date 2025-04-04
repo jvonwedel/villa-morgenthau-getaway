@@ -115,7 +115,16 @@ const Footer = () => {
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Mehr</h3>
             <ul className="space-y-2">
               <li><Link to="/gallery" className="text-villa-muted hover:text-white transition-colors text-sm">Galerie</Link></li>
-              <li><Link to="/booking" className="text-villa-muted hover:text-white transition-colors text-sm">Preise & Buchung</Link></li>
+              <li>
+                <a 
+                  href="https://www.airbnb.de/rooms/1305881991709578029" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                >
+                  Preise & Buchung
+                </a>
+              </li>
               <li><Link to="/imprint" className="text-villa-muted hover:text-white transition-colors text-sm">Impressum</Link></li>
               <li><Link to="/privacy" className="text-villa-muted hover:text-white transition-colors text-sm">Datenschutz</Link></li>
             </ul>
