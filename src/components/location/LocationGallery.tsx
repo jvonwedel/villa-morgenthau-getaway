@@ -49,7 +49,7 @@ const LocationGallery = () => {
         <div className="text-center mt-10">
           <Link to="/gallery" className="inline-block">
             <Button 
-              className="bg-transparent border border-villa-dark text-villa-dark hover:bg-villa-dark hover:text-white px-6 py-3 rounded-sm transition-all duration-300 text-center text-sm uppercase tracking-wider font-medium"
+              className="bg-transparent border border-villa-dark text-villa-dark hover:bg-villa-dark hover:text-white px-6 py-3 rounded-sm transition-all duration-300 text-center text-sm uppercase tracking-wider"
             >
               Zeig mir mehr
             </Button>
