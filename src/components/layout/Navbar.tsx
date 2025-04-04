@@ -39,9 +39,6 @@ const Navbar = () => {
     path: '/for-families',
     label: 'Familien'
   }, {
-    path: '/your-stay',
-    label: 'Aufenthalt'
-  }, {
     path: '/gallery',
     label: 'Galerie'
   }, {

@@ -41,7 +41,6 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Mehr</h3>
             <ul className="space-y-2">
-              <li><Link to="/your-stay" className="text-villa-muted hover:text-white transition-colors text-sm">Dein Aufenthalt</Link></li>
               <li><Link to="/gallery" className="text-villa-muted hover:text-white transition-colors text-sm">Galerie</Link></li>
               <li><Link to="/booking" className="text-villa-muted hover:text-white transition-colors text-sm">Preise & Buchung</Link></li>
               <li><Link to="/imprint" className="text-villa-muted hover:text-white transition-colors text-sm">Impressum</Link></li>

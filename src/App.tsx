@@ -11,7 +11,6 @@ import Location from "./pages/Location";
 import SeekingCalm from "./pages/SeekingCalm";
 import ForActives from "./pages/ForActives";
 import ForFamilies from "./pages/ForFamilies";
-import YourStay from "./pages/YourStay";
 import Gallery from "./pages/Gallery";
 import Booking from "./pages/Booking";
 
@@ -30,7 +29,6 @@ const App = () => (
           <Route path="/seeking-calm" element={<SeekingCalm />} />
           <Route path="/for-actives" element={<ForActives />} />
           <Route path="/for-families" element={<ForFamilies />} />
-          <Route path="/your-stay" element={<YourStay />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/booking" element={<Booking />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
