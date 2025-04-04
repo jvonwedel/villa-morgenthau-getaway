@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
 
@@ -24,6 +25,18 @@ const Footer = () => {
         // Scroll to the element with the offset
         window.scrollTo({
           top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+    
+    // If we're clicking on the home link, scroll to top
+    if (path === '/') {
+      // If we're already on the home page, scroll to top
+      if (location.pathname === '/') {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
           behavior: 'smooth'
         });
       }
@@ -57,6 +70,15 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-lg mb-4 border-b border-villa-accent pb-2 inline-block">Entdecken</h3>
             <ul className="space-y-2">
+              <li>
+                <Link 
+                  to="/" 
+                  className="text-villa-muted hover:text-white transition-colors text-sm"
+                  onClick={(e) => handleNavLinkClick(e, '/')}
+                >
+                  Home
+                </Link>
+              </li>
               <li><Link to="/about" className="text-villa-muted hover:text-white transition-colors text-sm">Über die Villa Morgenthau</Link></li>
               <li><Link to="/location" className="text-villa-muted hover:text-white transition-colors text-sm">Lage</Link></li>
               <li>

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -39,6 +40,18 @@ const Navbar = () => {
         // Scroll to the element with the offset
         window.scrollTo({
           top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+    
+    // If we're clicking on the home link, scroll to top
+    if (path === '/') {
+      // If we're already on the home page, scroll to top
+      if (location.pathname === '/') {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
           behavior: 'smooth'
         });
       }
