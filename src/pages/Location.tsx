@@ -22,7 +22,21 @@ const Location = () => {
       if (element) {
         // Add a small delay to ensure the page is fully loaded
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          // Get the navbar height to offset the scroll position
+          const navbar = document.querySelector('header');
+          const navbarHeight = navbar ? navbar.offsetHeight : 0;
+          
+          // Calculate the element's position relative to the viewport
+          const elementPosition = element.getBoundingClientRect().top;
+          
+          // Calculate the position to scroll to (element position + current scroll - navbar height)
+          const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+          
+          // Scroll to the element with the offset
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
         }, 100);
       }
     } else {
