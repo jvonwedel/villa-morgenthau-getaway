@@ -49,6 +49,14 @@ const LocationMap = () => {
           So viel zu entdecken
         </SectionTitle>
         
+        <div className="relative mb-10">
+          <img 
+            src="https://imgur.com/orly7kl.jpg" 
+            alt="Karte der Umgebung" 
+            className="w-full rounded-sm shadow-md"
+          />
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {attractions.map((attraction, index) => (
             <div key={index} className="bg-white p-6 rounded-sm shadow-md hover:shadow-lg transition-shadow">
