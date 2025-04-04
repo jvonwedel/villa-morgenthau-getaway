@@ -1,3 +1,4 @@
+
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -10,10 +11,10 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-serif mb-8 text-center">Über die Villa Morgenthau</h1>
             
-            {/* First photo container as a placeholder */}
+            {/* First photo container with updated image */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img src="/placeholder.svg" alt="Villa Morgenthau Historical Photo" className="w-full h-auto object-contain" />
+                <img src="https://i.imgur.com/jPxLP7A.jpg" alt="Villa Morgenthau Historical Photo" className="w-full h-auto object-contain" />
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
