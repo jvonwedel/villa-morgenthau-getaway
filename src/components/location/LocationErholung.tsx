@@ -1,6 +1,8 @@
+
 import { Card, CardContent } from "../ui/card";
 import SectionTitle from '../ui/SectionTitle';
 import { AspectRatio } from "../ui/aspect-ratio";
+
 const LocationErholung = () => {
   const images = [{
     url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e',
@@ -15,10 +17,11 @@ const LocationErholung = () => {
     url: 'https://images.unsplash.com/photo-1500673922987-e212871fec22',
     alt: 'Gelbes Licht zwischen Bäumen'
   }];
+  
   return <section id="erholung" className="section-padding bg-villa-muted/50">
       <div className="container-custom">
         <SectionTitle subtitle="ENTSPANNUNG">
-          Erholung in der Natur
+          Erholung und Ruhe in der Natur
         </SectionTitle>
         
         <div className="mb-8">
@@ -38,4 +41,5 @@ const LocationErholung = () => {
       </div>
     </section>;
 };
+
 export default LocationErholung;
