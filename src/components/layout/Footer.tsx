@@ -87,7 +87,7 @@ const Footer = () => {
                   className="text-villa-muted hover:text-white transition-colors text-sm"
                   onClick={(e) => handleNavLinkClick(e, '/location#erholung')}
                 >
-                  Entspannung
+                  Erholung
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ const Footer = () => {
                   className="text-villa-muted hover:text-white transition-colors text-sm"
                   onClick={(e) => handleNavLinkClick(e, '/location#aktiv')}
                 >
-                  Aktiv
+                  Für Aktive
                 </Link>
               </li>
               <li>
