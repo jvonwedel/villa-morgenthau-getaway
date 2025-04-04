@@ -21,7 +21,7 @@ const LocationErholung = () => {
   return <section id="erholung" className="section-padding bg-villa-muted/50">
       <div className="container-custom">
         <SectionTitle subtitle="ENTSPANNUNG">
-          Erholung und Ruhe in der Natur
+          Erholung & Ruhe in der Natur
         </SectionTitle>
         
         <div className="mb-8">
