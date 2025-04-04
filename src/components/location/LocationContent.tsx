@@ -1,10 +1,11 @@
 
 import SectionTitle from '../ui/SectionTitle';
+
 const LocationContent = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 gap-8">
           <div>
             <SectionTitle subtitle="ENTDECKE DIE UMGEBUNG">
               Der ideale Ausgangspunkt für Erkundungen
@@ -14,7 +15,7 @@ const LocationContent = () => {
             
             <p className="text-gray-700 mb-6">In kurzer Fahrzeit finden Sie charmante Dörfer mit lokalen Hofläden, Restaurants, die authentische Küche servieren, zahlreiche Wassersportmöglichkeiten, aber auch kulturelle Stätten wie das Wikingermuseum Haithabu, die die Geschichte dieser historischen Region erzählen. Naturliebhaber werden darüberhinaus die Nähe zu (Kanu-)Wanderwegen, dem Wattenmeer und dem geschützten Gebietverband Natura2000 zu schätzen wissen.</p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-villa-muted p-4 rounded-sm">
                 <h3 className="font-medium mb-2">Sehenswürdigkeiten in der Nähe</h3>
                 <ul className="space-y-2">
@@ -57,4 +58,5 @@ const LocationContent = () => {
     </section>
   );
 };
+
 export default LocationContent;
