@@ -1,4 +1,3 @@
-
 // Type definitions for gallery images
 export interface GalleryImage {
   id: string;
@@ -79,13 +78,6 @@ export const galleryImages: GalleryImage[] = [
     title: 'Arbeitsbereich',
     description: 'Funktionaler Arbeitsbereich mit natürlichem Licht',
     imageUrl: 'https://imgur.com/rKyqtnU.jpg',
-    tags: ['Interior']
-  },
-  {
-    id: '27',
-    title: 'Wohnraumdetail',
-    description: 'Stilvolle Dekoration im Wohnbereich',
-    imageUrl: 'https://imgur.com/KzmUBOC.jpg',
     tags: ['Interior']
   },
   {
