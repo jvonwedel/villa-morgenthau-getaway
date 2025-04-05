@@ -25,7 +25,7 @@ const YourStay = () => {
     <section className="section-padding bg-white">
       <div className="container-custom">
         <SectionTitle subtitle="UNTERKUNFT" centered>
-          Entdecke die Villa Morgenthau
+          Herzliche Willkommen
         </SectionTitle>
         
         <div className="max-w-3xl mx-auto text-center mb-12">
