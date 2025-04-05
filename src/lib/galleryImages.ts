@@ -74,6 +74,7 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/EyipMyi.jpg',
     tags: ['Interior']
   },
+  // Interior pictures 39-42 kept
   {
     id: '39',
     title: 'Wohnzimmerbereich',
@@ -95,13 +96,7 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/gzW8AuI.jpg',
     tags: ['Interior']
   },
-  {
-    id: '42',
-    title: 'Eingangsbereich',
-    description: 'Einladender Eingangsbereich mit Designelementen',
-    imageUrl: 'https://imgur.com/WS2dzUZ.jpg',
-    tags: ['Interior']
-  },
+  // Removed desk picture (ID 42)
   
   // Garten & Umgebung Category
   {
@@ -181,6 +176,13 @@ export const galleryImages: GalleryImage[] = [
     title: 'Gartenpfad',
     description: 'Gepflegter Pfad im Garten',
     imageUrl: 'https://imgur.com/t0DPKuC.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '43',
+    title: 'Natürliche Umgebung',
+    description: 'Schöne natürliche Umgebung rund um die Villa',
+    imageUrl: 'https://imgur.com/hqQLxvh.jpg',
     tags: ['Garten & Umgebung']
   },
   
