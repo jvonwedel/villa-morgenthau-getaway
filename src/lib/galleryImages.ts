@@ -75,13 +75,6 @@ export const galleryImages: GalleryImage[] = [
     tags: ['Interior']
   },
   {
-    id: '26',
-    title: 'Arbeitsbereich',
-    description: 'Funktionaler Arbeitsbereich mit natürlichem Licht',
-    imageUrl: 'https://imgur.com/rKyqtnU.jpg',
-    tags: ['Interior']
-  },
-  {
     id: '39',
     title: 'Wohnzimmerbereich',
     description: 'Stylischer Wohnzimmerbereich mit Leseecke',

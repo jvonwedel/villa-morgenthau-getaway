@@ -24,7 +24,7 @@ const GalleryHeader = () => {
             <span className="text-sm font-medium">Fotosammlung</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
-            Galerie
+            Die Villa Morgenthau in Bildern
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl">
             Entdecken Sie die Villa Morgenthau durch unsere Fotosammlung, die das Anwesen und seine Umgebung zeigt.
