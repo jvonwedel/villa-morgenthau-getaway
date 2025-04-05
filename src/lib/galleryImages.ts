@@ -13,7 +13,7 @@ export const galleryImages: GalleryImage[] = [
   // Interior Category
   {
     id: '1',
-    title: 'Essbereich',
+    title: 'Die Tafel im Esszimmer',
     description: 'Heller Essbereich mit Designerlampen und großem Esstisch aus Massivholz',
     imageUrl: 'https://i.imgur.com/ZeCXciN.png',
     tags: ['Interior']
