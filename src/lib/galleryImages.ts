@@ -1,3 +1,4 @@
+
 // Type definitions for gallery images
 export interface GalleryImage {
   id: string;
@@ -117,6 +118,7 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/cJnKknJ.jpg',
     tags: ['Garten & Umgebung']
   },
+  /* Moving these three images to Aktivitäten category
   {
     id: '8',
     title: 'Wasserfall',
@@ -138,6 +140,7 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/hEPDWAw.jpg',
     tags: ['Garten & Umgebung']
   },
+  */
   {
     id: '11',
     title: 'Berge im Sonnenlicht',
@@ -189,6 +192,27 @@ export const galleryImages: GalleryImage[] = [
   },
   
   // Aktivitäten Category
+  {
+    id: '8',
+    title: 'Wasserfall',
+    description: 'Wasserfall in der Nähe der Villa',
+    imageUrl: 'https://imgur.com/uxyoic3.jpg',
+    tags: ['Aktivitäten']
+  },
+  {
+    id: '9',
+    title: 'Ozean',
+    description: 'Ozeanwelle am Strand',
+    imageUrl: 'https://imgur.com/cQPT9Oe.jpg',
+    tags: ['Aktivitäten']
+  },
+  {
+    id: '10',
+    title: 'Kiefernwälder',
+    description: 'Kiefernwälder in der Umgebung',
+    imageUrl: 'https://imgur.com/hEPDWAw.jpg',
+    tags: ['Aktivitäten']
+  },
   {
     id: '15',
     title: 'Wanderweg',
