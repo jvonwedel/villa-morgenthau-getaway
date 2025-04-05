@@ -122,7 +122,7 @@ const About = () => {
               
               <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Ernte ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
 
-              {/* Replaced the large images with a row of four images */}
+              {/* Replaced the large images with a row of four images without captions */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
                 {bottomImages.map((image, index) => (
                   <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
@@ -133,7 +133,6 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </AspectRatio>
-                    <p className="text-sm text-gray-500 italic text-center mt-2">{image.alt}</p>
                   </Card>
                 ))}
               </div>
