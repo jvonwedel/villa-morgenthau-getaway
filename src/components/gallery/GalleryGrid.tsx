@@ -103,11 +103,6 @@ const GalleryGrid = () => {
           ))}
         </div>
         
-        {/* Copyright Notice at the bottom */}
-        <div className="mt-10 text-center text-sm text-gray-600">
-          <p>Fotos © Villa Morgenthau. Alle hier veröffentlichten Bilder sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung, Verbreitung oder Bearbeitung ist nicht gestattet.</p>
-        </div>
-        
         {/* Booking Button */}
         <div className="text-center mt-8">
           <a 
@@ -118,6 +113,11 @@ const GalleryGrid = () => {
           >
             Jetzt buchen
           </a>
+        </div>
+        
+        {/* Copyright Notice at the bottom, now below the booking button */}
+        <div className="mt-6 text-center text-sm text-gray-600">
+          <p>{copyrightNotice}</p>
         </div>
         
         {/* Lightbox */}
@@ -137,7 +137,7 @@ const GalleryGrid = () => {
                 onError={() => handleImageError(lightboxImage.id, lightboxImage.imageUrl)}
               />
               <div className="text-white text-center mt-4">
-                <p className="text-gray-300 text-sm">Fotos © Villa Morgenthau. Alle hier veröffentlichten Bilder sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung, Verbreitung oder Bearbeitung ist nicht gestattet.</p>
+                <p className="text-gray-300 text-sm">{copyrightNotice}</p>
               </div>
             </div>
           </div>
