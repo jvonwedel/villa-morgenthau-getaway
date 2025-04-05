@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import GalleryGrid from '../components/gallery/GalleryGrid';
+import GalleryHeader from '../components/gallery/GalleryHeader';
 
 const Gallery = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Gallery = () => {
 
   return (
     <Layout>
+      <GalleryHeader />
       <GalleryGrid />
     </Layout>
   );
