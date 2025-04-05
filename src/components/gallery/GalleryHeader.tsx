@@ -6,9 +6,13 @@ const GalleryHeader = () => {
     <section className="relative h-[50vh] overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="/placeholder.svg" 
+          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
           alt="Villa Morgenthau Galerie" 
           className="w-full h-full object-cover"
+          onError={(e) => {
+            console.log("Header image failed to load");
+            (e.target as HTMLImageElement).src = '/placeholder.svg';
+          }}
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>

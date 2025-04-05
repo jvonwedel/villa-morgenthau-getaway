@@ -3,19 +3,32 @@ import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Link } from 'react-router-dom';
 import { galleryImages } from '@/lib/galleryImages';
+import { Skeleton } from '../ui/skeleton';
 
 const Gallery = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [imagesLoading, setImagesLoading] = useState({});
+  const [imageErrors, setImageErrors] = useState({});
   
   // Get the first 6 images from the galleryImages collection
   const displayImages = galleryImages.slice(0, 6);
   
-  const handleImageError = (imageId: string, imageUrl: string) => {
+  const handleImageLoad = (imageId) => {
+    setImagesLoading(prev => ({
+      ...prev,
+      [imageId]: false
+    }));
+  };
+  
+  const handleImageError = (imageId, imageUrl) => {
     console.log(`Image failed to load in home gallery: ${imageUrl}`);
     setImageErrors(prev => ({
       ...prev,
       [imageId]: true
+    }));
+    setImagesLoading(prev => ({
+      ...prev,
+      [imageId]: false
     }));
   };
 
@@ -36,10 +49,16 @@ const Gallery = () => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="w-full h-full">
+                {imagesLoading[image.id] !== false && (
+                  <Skeleton className="absolute inset-0 w-full h-full" />
+                )}
                 <img 
                   src={imageErrors[image.id] ? '/placeholder.svg' : image.imageUrl} 
                   alt={image.description || image.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                    imagesLoading[image.id] !== false ? 'invisible' : 'visible'
+                  }`}
+                  onLoad={() => handleImageLoad(image.id)}
                   onError={() => handleImageError(image.id, image.imageUrl)}
                 />
               </div>
