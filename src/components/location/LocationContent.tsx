@@ -6,19 +6,19 @@ import { Card } from "../ui/card";
 const LocationContent = () => {
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1472396961693-142e6e269027',
+      url: 'https://imgur.com/cJnKknJ.jpg',
       alt: 'Zwei Rehe in ihrer natürlichen Umgebung'
     },
     {
-      url: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716',
+      url: 'https://imgur.com/uxyoic3.jpg',
       alt: 'Wasserfall in der Nähe der Villa'
     },
     {
-      url: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      url: 'https://imgur.com/HJfsdjk.jpg',
       alt: 'Fluss zwischen Bergen unter weißem Himmel'
     },
     {
-      url: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9',
+      url: 'https://imgur.com/hEPDWAw.jpg',
       alt: 'Kiefernwälder in der Umgebung'
     }
   ];
