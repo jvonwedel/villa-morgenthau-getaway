@@ -53,6 +53,41 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://i.imgur.com/6JzS2YQ.png',
     tags: ['Interior']
   },
+  {
+    id: '23',
+    title: 'Wohnbereich',
+    description: 'Gemütlicher Wohnbereich mit Holzdetails',
+    imageUrl: 'https://imgur.com/1UsyJ8X.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '24',
+    title: 'Schlafzimmerdetail',
+    description: 'Elegante Einrichtung im Schlafbereich',
+    imageUrl: 'https://imgur.com/cnaVZTw.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '25',
+    title: 'Badezimmerdetail',
+    description: 'Modernes Badezimmer mit ausgewählten Accessoires',
+    imageUrl: 'https://imgur.com/EyipMyi.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '26',
+    title: 'Arbeitsbereich',
+    description: 'Funktionaler Arbeitsbereich mit natürlichem Licht',
+    imageUrl: 'https://imgur.com/rKyqtnU.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '27',
+    title: 'Wohnraumdetail',
+    description: 'Stilvolle Dekoration im Wohnbereich',
+    imageUrl: 'https://imgur.com/KzmUBOC.jpg',
+    tags: ['Interior']
+  },
   
   // Garten & Umgebung Category
   {
@@ -111,6 +146,27 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/SQ5ymrP.jpg',
     tags: ['Garten & Umgebung']
   },
+  {
+    id: '22',
+    title: 'Familie am Strand',
+    description: 'Familie am Strand',
+    imageUrl: 'https://imgur.com/MLLScuV.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '28',
+    title: 'Gartenterrasse',
+    description: 'Gemütliche Terrasse im Garten',
+    imageUrl: 'https://imgur.com/o2AmxY9.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '29',
+    title: 'Gartenpfad',
+    description: 'Gepflegter Pfad im Garten',
+    imageUrl: 'https://imgur.com/t0DPKuC.jpg',
+    tags: ['Garten & Umgebung']
+  },
   
   // Aktivitäten Category
   {
@@ -141,34 +197,90 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/fWB8nPL.jpg',
     tags: ['Aktivitäten']
   },
-  
-  // Jahreszeiten Category
   {
     id: '19',
     title: 'Wildtiere',
     description: 'Wildtiere auf einer Wiese',
     imageUrl: 'https://imgur.com/Ra7t2Jm.jpg',
-    tags: ['Jahreszeiten']
+    tags: ['Aktivitäten']
   },
   {
     id: '20',
     title: 'Schafherde',
     description: 'Eine Schafherde auf der Weide',
     imageUrl: 'https://imgur.com/q3e67S1.jpg',
-    tags: ['Jahreszeiten']
+    tags: ['Aktivitäten']
   },
   {
     id: '21',
     title: 'Rehe im Wald',
     description: 'Rehe im Wald',
     imageUrl: 'https://imgur.com/tJ12hM9.jpg',
+    tags: ['Aktivitäten']
+  },
+  
+  // Jahreszeiten Category
+  {
+    id: '30',
+    title: 'Frühling',
+    description: 'Frühling in der Natur',
+    imageUrl: 'https://imgur.com/JkOHdeF.jpg',
     tags: ['Jahreszeiten']
   },
   {
-    id: '22',
-    title: 'Familie am Strand',
-    description: 'Familie am Strand',
-    imageUrl: 'https://imgur.com/MLLScuV.jpg',
+    id: '31',
+    title: 'Sommerwiese',
+    description: 'Blumen auf einer Sommerwiese',
+    imageUrl: 'https://imgur.com/Co1LxKZ.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '32',
+    title: 'Herbstlaub',
+    description: 'Buntes Herbstlaub',
+    imageUrl: 'https://imgur.com/JVQfzJz.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '33',
+    title: 'Winterlandschaft',
+    description: 'Verschneite Winterlandschaft',
+    imageUrl: 'https://imgur.com/qdmaXTj.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '34',
+    title: 'Frühlingsblüten',
+    description: 'Frühlingsblüten in voller Pracht',
+    imageUrl: 'https://imgur.com/PCSHD1y.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '35',
+    title: 'Sommerabend',
+    description: 'Warmer Sommerabend am Wasser',
+    imageUrl: 'https://imgur.com/PJ8Xi9e.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '36',
+    title: 'Herbstwald',
+    description: 'Farbenprächtiger Herbstwald',
+    imageUrl: 'https://imgur.com/PPWMrDM.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '37',
+    title: 'Winterbach',
+    description: 'Bach im verschneiten Winterwald',
+    imageUrl: 'https://imgur.com/fhS3lyy.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '38',
+    title: 'Winterberg',
+    description: 'Berglandschaft im Winter',
+    imageUrl: 'https://imgur.com/kJPXBt1.jpg',
     tags: ['Jahreszeiten']
   }
 ];
