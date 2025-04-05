@@ -4,7 +4,29 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Card } from "@/components/ui/card";
+
 const About = () => {
+  // Images for the new gallery row
+  const images = [
+    {
+      url: 'https://i.imgur.com/2bBTwzC.png',
+      alt: 'Modern kitchen with elegant design'
+    },
+    {
+      url: 'https://i.imgur.com/BN3r98z.png',
+      alt: 'Cozy fireplace area'
+    },
+    {
+      url: 'https://i.imgur.com/ZeCXciN.png',
+      alt: 'Bright dining area'
+    },
+    {
+      url: 'https://i.imgur.com/GwoECRY.png',
+      alt: 'Sunlit winter garden'
+    }
+  ];
+
   return <Layout>
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -29,6 +51,24 @@ const About = () => {
 
               <p className="mb-6">Nachdem sie jahrelang leer stand, haben wir sie umfassend modernisiert. Bei der Restaurierung haben wir uns bemüht, die historischen Elemente wie die wunderschönen Terrazzoböden zu bewahren und gleichzeitig sensibel moderne Ausstattung zu integrieren.</p>
               
+              {/* Added image gallery row between paragraphs */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+                {images.map((image, index) => (
+                  <Card key={index} className="overflow-hidden border-none shadow-md rounded-none group relative">
+                    <AspectRatio ratio={1/1}>
+                      <img 
+                        src={image.url} 
+                        alt={image.alt} 
+                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                      />
+                    </AspectRatio>
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                      <p className="text-white text-sm p-2">{image.alt}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+              
               {/* Second photo container with two photos side by side */}
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -52,7 +92,7 @@ const About = () => {
               
               <div className="flex justify-center my-12">
                 <a href="https://www.instagram.com/villamorgenthau/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                  VILLA MORGENTHAU AUF INSTAGRAM
+                  VORHER-NACHHER AUF INSTAGRAM
                 </a>
               </div>
               
@@ -63,7 +103,7 @@ const About = () => {
 
               <p className="mb-6">Draußen erstreckt sich der große Garten mit alten Bäumen und viel Grün. Ein Ort, an dem man sofort ankommt, an dem die Zeit ein bisschen langsamer läuft und man sich einfach wohlfühlt. Im Liegestuhl in der Sonne ein Buch lesen, währen die Kinder Fussball spielen oder Käfer und Mini-Frösche im Beet entdecken. Oder in der Hängematte liegen und träumen. Alles möglich. Und am Rande der großen Wiese steht die alte Friedenseiche – als wäre sie schon immer da gewesen, um Ruhe zu schenken.</p>
               
-              <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Erne ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
+              <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Ernte ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
 
               <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
