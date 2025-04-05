@@ -31,8 +31,7 @@ const YourStay = () => {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-gray-700">
             In der Villa Morgenthau erwartet dich historischer Charme in Kombination mit modernem Interior. 
-            Die Einrichtung wurde mit Liebe zum Detail durchdacht, so dass du die schönste Zeit des Jahres 
-            in der besten Umgebung genießen kannst.
+            Die Einrichtung wurde mit Liebe zum Detail durchdacht, so dass du die schönste Zeit des Jahres so richtig genießen kannst.
           </p>
         </div>
         
@@ -58,6 +57,12 @@ const YourStay = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="max-w-3xl mx-auto text-center mt-10">
+          <p className="text-gray-700">
+            Und freue dich auf eine unvergessliche Zeit in einmaliger Umgebung! Wir freuen uns, euch bald begrüßen zu dürfen!
+          </p>
         </div>
       </div>
     </section>

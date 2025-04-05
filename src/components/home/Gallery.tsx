@@ -65,14 +65,7 @@ const Gallery = () => {
               <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${
                 hoveredIndex === index ? 'bg-opacity-30' : 'bg-opacity-0'
               }`} />
-              <div className={`absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-3 transform ${
-                hoveredIndex === index ? 'translate-y-0' : 'translate-y-full'
-              } transition-transform duration-300`}>
-                <h3 className="font-medium text-white text-sm">{image.title}</h3>
-                {image.description && (
-                  <p className="text-gray-200 text-xs mt-1">{image.description}</p>
-                )}
-              </div>
+              {/* Removing caption hover effect as requested */}
             </Link>
           ))}
         </div>

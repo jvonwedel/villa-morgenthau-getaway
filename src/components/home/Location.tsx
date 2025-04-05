@@ -24,7 +24,7 @@ const Location = () => {
               Zwischen den Meeren in der Natur
             </SectionTitle>
             <p className="text-gray-700 mb-6">Eingebettet in unberührte Natur bietet die Villa Morgenthau die perfekte Balance zwischen Abgeschiedenheit und zahlreichen Unternehmungsmöglichkeiten. Umgeben von üppigen Wäldern und unberührten Moor- und Naturschutzflächen, jedoch nur eine kurze Fahrt von Sehenswürdigkeiten und Einkaufsmöglichkeiten entfernt.</p>
-            <p className="text-gray-700 mb-8">Die nahe gelegene Stadt Husum bietet charmante Geschäfte und Restaurants, während die Umgebung (Kanu-)Wanderwege, das Wattenmeer, die Schlei und weitere tolle Ziele zum Erkunden bietet. Unsere Lage ist die ideale Basis sowohl für Entspannung als auch für Abenteuer.</p>
+            <p className="text-gray-700 mb-8">In der nahe gelegenen Stadt Husum gibt es charmante Geschäfte und Cafés, während die Umgebung (Kanu-)Wanderwege, das Wattenmeer, die Schlei und weitere tolle Ziele zum Erkunden bietet. Unsere Lage ist die ideale Basis sowohl für Entspannung als auch für Abenteuer.</p>
             <Link to="/location" className="btn-secondary">MEHR ZUR LAGE</Link>
           </div>
         </div>
