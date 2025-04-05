@@ -58,12 +58,6 @@ const YourStay = () => {
             ))}
           </div>
         </div>
-
-        <div className="max-w-3xl mx-auto text-center mt-10">
-          <p className="text-gray-700">
-            Und freue dich auf eine unvergessliche Zeit in einmaliger Umgebung! Wir freuen uns, euch bald begrüßen zu dürfen!
-          </p>
-        </div>
       </div>
     </section>
   );

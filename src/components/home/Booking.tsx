@@ -15,7 +15,7 @@ const Booking = () => {
           <h2 className="text-3xl lg:text-5xl font-serif mb-6 md:text-2xl">
             Reserviere deinen Urlaub in der Villa Morgenthau
           </h2>
-          <p className="text-lg mb-8">Verbringe eine unvergessliche Zeit in unserer historischen Villa Morgenthau! Wir freuen uns, euch bald begrüßen zu dürfen!</p>
+          <p className="text-lg mb-8">Und freue dich auf eine unvergessliche Zeit in einmaliger Umgebung! Wir freuen uns, euch bald begrüßen zu dürfen!</p>
           <a href="https://www.airbnb.de/rooms/1305881991709578029" target="_blank" rel="noopener noreferrer" className="btn-primary bg-white text-villa-dark hover:bg-villa-accent">
             Verfügbarkeit prüfen
           </a>
