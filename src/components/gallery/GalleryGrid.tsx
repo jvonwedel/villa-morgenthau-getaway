@@ -56,7 +56,7 @@ const GalleryGrid = () => {
     <section className="section-padding bg-white pt-28">
       <div className="container-custom">
         <SectionTitle subtitle="IMPRESSIONEN" centered>
-          Villa Morgenthau Fotogalerie
+          Die Villa Morgenthau in Bildern
         </SectionTitle>
         
         {/* Gallery Navigation */}
