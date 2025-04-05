@@ -10,40 +10,40 @@ const About = () => {
   // Images for the new gallery row
   const images = [
     {
-      url: 'https://i.imgur.com/2bBTwzC.png',
-      alt: 'Modern kitchen with elegant design'
+      url: 'https://imgur.com/S0UtSaP.jpg',
+      alt: 'Modern interior with natural light'
     },
     {
-      url: 'https://i.imgur.com/BN3r98z.png',
-      alt: 'Cozy fireplace area'
+      url: 'https://imgur.com/1svVa6t.jpg',
+      alt: 'Elegant bedroom space'
     },
     {
-      url: 'https://i.imgur.com/ZeCXciN.png',
-      alt: 'Bright dining area'
+      url: 'https://imgur.com/Nz9pS94.jpg',
+      alt: 'Cozy living area'
     },
     {
-      url: 'https://i.imgur.com/GwoECRY.png',
-      alt: 'Sunlit winter garden'
+      url: 'https://imgur.com/psPEJg5.jpg',
+      alt: 'Stylish interior design'
     }
   ];
 
   // Additional images for the bottom gallery
   const bottomImages = [
     {
-      url: 'https://i.imgur.com/cKx6mNe.jpg',
-      alt: 'Der gemütliche Kachelofen'
+      url: 'https://imgur.com/e04eOWe.jpg',
+      alt: 'Garden view of Villa Morgenthau'
     },
     {
-      url: 'https://i.imgur.com/rOnWSwD.jpg',
-      alt: 'Die offene Küche'
+      url: 'https://imgur.com/zF0Q39z.jpg',
+      alt: 'Exterior architecture detail'
     },
     {
-      url: 'https://i.imgur.com/6zbk18W.jpg',
-      alt: 'Ein Schlafzimmer'
+      url: 'https://imgur.com/8wBshuM.jpg',
+      alt: 'Natural surroundings'
     },
     {
-      url: 'https://i.imgur.com/peeM1qe.jpg',
-      alt: 'Die Bibliothek'
+      url: 'https://imgur.com/flcVila.jpg',
+      alt: 'Villa garden space'
     }
   ];
 
@@ -98,12 +98,22 @@ const About = () => {
                 </a>
               </div>
               
+              {/* New section with heading and paragraph */}
+              <h2 className="font-serif text-2xl mb-4 mt-8">Die Idee hinter dem Namen</h2>
+              
+              <p className="mb-6">Morgens legt sich ein Schleier aus Tau über die weiten Wiesen und Felder rund ums Haus. Wenn die Sonne langsam aufgeht, glitzern Millionen winziger Tropfen im ersten Sonnenlicht – und erinnern daran, warum die Villa Morgenthau ihren Namen trägt.</p>
+              
+              {/* New image after the paragraph */}
+              <div className="w-full h-auto my-10 rounded-sm shadow-lg mb-4 overflow-hidden">
+                <img src="https://imgur.com/s5bq1pH.jpg" alt="Morning dew at Villa Morgenthau" className="w-full h-full object-cover" />
+              </div>
+              
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
               
               <p className="mb-6">Hier, mitten in der Natur, ist Platz zum Durchatmen und Abschalten. Drinnen sorgt der Kachelofen für wohlige Wärme und der offene Wohn- und Essbereich bietet für genug Platz für alle, falls sich das nordfriesische Wetter mal nicht von seiner besten Seite zeigt. In der Bibliothek ist Platz zum Lesen oder zum Arbeiten, Glasfasernetz stellt sicher, dass auch Worcation kein Problem ist. Die Möbel sind mit Liebe ausgewählt – gemütlich, stilvoll, aber nicht überladen.
             </p>
 
-              {/* Moved image gallery row and removed hover effects */}
+              {/* Updated first image gallery row with the new URLs */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
                 {images.map((image, index) => (
                   <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
@@ -122,7 +132,7 @@ const About = () => {
               
               <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Ernte ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
 
-              {/* Replaced the large images with a row of four images without captions */}
+              {/* Updated bottom images row with the new URLs */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
                 {bottomImages.map((image, index) => (
                   <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
