@@ -106,29 +106,6 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/cJnKknJ.jpg',
     tags: ['Garten & Umgebung']
   },
-  /* Moving these three images to Aktivitäten category
-  {
-    id: '8',
-    title: 'Wasserfall',
-    description: 'Wasserfall in der Nähe der Villa',
-    imageUrl: 'https://imgur.com/uxyoic3.jpg',
-    tags: ['Garten & Umgebung']
-  },
-  {
-    id: '9',
-    title: 'Ozean',
-    description: 'Ozeanwelle am Strand',
-    imageUrl: 'https://imgur.com/cQPT9Oe.jpg',
-    tags: ['Garten & Umgebung']
-  },
-  {
-    id: '10',
-    title: 'Kiefernwälder',
-    description: 'Kiefernwälder in der Umgebung',
-    imageUrl: 'https://imgur.com/hEPDWAw.jpg',
-    tags: ['Garten & Umgebung']
-  },
-  */
   {
     id: '11',
     title: 'Berge im Sonnenlicht',
@@ -183,6 +160,27 @@ export const galleryImages: GalleryImage[] = [
     title: 'Natürliche Umgebung',
     description: 'Schöne natürliche Umgebung rund um die Villa',
     imageUrl: 'https://imgur.com/hqQLxvh.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '44',
+    title: 'Gartenbereich',
+    description: 'Harmonischer Gartenbereich mit natürlichem Flair',
+    imageUrl: 'https://imgur.com/7ziMVlN.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '45',
+    title: 'Gartenweg',
+    description: 'Idyllischer Weg durch den gepflegten Garten',
+    imageUrl: 'https://imgur.com/xwJu9vO.jpg',
+    tags: ['Garten & Umgebung']
+  },
+  {
+    id: '46',
+    title: 'Gartenblick',
+    description: 'Aussicht auf die wunderschöne Gartenlandschaft',
+    imageUrl: 'https://imgur.com/azqdNfb.jpg',
     tags: ['Garten & Umgebung']
   },
   
@@ -258,6 +256,20 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/tJ12hM9.jpg',
     tags: ['Aktivitäten']
   },
+  {
+    id: '47',
+    title: 'Wandern in den Bergen',
+    description: 'Wandererlebnis in der atemberaubenden Berglandschaft',
+    imageUrl: 'https://imgur.com/1wpvnQ7.jpg',
+    tags: ['Aktivitäten']
+  },
+  {
+    id: '48',
+    title: 'Wassersport',
+    description: 'Aktive Erholung am kristallklaren Gewässer',
+    imageUrl: 'https://imgur.com/BNOP5og.jpg',
+    tags: ['Aktivitäten']
+  },
   
   // Jahreszeiten Category
   {
@@ -321,6 +333,27 @@ export const galleryImages: GalleryImage[] = [
     title: 'Winterberg',
     description: 'Berglandschaft im Winter',
     imageUrl: 'https://imgur.com/kJPXBt1.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '49',
+    title: 'Frühlingserwachen',
+    description: 'Natürliches Erwachen nach dem langen Winter',
+    imageUrl: 'https://imgur.com/P2qRgNy.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '50',
+    title: 'Sommerliche Landschaft',
+    description: 'Warme Sommerstimmung in der Natur',
+    imageUrl: 'https://imgur.com/ZS5mdRh.jpg',
+    tags: ['Jahreszeiten']
+  },
+  {
+    id: '51',
+    title: 'Winterimpression',
+    description: 'Malerische Winterlandschaft im Schnee',
+    imageUrl: 'https://imgur.com/48mruQI.jpg',
     tags: ['Jahreszeiten']
   }
 ];
