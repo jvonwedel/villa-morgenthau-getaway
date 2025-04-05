@@ -53,6 +53,20 @@ const Location = () => {
       <LocationErholung />
       <LocationAktiv />
       <LocationFamilien />
+      
+      {/* Booking Button Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom text-center">
+          <a 
+            href="https://www.airbnb.de/rooms/1305881991709578029"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Jetzt buchen
+          </a>
+        </div>
+      </section>
     </Layout>
   );
 };
