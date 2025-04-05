@@ -6,7 +6,7 @@ import GalleryHeader from '../components/gallery/GalleryHeader';
 
 const Gallery = () => {
   useEffect(() => {
-    // Scroll to top when the Gallery component mounts - using immediate execution
+    // Force scroll to top when the Gallery component mounts
     window.scrollTo({
       top: 0,
       behavior: 'auto'  // Immediate scrolling

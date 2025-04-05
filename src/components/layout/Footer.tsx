@@ -1,22 +1,18 @@
-
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleNavLinkClick = (e, path) => {
-    // For Gallery links, ensure we always scroll to top
+    // For Gallery links, use navigate and then scroll
     if (path === '/gallery') {
       e.preventDefault();
-      // First navigate to the page if not already there
-      if (location.pathname !== '/gallery') {
-        window.history.pushState({}, '', path);
-      }
-      // Then scroll to top immediately
+      navigate('/gallery');
       window.scrollTo({
         top: 0,
-        behavior: 'auto'  // Use 'auto' instead of 'smooth' for immediate scroll
+        behavior: 'auto'  // Immediate scroll
       });
       return;
     }
