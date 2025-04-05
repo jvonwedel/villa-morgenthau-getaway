@@ -25,7 +25,7 @@ const LocationErholung = () => {
         </SectionTitle>
         
         <div className="mb-8">
-          <p className="text-gray-700 mb-6">Die Villa Morgenthau bietet den perfekten Rückzugsort für alle, die dem Alltag entfliehen und die Seele baumeln lassen möchten. Umgeben von malerischer Natur findet ihr hier die Ruhe, die im Alltag sonst viel zu kurz kommt. Genießt entspannte Spaziergänge durch die umliegenden Wälder, watet durch die Weiten des Wattenmeers oder lasst einfach den Blick über die weite Landschaft schweifen. Hier könnt ihr durchatmen und neue Kraft tanken.</p>
+          <p className="text-gray-700 mb-6">Die Villa Morgenthau bietet den perfekten Rückzugsort für alle, die dem Alltag entfliehen und die Seele baumeln lassen möchten. Umgeben von malerischer Natur findet ihr hier die Ruhe, die im Alltag sonst viel zu kurz kommt. Genießt entspannte Spaziergänge durch die umliegenden Wälder, watet durch die Weiten des Wattenmeers oder lasst einfach mal den Blick über die Landschaft schweifen. Hier könnt ihr durchatmen und neue Kraft tanken. Und abends? Da könnt ihr euch einfach zurücklehnen, in den Himmel schauen und Millionen Sterne sehen – ohne Stadtlichter, die alles überstrahlen. Perfekt, um den Tag in Ruhe ausklingen zu lassen.</p>
           
         </div>
         

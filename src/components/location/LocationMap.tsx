@@ -11,14 +11,14 @@ const attractions = [
   },
   {
     name: "Kanuwanderwege",
-    description: "Entdeckt Sie die wunderbare und unberührte Flusslandschaft entlang der Treene",
+    description: "Entdeckt die wunderbare und unberührte Flusslandschaft entlang der Treene",
     distance: "10 Min. Fahrt",
     coords: { top: "15%", left: "60%" }
   },
   {
     name: "Lokale Hofläden",
     description: "Probiert lokalen Käse bei Backensholz während eure Kinder happy auf dem Spielplatz toben",
-    distance: "20 Min. Fahrt",
+    distance: "15 Min. Fahrt",
     coords: { top: "70%", left: "35%" }
   },
   {

@@ -32,10 +32,10 @@ const LocationFamilien = () => {
         
         <div className="mb-8">
           <p className="text-gray-700 mb-6">
-            Hier gibt's Platz ohne Ende – für Fußballspiele im Garten, lustige Tischtennis-Matches oder einfach zum Barfuß-Rumrennen. Die Kids können sich austoben, während ihr entspannt in der Hängematte liegt oder gemeinsam den Tag genießt. Alles ganz unkompliziert, so wie es sein soll.
+            Hier gibt's Platz ohne Ende – für Fußballspiele im Garten, lustige Tischtennis-Matches oder einfach zum Barfuß-Rumrennen. Die Kids können sich austoben, während ihr entspannt in der Hängematte liegt oder gemeinsam das Lagerfeuer für den Abend vorbereitet und schon mal einen Aperitiv genießt. Alles ganz entspannt, so wie es im Urlaub sein soll.
           </p>
           <p className="text-gray-700">
-            Und wenn noch mehr Action gefragt ist: Der Spielplatz vom Hofladen Backensholz ist nur ein paar Minuten entfernt – mit einem riesigen Trampolin, auf dem die Kinder eine Menge Spaß haben, während ihr euren Drink genießt. Und wenn das Wetter mal nicht mitspielt ist auch drinnen genug Platz. Wobei, Wattenmeer bei nordfriesischem Regen ist auch eine unvergessliche Kombi. Wir wünschen euch viel Spaß zusammen!
+            Und wenn noch mehr Action gefragt ist: Der Spielplatz vom Hofladen Backensholz ist nur ein paar Minuten entfernt – mit einem riesigen Trampolin, auf dem die Kinder eine Menge Spaß haben, während ihr euch durch die Käse-Leckereien probiert. Und wenn das Wetter mal nicht mitspielt ist auch drinnen genug Platz. Wobei, Wattenmeer bei nordfriesischem Regen ist auch eine unvergessliche Kombi. Wir wünschen euch viel Spaß zusammen!
           </p>
         </div>
         

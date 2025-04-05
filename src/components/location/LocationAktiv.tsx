@@ -35,7 +35,7 @@ const LocationAktiv = () => {
             Für alle, die im Urlaub nicht nur entspannen, sondern auch was erleben wollen, ist die Villa Morgenthau der perfekte Ausgangspunkt. Die Region bietet eine Fülle an Wassersportmöglichkeiten und Outdoor-Aktivitäten.
           </p>
           <p className="text-gray-700">
-            Ob Kitesurfen, Windsurfen oder Segeln – sowohl die die Nordsee als auch die Schlei sind echte Paradiese für Wassersportfans. Auch Kajak- und Kanutouren durch die Küstenlandschaft sind ein unvergessliches Erlebnis. Wer lieber an Land aktiv ist, kann die Umgebung per Rad oder Fuß oder Pferd erkunden. Kilometerlange Deiche und malerische Wege laden zu Touren mit frischer Meeresbrise ein.
+            Ob Kitesurfen, Windsurfen oder Segeln – sowohl die die Nordsee als auch die Schlei sind echte Paradiese für Wassersportfans. Auch Kajak- und Kanutouren durch die Küstenlandschaft sind ein unvergessliches Erlebnis. Wer lieber an Land aktiv ist, kann die Umgebung per Rad oder Fuß oder Pferd oder auch mit dem Golfschläger erkunden. Kilometerlange Deiche und malerische Wege laden zu Touren mit frischer Meeresbrise ein.
           </p>
         </div>
         
