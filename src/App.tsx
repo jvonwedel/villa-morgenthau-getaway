@@ -14,6 +14,7 @@ import ForFamilies from "./pages/ForFamilies";
 import Gallery from "./pages/Gallery";
 import Booking from "./pages/Booking";
 import Privacy from "./pages/Privacy";
+import Imprint from "./pages/Imprint";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/imprint" element={<Imprint />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
