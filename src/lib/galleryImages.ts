@@ -215,6 +215,7 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/vKf0AhZ.jpg',
     tags: ['Aktivitäten']
   },
+  // Removed golf picture (5th in Aktivitäten)
   {
     id: '16',
     title: 'Fluss mit Felsformationen',
@@ -333,3 +334,4 @@ export const fetchGalleryImages = (): GalleryImage[] => {
 export const fetchGalleryImagesByTag = (tag: string): GalleryImage[] => {
   return galleryImages.filter(image => image.tags.includes(tag));
 };
+
