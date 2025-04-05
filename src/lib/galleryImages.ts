@@ -1,3 +1,4 @@
+
 // Type definitions for gallery images
 export interface GalleryImage {
   id: string;
@@ -8,7 +9,7 @@ export interface GalleryImage {
 }
 
 // Copyright notice for all gallery images
-export const copyrightNotice = "Fotos © E. von Wedel. Alle hier veröffentlichten Bilder sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung, Verbreitung oder Bearbeitung ist nicht gestattet.";
+export const copyrightNotice = "Fotos © Villa Morgenthau. Alle hier veröffentlichten Bilder sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung, Verbreitung oder Bearbeitung ist nicht gestattet.";
 
 // Collection of gallery images
 export const galleryImages: GalleryImage[] = [
