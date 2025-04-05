@@ -6,20 +6,20 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const LocationFamilien = () => {
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d',
+      url: 'https://imgur.com/Ra7t2Jm.jpg',
       alt: 'Wildtiere auf einer Wiese'
     },
     {
-      url: 'https://images.unsplash.com/photo-1452960962994-acf4fd70b632',
+      url: 'https://imgur.com/q3e67S1.jpg',
       alt: 'Eine Schafherde auf der Weide'
     },
     {
-      url: 'https://images.unsplash.com/photo-1439886183900-e79ec0057170',
+      url: 'https://imgur.com/tJ12hM9.jpg',
       alt: 'Rehe im Wald'
     },
     {
-      url: 'https://images.unsplash.com/photo-1441057206919-63d19fac2369',
-      alt: 'Pinguine auf einem Felsen'
+      url: 'https://imgur.com/MLLScuV.jpg',
+      alt: 'Familie am Strand'
     }
   ];
 

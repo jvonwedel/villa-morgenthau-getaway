@@ -6,19 +6,19 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const LocationAktiv = () => {
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff',
+      url: 'https://imgur.com/vKf0AhZ.jpg',
       alt: 'Wanderweg durch den Wald mit Felsen'
     },
     {
-      url: 'https://images.unsplash.com/photo-1504893524553-b855bce32c67',
+      url: 'https://imgur.com/tWAJwzF.jpg',
       alt: 'Fluss umgeben von Felsformationen'
     },
     {
-      url: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
+      url: 'https://imgur.com/cQPT9Oe.jpg',
       alt: 'Ozeanwelle am Strand'
     },
     {
-      url: 'https://images.unsplash.com/photo-1458668383970-8ddd3927deed',
+      url: 'https://imgur.com/fWB8nPL.jpg',
       alt: 'Berglandschaft der Alpen'
     }
   ];
