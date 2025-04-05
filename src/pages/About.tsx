@@ -27,6 +27,26 @@ const About = () => {
     }
   ];
 
+  // Additional images for the bottom gallery
+  const bottomImages = [
+    {
+      url: 'https://i.imgur.com/cKx6mNe.jpg',
+      alt: 'Der gemütliche Kachelofen'
+    },
+    {
+      url: 'https://i.imgur.com/rOnWSwD.jpg',
+      alt: 'Die offene Küche'
+    },
+    {
+      url: 'https://i.imgur.com/6zbk18W.jpg',
+      alt: 'Ein Schlafzimmer'
+    },
+    {
+      url: 'https://i.imgur.com/peeM1qe.jpg',
+      alt: 'Die Bibliothek'
+    }
+  ];
+
   return <Layout>
       <section className="section-padding bg-white">
         <div className="container-custom">
@@ -102,42 +122,20 @@ const About = () => {
               
               <p className="mb-12">Und dann ist da noch der Obstgarten, der Walnussbaum und die Marone - wir laden euch herzlich zur Ernte ein. Ob Bärlauch im Frühling, Beeren im Sommer oder Maronen, Walnüsse, Äpfel und Birnen im Herbst. Frischer und lokaler geht nicht.</p>
 
-              <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/cKx6mNe.jpg" alt="Villa Morgenthau Living Room" className="w-full h-full object-cover" />
+              {/* Replaced the large images with a row of four images */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+                {bottomImages.map((image, index) => (
+                  <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
+                    <AspectRatio ratio={1/1}>
+                      <img 
+                        src={image.url} 
+                        alt={image.alt} 
+                        className="w-full h-full object-cover"
+                      />
                     </AspectRatio>
-                  </div>
-                  <p className="text-sm text-gray-500 italic text-center">Der gemütliche Kachelofen</p>
-                </div>
-                
-                <div>
-                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/rOnWSwD.jpg" alt="Villa Morgenthau Kitchen" className="w-full h-full object-cover" />
-                    </AspectRatio>
-                  </div>
-                  <p className="text-sm text-gray-500 italic text-center">Die offene Küche</p>
-                </div>
-                
-                <div>
-                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/6zbk18W.jpg" alt="Villa Morgenthau Bedroom" className="w-full h-full object-cover" />
-                    </AspectRatio>
-                  </div>
-                  <p className="text-sm text-gray-500 italic text-center">Ein Schlafzimmer</p>
-                </div>
-                
-                <div>
-                  <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                    <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/peeM1qe.jpg" alt="Villa Morgenthau Bathroom" className="w-full h-full object-cover" />
-                    </AspectRatio>
-                  </div>
-                  <p className="text-sm text-gray-500 italic text-center">Die Bibliothek</p>
-                </div>
+                    <p className="text-sm text-gray-500 italic text-center mt-2">{image.alt}</p>
+                  </Card>
+                ))}
               </div>
               
               <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-12">
