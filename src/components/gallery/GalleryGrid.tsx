@@ -103,30 +103,6 @@ const GalleryGrid = () => {
           ))}
         </div>
         
-        {/* Featured Large Image for Interior */}
-        {activeCategory === 'Interior' && displayImages.length > 0 && (
-          <div className="mt-10">
-            <div 
-              className="aspect-[16/9] relative overflow-hidden cursor-pointer"
-              onClick={() => openLightbox(displayImages[0])}
-            >
-              {imagesLoading[displayImages[0].id] !== false && (
-                <Skeleton className="absolute inset-0 w-full h-full" />
-              )}
-              <img 
-                src={imageErrors[displayImages[0].id] ? '/placeholder.svg' : displayImages[0].imageUrl} 
-                alt={displayImages[0].title}
-                className={`w-full h-full object-cover transition-transform duration-700 hover:scale-105 ${
-                  imagesLoading[displayImages[0].id] !== false ? 'invisible' : 'visible'
-                }`}
-                onLoad={() => handleImageLoad(displayImages[0].id)}
-                onError={() => handleImageError(displayImages[0].id, displayImages[0].imageUrl)}
-              />
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-20 transition-opacity duration-300" />
-            </div>
-          </div>
-        )}
-        
         {/* Booking Button */}
         <div className="text-center mt-12">
           <a 

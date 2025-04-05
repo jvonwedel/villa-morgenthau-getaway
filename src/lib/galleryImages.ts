@@ -88,6 +88,34 @@ export const galleryImages: GalleryImage[] = [
     imageUrl: 'https://imgur.com/KzmUBOC.jpg',
     tags: ['Interior']
   },
+  {
+    id: '39',
+    title: 'Wohnzimmerbereich',
+    description: 'Stylischer Wohnzimmerbereich mit Leseecke',
+    imageUrl: 'https://imgur.com/4XT7fcV.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '40',
+    title: 'Küchenzeile',
+    description: 'Moderne Küchenzeile mit hochwertigen Geräten',
+    imageUrl: 'https://imgur.com/HWtrQCW.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '41',
+    title: 'Esszimmer',
+    description: 'Gemütliches Esszimmer mit natürlichem Licht',
+    imageUrl: 'https://imgur.com/gzW8AuI.jpg',
+    tags: ['Interior']
+  },
+  {
+    id: '42',
+    title: 'Eingangsbereich',
+    description: 'Einladender Eingangsbereich mit Designelementen',
+    imageUrl: 'https://imgur.com/WS2dzUZ.jpg',
+    tags: ['Interior']
+  },
   
   // Garten & Umgebung Category
   {
