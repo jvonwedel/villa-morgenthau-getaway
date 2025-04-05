@@ -4,6 +4,7 @@ import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import { galleryImages } from '../../lib/galleryImages';
 import { Skeleton } from '../ui/skeleton';
+import { Button } from '../ui/button';
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState('Interior');
@@ -49,27 +50,19 @@ const GalleryGrid = () => {
     }));
   };
 
-  // Translate category names
-  const getCategoryName = (category) => {
-    switch(category) {
-      case 'Interior': return 'Innenbereich';
-      case 'Outdoor': return 'Außenbereich';
-      case 'Umgebung': return 'Umgebung';
-      case 'Jahreszeiten': return 'Jahreszeiten';
-      default: return category;
-    }
-  };
+  // Updated categories
+  const categories = ['Interior', 'Garten & Umgebung', 'Aktivitäten', 'Jahreszeiten'];
   
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white pt-28">
       <div className="container-custom">
-        <SectionTitle subtitle="ENTDECKEN SIE UNSERE RÄUME" centered>
+        <SectionTitle subtitle="IMPRESSIONEN" centered>
           Villa Morgenthau Fotogalerie
         </SectionTitle>
         
         {/* Gallery Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {(['Interior', 'Outdoor', 'Umgebung', 'Jahreszeiten']).map((category) => (
+          {categories.map((category) => (
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
@@ -79,7 +72,7 @@ const GalleryGrid = () => {
                   : 'bg-villa-muted text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {getCategoryName(category)}
+              {category}
             </button>
           ))}
         </div>
@@ -140,6 +133,18 @@ const GalleryGrid = () => {
             </div>
           </div>
         )}
+        
+        {/* Booking Button */}
+        <div className="text-center mt-12">
+          <a 
+            href="https://www.airbnb.de/rooms/1305881991709578029"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary bg-villa-dark text-white hover:bg-villa-accent"
+          >
+            Jetzt buchen
+          </a>
+        </div>
         
         {/* Lightbox */}
         {lightboxImage && (
