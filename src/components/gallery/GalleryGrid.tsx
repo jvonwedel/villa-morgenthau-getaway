@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
-import { galleryImages } from '../../lib/galleryImages';
+import { galleryImages, copyrightNotice } from '../../lib/galleryImages';
 import { Skeleton } from '../ui/skeleton';
 
 const GalleryGrid = () => {
@@ -59,6 +59,11 @@ const GalleryGrid = () => {
           Die Villa Morgenthau in Bildern
         </SectionTitle>
         
+        {/* Copyright Notice */}
+        <div className="mb-6 text-center text-sm text-gray-600">
+          <p>{copyrightNotice}</p>
+        </div>
+        
         {/* Gallery Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           {categories.map((category) => (
@@ -90,7 +95,7 @@ const GalleryGrid = () => {
                 )}
                 <img 
                   src={imageErrors[image.id] ? '/placeholder.svg' : image.imageUrl} 
-                  alt={image.description || image.title}
+                  alt="Villa Morgenthau"
                   className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
                     imagesLoading[image.id] !== false ? 'invisible' : 'visible'
                   }`}
@@ -127,15 +132,12 @@ const GalleryGrid = () => {
             <div className="max-w-4xl w-full">
               <img 
                 src={imageErrors[lightboxImage.id] ? '/placeholder.svg' : lightboxImage.imageUrl} 
-                alt={lightboxImage.title}
+                alt="Villa Morgenthau"
                 className="max-w-full max-h-[80vh] object-contain mx-auto"
                 onError={() => handleImageError(lightboxImage.id, lightboxImage.imageUrl)}
               />
               <div className="text-white text-center mt-4">
-                <h2 className="text-xl font-semibold">{lightboxImage.title}</h2>
-                {lightboxImage.description && (
-                  <p className="text-gray-300 mt-2">{lightboxImage.description}</p>
-                )}
+                <p className="text-gray-300 text-sm">{copyrightNotice}</p>
               </div>
             </div>
           </div>
