@@ -4,7 +4,6 @@ import { X } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import { galleryImages } from '../../lib/galleryImages';
 import { Skeleton } from '../ui/skeleton';
-import { Button } from '../ui/button';
 
 const GalleryGrid = () => {
   const [activeCategory, setActiveCategory] = useState('Interior');
@@ -99,12 +98,6 @@ const GalleryGrid = () => {
                   onError={() => handleImageError(image.id, image.imageUrl)}
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="font-medium text-white">{image.title}</h3>
-                  {image.description && (
-                    <p className="text-gray-200 text-sm mt-1">{image.description}</p>
-                  )}
-                </div>
               </div>
             </div>
           ))}
