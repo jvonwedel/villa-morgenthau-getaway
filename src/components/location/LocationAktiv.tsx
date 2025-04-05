@@ -14,8 +14,8 @@ const LocationAktiv = () => {
       alt: 'Fluss umgeben von Felsformationen'
     },
     {
-      url: 'https://imgur.com/cQPT9Oe.jpg',
-      alt: 'Ozeanwelle am Strand'
+      url: 'https://imgur.com/HJfsdjk.jpg',
+      alt: 'Fluss zwischen Bergen unter weißem Himmel'
     },
     {
       url: 'https://imgur.com/fWB8nPL.jpg',

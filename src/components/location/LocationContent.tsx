@@ -14,8 +14,8 @@ const LocationContent = () => {
       alt: 'Wasserfall in der Nähe der Villa'
     },
     {
-      url: 'https://imgur.com/HJfsdjk.jpg',
-      alt: 'Fluss zwischen Bergen unter weißem Himmel'
+      url: 'https://imgur.com/cQPT9Oe.jpg',
+      alt: 'Ozeanwelle am Strand'
     },
     {
       url: 'https://imgur.com/hEPDWAw.jpg',
