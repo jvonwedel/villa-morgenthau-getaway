@@ -51,7 +51,7 @@ const LocationMap = () => {
         
         <div className="relative mb-10">
           <img 
-            src="https://imgur.com/orly7kl.jpg" 
+            src="https://imgur.com/bL8irqx.jpg" 
             alt="Karte der Umgebung" 
             className="w-full rounded-sm shadow-md"
           />
