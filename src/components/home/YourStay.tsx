@@ -34,6 +34,7 @@ const YourStay = () => {
           <p className="text-gray-700">
             In der Villa Morgenthau erwartet dich historischer Charme in Kombination mit modernem Interior. 
             Die Einrichtung wurde mit Liebe zum Detail durchdacht, so dass du die schönste Zeit des Jahres so richtig genießen kannst.
+            Die Villa Morgenthau bietet Platz für bis zu acht Gäste und hat alles, was ihr für einen entspannten und unvergesslichen Urlaub braucht.
           </p>
         </div>
         
