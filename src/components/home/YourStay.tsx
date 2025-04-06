@@ -9,7 +9,8 @@ const YourStay = () => {
     'Komfortable Schlafzimmer',
     'Privater Garten',
     'Kamin',
-    'Smart TV'
+    'Smart TV',
+    'Playstation'
   ];
 
   // Second column of amenities
@@ -18,7 +19,8 @@ const YourStay = () => {
     'Moderne Badezimmer',
     'Wintergarten & Terrasse',
     'Highspeed W-LAN',
-    'Waschmaschine & Trockner'
+    'Waschmaschine & Trockner',
+    'E-Ladesäule (auf Wunsch verfügbar)'
   ];
 
   return (
