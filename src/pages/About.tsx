@@ -7,21 +7,21 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   // Images for the new gallery row
-  const images = [
+  const topImages = [
     {
-      url: '/src/images/about_image/aboutimagestop1.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagestop1.jpeg',
       alt: 'Modern interior with natural light'
     },
     {
-      url: '/src/images/about_image/aboutimagestop2.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagestop2.jpeg',
       alt: 'Elegant bedroom space'
     },
     {
-      url: '/src/images/about_image/aboutimagestop3.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagestop3.jpeg',
       alt: 'Cozy living area'
     },
     {
-      url: '/src/images/about_image/aboutimagestop4.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagestop4.jpeg',
       alt: 'Stylish interior design'
     }
   ];
@@ -29,19 +29,19 @@ const About = () => {
   // Additional images for the bottom gallery
   const bottomImages = [
     {
-      url: '/src/images/about_image/aboutimagebtm.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagebtm.jpeg',
       alt: 'Garden view of Villa Morgenthau'
     },
     {
-      url: '/src/images/about_image/aboutimagebtm2.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagebtm2.jpeg',
       alt: 'Exterior architecture detail'
     },
     {
-      url: '/src/images/about_image/aboutimagebtm3.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagebtm3.jpeg',
       alt: 'Natural surroundings'
     },
     {
-      url: '/src/images/about_image/aboutimagebtm4.jpeg',
+      url: '/lovable-uploads/images/about_image/aboutimagebtm4.jpeg',
       alt: 'Villa garden space'
     }
   ];
@@ -55,7 +55,7 @@ const About = () => {
             {/* First photo container with updated image */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img src="/src/images/about_image/aboutbanner/aboutbarner.jpeg" alt="Villa Morgenthau Historical Photo" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/images/about_image/aboutbanner/aboutbarner.jpeg" alt="Villa Morgenthau Historical Photo" className="w-full h-full object-cover" />
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
@@ -75,7 +75,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/src/images/about_image/aboutbanner/aboutstairimage.jpeg" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
+                      <img src="/lovable-uploads/images/about_image/aboutbanner/aboutstairimage.jpeg" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
@@ -84,7 +84,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="/src/images/about_image/aboutbanner/aboutoldhome.jpeg" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
+                      <img src="/lovable-uploads/images/about_image/aboutbanner/aboutoldhome.jpeg" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Umbau der offenen Küche</p>
@@ -104,7 +104,7 @@ const About = () => {
               
               {/* New image after the paragraph */}
               <div className="w-full h-auto my-10 rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img src="/src/images/about_image/aboutbanner/aboutoutsideimage.jpeg" alt="Morning dew at Villa Morgenthau" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/images/about_image/aboutbanner/aboutoutsideimg.jpeg" alt="Morning dew at Villa Morgenthau" className="w-full h-full object-cover" />
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>
@@ -114,7 +114,7 @@ const About = () => {
 
               {/* Updated first image gallery row with the new URLs */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-                {images.map((image, index) => (
+                {topImages.map((image, index) => (
                   <Card key={index} className="overflow-hidden border-none shadow-md rounded-none">
                     <AspectRatio ratio={1/1}>
                       <img 

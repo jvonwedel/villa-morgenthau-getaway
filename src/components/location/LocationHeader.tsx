@@ -1,11 +1,10 @@
-
 import { MapPin } from 'lucide-react';
 
 const LocationHeader = () => {
   return <section className="relative h-[70vh] overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="/src/images/location_image/locationheader.jpeg" 
+          src="/lovable-uploads/images/location_image/locationheader.jpeg" 
           alt="Villa Morgenthau Lage" 
           className="w-full h-full object-cover" 
           onError={(e) => {

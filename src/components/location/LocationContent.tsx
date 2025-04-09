@@ -1,4 +1,3 @@
-
 import SectionTitle from '../ui/SectionTitle';
 import { AspectRatio } from "../ui/aspect-ratio";
 import { Card } from "../ui/card";
@@ -6,19 +5,19 @@ import { Card } from "../ui/card";
 const LocationContent = () => {
   const images = [
     {
-      url: '/src/images/location_image/locationimg1.jpeg',
+      url: '/lovable-uploads/images/location_image/locationimg1.jpeg',
       alt: 'Zwei Rehe in ihrer natürlichen Umgebung'
     },
     {
-      url: '/src/images/location_image/location2.jpeg',
+      url: '/lovable-uploads/images/location_image/location2.jpeg',
       alt: 'Wasserfall in der Nähe der Villa'
     },
     {
-      url: '/src/images/location_image/location3corect.jpeg',
+      url: '/lovable-uploads/images/location_image/location3corect.jpeg',
       alt: 'Ozeanwelle am Strand'
     },
     {
-      url: '/src/images/location_image/location4.jpeg',
+      url: '/lovable-uploads/images/location_image/location4.jpeg',
       alt: 'Kiefernwälder in der Umgebung'
     }
   ];

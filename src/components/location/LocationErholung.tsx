@@ -1,20 +1,19 @@
-
 import { Card, CardContent } from "../ui/card";
 import SectionTitle from '../ui/SectionTitle';
 import { AspectRatio } from "../ui/aspect-ratio";
 
 const LocationErholung = () => {
   const images = [{
-    url: '/src/images/location_image/location_erholung/locatioerlung.jpeg',
+    url: '/lovable-uploads/images/location_image/location_erholung/locatioerlung.jpeg',
     alt: 'Landschaftsfotografie von Bergen im Sonnenlicht'
   }, {
-    url: '/src/images/location_image/location_erholung/locationerlung2.jpeg',
+    url: '/lovable-uploads/images/location_image/location_erholung/locationerlung2.jpeg',
     alt: 'Nebliger Berggipfel zum Entspannen'
   }, {
-    url: '/src/images/location_image/location_erholung/locationerlung3.jpeg',
+    url: '/lovable-uploads/images/location_image/location_erholung/locationerlung3.jpeg',
     alt: 'Wald im Sonnenlicht'
   }, {
-    url: '/src/images/location_image/location_erholung/locationerlung4.jpeg',
+    url: '/lovable-uploads/images/location_image/location_erholung/locationerlung4.jpeg',
     alt: 'Gelbes Licht zwischen Bäumen'
   }];
   

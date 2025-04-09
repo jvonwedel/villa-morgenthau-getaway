@@ -5,19 +5,19 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const LocationAktiv = () => {
   const images = [
     {
-      url: '/src/images/location_image/location_activ/locationactiv1.jpeg',
+      url: '/lovable-uploads/images/location_image/location_activ/locationactiv1.jpeg',
       alt: 'Wanderweg durch den Wald mit Felsen'
     },
     {
-      url: '/src/images/location_image/location_activ/locationactiv2.jpeg',
+      url: '/lovable-uploads/images/location_image/location_activ/locationactiv2.jpeg',
       alt: 'Fluss umgeben von Felsformationen'
     },
     {
-      url: '/src/images/location_image/location_activ/locationactiv3.jpeg',
+      url: '/lovable-uploads/images/location_image/location_activ/locationactiv3.jpeg',
       alt: 'Fluss zwischen Bergen unter weißem Himmel'
     },
     {
-      url: '/src/images/location_image/location_activ/locationactiv4.jpeg',
+      url: '/lovable-uploads/images/location_image/location_activ/locationactiv4.jpeg',
       alt: 'Berglandschaft der Alpen'
     }
   ];

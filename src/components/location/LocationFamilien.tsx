@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "../ui/card";
 import SectionTitle from '../ui/SectionTitle';
 import { AspectRatio } from "../ui/aspect-ratio";
@@ -6,19 +5,19 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const LocationFamilien = () => {
   const images = [
     {
-      url: '/src/images/location_image/location_familie/familie1.jpeg',
+      url: '/lovable-uploads/images/location_image/location_familie/familie1.jpeg',
       alt: 'Wildtiere auf einer Wiese'
     },
     {
-      url: '/src/images/location_image/location_familie/familie2.jpeg',
+      url: '/lovable-uploads/images/location_image/location_familie/familie2.jpeg',
       alt: 'Eine Schafherde auf der Weide'
     },
     {
-      url: '/src/images/location_image/location_familie/familie3.jpeg',
+      url: '/lovable-uploads/images/location_image/location_familie/familie3.jpeg',
       alt: 'Rehe im Wald'
     },
     {
-      url: '/src/images/location_image/location_familie/familie4.jpeg',
+      url: '/lovable-uploads/images/location_image/location_familie/familie4.jpeg',
       alt: 'Familie am Strand'
     }
   ];

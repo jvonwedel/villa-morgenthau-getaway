@@ -17,63 +17,63 @@ export const galleryImages: GalleryImage[] = [
     id: '1',
     title: '',
     description: '',
-    imageUrl: '/src/images/image1.jpeg',
+    imageUrl: '/lovable-uploads/images/image1.jpeg',
     tags: ['Interior']
   },
   {
     id: '2',
     title: '',
     description: '',
-    imageUrl: '/src/images/image2.png',
+    imageUrl: '/lovable-uploads/images/image2.png',
     tags: ['Interior']
   },
   {
     id: '3',
     title: '',
     description: '',
-    imageUrl: '/src/images/image3.png',
+    imageUrl: '/lovable-uploads/images/image3.png',
     tags: ['Interior']
   },
   {
     id: '4',
     title: '',
     description: '',
-    imageUrl: '/src/images/image4.png',
+    imageUrl: '/lovable-uploads/images/image4.png',
     tags: ['Interior']
   },
   {
     id: '5',
     title: '',
     description: '',
-    imageUrl: '/src/images/image5.png',
+    imageUrl: '/lovable-uploads/images/image5.png',
     tags: ['Interior']
   },
   {
     id: '6',
     title: '',
     description: '',
-    imageUrl: '/src/images/image6.png',
+    imageUrl: '/lovable-uploads/images/image6.png',
     tags: ['Interior']
   },
   {
     id: '23',
     title: '',
     description: '',
-    imageUrl: '/src/images/image23.jpeg',
+    imageUrl: '/lovable-uploads/images/image23.jpeg',
     tags: ['Interior']
   },
   {
     id: '24',
     title: '',
     description: '',
-    imageUrl: '/src/images/image24.jpeg',
+    imageUrl: '/lovable-uploads/images/image24.jpeg',
     tags: ['Interior']
   },
   {
     id: '25',
     title: '',
     description: '',
-    imageUrl: '/src/images/image25.jpeg',
+    imageUrl: '/lovable-uploads/images/image25.jpeg',
     tags: ['Interior']
   },
   // Interior pictures 39-42 kept
@@ -81,107 +81,114 @@ export const galleryImages: GalleryImage[] = [
     id: '39',
     title: '',
     description: '',
-    imageUrl: '/src/images/image39.jpeg',
+    imageUrl: '/lovable-uploads/images/image39.jpeg',
     tags: ['Interior']
   },
   {
     id: '40',
     title: '',
     description: '',
-    imageUrl: '/src/images/image40.jpeg',
+    imageUrl: '/lovable-uploads/images/image40.jpeg',
     tags: ['Interior']
   },
   {
     id: '41',
     title: '',
     description: '',
-    imageUrl: '/src/images/image41.jpeg',
+    imageUrl: '/lovable-uploads/images/image41.jpeg',
     tags: ['Interior']
   },
+  // {
+  //   id: '42',
+  //   title: '',
+  //   description: '',
+  //   imageUrl: '/lovable-uploads/images/image42.jpeg',
+  //   tags: ['Interior']
+  // },
   
   // Garten & Umgebung Category
   {
     id: '7',
     title: '',
     description: '',
-    imageUrl: '/src/images/image7.jpeg',
+    imageUrl: '/lovable-uploads/images/image7.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '11',
     title: '',
     description: '',
-    imageUrl: '/src/images/image11.jpeg',
+    imageUrl: '/lovable-uploads/images/image11.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '12',
     title: '',
     description: '',
-    imageUrl: '/src/images/image12.jpeg',
+    imageUrl: '/lovable-uploads/images/image12.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '13',
     title: '',
     description: '',
-    imageUrl: '/src/images/image13.jpeg',
+    imageUrl: '/lovable-uploads/images/image13.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '14',
     title: '',
     description: '',
-    imageUrl: '/src/images/image14.jpeg',
+    imageUrl: '/lovable-uploads/images/image14.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '22',
     title: '',
     description: '',
-    imageUrl: '/src/images/image22.jpeg',
+    imageUrl: '/lovable-uploads/images/image22.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '28',
     title: '',
     description: '',
-    imageUrl: '/src/images/image28.jpeg',
+    imageUrl: '/lovable-uploads/images/image28.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '29',
     title: '',
     description: '',
-    imageUrl: '/src/images/image29.jpeg',
+    imageUrl: '/lovable-uploads/images/image29.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '43',
     title: '',
     description: '',
-    imageUrl: '/src/images/image43.jpeg',
+    imageUrl: '/lovable-uploads/images/image43.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '44',
     title: '',
     description: '',
-    imageUrl: '/src/images/image44.jpeg',
+    imageUrl: '/lovable-uploads/images/image44.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '45',
     title: '',
     description: '',
-    imageUrl: '/src/images/image45.jpeg',
+    imageUrl: '/lovable-uploads/images/image45.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '46',
     title: '',
     description: '',
-    imageUrl: '/src/images/image46.jpeg',
+    imageUrl: '/lovable-uploads/images/image46.jpeg',
     tags: ['Garten & Umgebung']
   },
   
@@ -190,84 +197,84 @@ export const galleryImages: GalleryImage[] = [
     id: '8',
     title: '',
     description: '',
-    imageUrl: '/src/images/image8.jpeg',
+    imageUrl: '/lovable-uploads/images/image8.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '9',
     title: '',
     description: '',
-    imageUrl: '/src/images/image9.jpeg',
+    imageUrl: '/lovable-uploads/images/image9.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '10',
     title: '',
     description: '',
-    imageUrl: '/src/images/image10.jpeg',
+    imageUrl: '/lovable-uploads/images/image10.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '15',
     title: '',
     description: '',
-    imageUrl: '/src/images/image15.jpeg',
+    imageUrl: '/lovable-uploads/images/image15.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '16',
     title: '',
     description: '',
-    imageUrl: '/src/images/image16.jpeg',
+    imageUrl: '/lovable-uploads/images/image16.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '17',
     title: '',
     description: '',
-    imageUrl: '/src/images/image17.jpeg',
+    imageUrl: '/lovable-uploads/images/image17.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '18',
     title: '',
     description: '',
-    imageUrl: '/src/images/image18.jpeg',
+    imageUrl: '/lovable-uploads/images/image18.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '19',
     title: '',
     description: '',
-    imageUrl: '/src/images/image19.jpeg',
+    imageUrl: '/lovable-uploads/images/image19.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '20',
     title: '',
     description: '',
-    imageUrl: '/src/images/image20.jpeg',
+    imageUrl: '/lovable-uploads/images/image20.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '21',
     title: '',
     description: '',
-    imageUrl: '/src/images/image21.jpeg',
+    imageUrl: '/lovable-uploads/images/image21.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '47',
     title: '',
     description: '',
-    imageUrl: '/src/images/image47.jpeg',
+    imageUrl: '/lovable-uploads/images/image47.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '48',
     title: '',
     description: '',
-    imageUrl: '/src/images/image48.jpeg',
+    imageUrl: '/lovable-uploads/images/image48.jpeg',
     tags: ['Aktivitäten']
   },
   
@@ -276,84 +283,84 @@ export const galleryImages: GalleryImage[] = [
     id: '30',
     title: '',
     description: '',
-    imageUrl: '/src/images/image30.jpeg',
+    imageUrl: '/lovable-uploads/images/image30.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '31',
     title: '',
     description: '',
-    imageUrl: '/src/images/image31.jpeg',
+    imageUrl: '/lovable-uploads/images/image31.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '32',
     title: '',
     description: '',
-    imageUrl: '/src/images/image32.jpeg',
+    imageUrl: '/lovable-uploads/images/image32.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '33',
     title: '',
     description: '',
-    imageUrl: '/src/images/image33.jpeg',
+    imageUrl: '/lovable-uploads/images/image33.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '34',
     title: '',
     description: '',
-    imageUrl: '/src/images/image34.jpeg',
+    imageUrl: '/lovable-uploads/images/image34.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '35',
     title: '',
     description: '',
-    imageUrl: '/src/images/image35.jpeg',
+    imageUrl: '/lovable-uploads/images/image35.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '36',
     title: '',
     description: '',
-    imageUrl: '/src/images/image36.jpeg',
+    imageUrl: '/lovable-uploads/images/image36.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '37',
     title: '',
     description: '',
-    imageUrl: '/src/images/image37.jpeg',
+    imageUrl: '/lovable-uploads/images/image37.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '38',
     title: '',
     description: '',
-    imageUrl: '/src/images/image38.jpeg',
+    imageUrl: '/lovable-uploads/images/image38.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '49',
     title: '',
     description: '',
-    imageUrl: '/src/images/image49.jpeg',
+    imageUrl: '/lovable-uploads/images/image49.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '50',
     title: '',
     description: '',
-    imageUrl: '/src/images/image50.jpeg',
+    imageUrl: '/lovable-uploads/images/image50.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '51',
     title: '',
     description: '',
-    imageUrl: '/src/images/image51.jpeg',
+    imageUrl: '/lovable-uploads/images/image51.jpeg',
     tags: ['Jahreszeiten']
   }
 ];
