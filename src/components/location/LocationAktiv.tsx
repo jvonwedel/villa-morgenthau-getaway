@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "../ui/card";
 import SectionTitle from '../ui/SectionTitle';
 import { AspectRatio } from "../ui/aspect-ratio";
@@ -6,19 +5,19 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const LocationAktiv = () => {
   const images = [
     {
-      url: 'https://imgur.com/vKf0AhZ.jpg',
+      url: '/src/images/location_image/location_activ/locationactiv1.jpeg',
       alt: 'Wanderweg durch den Wald mit Felsen'
     },
     {
-      url: 'https://imgur.com/tWAJwzF.jpg',
+      url: '/src/images/location_image/location_activ/locationactiv2.jpeg',
       alt: 'Fluss umgeben von Felsformationen'
     },
     {
-      url: 'https://imgur.com/HJfsdjk.jpg',
+      url: '/src/images/location_image/location_activ/locationactiv3.jpeg',
       alt: 'Fluss zwischen Bergen unter weißem Himmel'
     },
     {
-      url: 'https://imgur.com/fWB8nPL.jpg',
+      url: '/src/images/location_image/location_activ/locationactiv4.jpeg',
       alt: 'Berglandschaft der Alpen'
     }
   ];

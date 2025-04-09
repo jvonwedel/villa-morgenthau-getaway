@@ -5,16 +5,16 @@ import { AspectRatio } from "../ui/aspect-ratio";
 
 const LocationErholung = () => {
   const images = [{
-    url: 'https://imgur.com/GC8P4Cs.jpg',
+    url: '/src/images/location_image/location_erholung/locatioerlung.jpeg',
     alt: 'Landschaftsfotografie von Bergen im Sonnenlicht'
   }, {
-    url: 'https://imgur.com/v0ReBG3.jpg',
+    url: '/src/images/location_image/location_erholung/locationerlung2.jpeg',
     alt: 'Nebliger Berggipfel zum Entspannen'
   }, {
-    url: 'https://imgur.com/MYH921i.jpg',
+    url: '/src/images/location_image/location_erholung/locationerlung3.jpeg',
     alt: 'Wald im Sonnenlicht'
   }, {
-    url: 'https://imgur.com/SQ5ymrP.jpg',
+    url: '/src/images/location_image/location_erholung/locationerlung4.jpeg',
     alt: 'Gelbes Licht zwischen Bäumen'
   }];
   

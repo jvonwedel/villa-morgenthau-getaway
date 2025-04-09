@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -10,19 +9,19 @@ const About = () => {
   // Images for the new gallery row
   const images = [
     {
-      url: 'https://imgur.com/S0UtSaP.jpg',
+      url: '/src/images/about_image/aboutimagestop1.jpeg',
       alt: 'Modern interior with natural light'
     },
     {
-      url: 'https://imgur.com/1svVa6t.jpg',
+      url: '/src/images/about_image/aboutimagestop2.jpeg',
       alt: 'Elegant bedroom space'
     },
     {
-      url: 'https://imgur.com/Nz9pS94.jpg',
+      url: '/src/images/about_image/aboutimagestop3.jpeg',
       alt: 'Cozy living area'
     },
     {
-      url: 'https://imgur.com/psPEJg5.jpg',
+      url: '/src/images/about_image/aboutimagestop4.jpeg',
       alt: 'Stylish interior design'
     }
   ];
@@ -30,19 +29,19 @@ const About = () => {
   // Additional images for the bottom gallery
   const bottomImages = [
     {
-      url: 'https://imgur.com/e04eOWe.jpg',
+      url: '/src/images/about_image/aboutimagebtm.jpeg',
       alt: 'Garden view of Villa Morgenthau'
     },
     {
-      url: 'https://imgur.com/zF0Q39z.jpg',
+      url: '/src/images/about_image/aboutimagebtm2.jpeg',
       alt: 'Exterior architecture detail'
     },
     {
-      url: 'https://imgur.com/8wBshuM.jpg',
+      url: '/src/images/about_image/aboutimagebtm3.jpeg',
       alt: 'Natural surroundings'
     },
     {
-      url: 'https://imgur.com/flcVila.jpg',
+      url: '/src/images/about_image/aboutimagebtm4.jpeg',
       alt: 'Villa garden space'
     }
   ];
@@ -56,7 +55,7 @@ const About = () => {
             {/* First photo container with updated image */}
             <div className="mb-10">
               <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img src="https://i.imgur.com/jPxLP7A.jpg" alt="Villa Morgenthau Historical Photo" className="w-full h-full object-cover" />
+                <img src="/src/images/about_image/aboutbanner/aboutbarner.jpeg" alt="Villa Morgenthau Historical Photo" className="w-full h-full object-cover" />
               </div>
               <p className="text-sm text-gray-500 italic text-center">Urkunde der Villa Morgenthau</p>
             </div>
@@ -76,7 +75,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/TFcqcQT.jpg" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
+                      <img src="/src/images/about_image/aboutbanner/aboutstairimage.jpeg" alt="Villa Morgenthau Renovation" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Restaurierung der Villa Morgenthau</p>
@@ -85,7 +84,7 @@ const About = () => {
                 <div>
                   <div className="w-full h-auto rounded-sm shadow-lg mb-4 overflow-hidden">
                     <AspectRatio ratio={4 / 3}>
-                      <img src="https://i.imgur.com/rtYorDY.jpg" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
+                      <img src="/src/images/about_image/aboutbanner/aboutoldhome.jpeg" alt="Villa Morgenthau Garden View" className="w-full h-full object-cover" />
                     </AspectRatio>
                   </div>
                   <p className="text-sm text-gray-500 italic text-center">Umbau der offenen Küche</p>
@@ -105,7 +104,7 @@ const About = () => {
               
               {/* New image after the paragraph */}
               <div className="w-full h-auto my-10 rounded-sm shadow-lg mb-4 overflow-hidden">
-                <img src="https://imgur.com/s5bq1pH.jpg" alt="Morning dew at Villa Morgenthau" className="w-full h-full object-cover" />
+                <img src="/src/images/about_image/aboutbanner/aboutoutsideimage.jpeg" alt="Morning dew at Villa Morgenthau" className="w-full h-full object-cover" />
               </div>
               
               <h2 className="font-serif text-2xl mb-4 mt-8">Home away from home - unsere Philosphie</h2>

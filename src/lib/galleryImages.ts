@@ -1,4 +1,3 @@
-
 // Type definitions for gallery images
 export interface GalleryImage {
   id: string;
@@ -18,63 +17,63 @@ export const galleryImages: GalleryImage[] = [
     id: '1',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/ZeCXciN.png',
+    imageUrl: '/src/images/image1.jpeg',
     tags: ['Interior']
   },
   {
     id: '2',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/GwoECRY.png',
+    imageUrl: '/src/images/image2.png',
     tags: ['Interior']
   },
   {
     id: '3',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/BN3r98z.png',
+    imageUrl: '/src/images/image3.png',
     tags: ['Interior']
   },
   {
     id: '4',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/2bBTwzC.png',
+    imageUrl: '/src/images/image4.png',
     tags: ['Interior']
   },
   {
     id: '5',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/vWCk5m4.png',
+    imageUrl: '/src/images/image5.png',
     tags: ['Interior']
   },
   {
     id: '6',
     title: '',
     description: '',
-    imageUrl: 'https://i.imgur.com/6JzS2YQ.png',
+    imageUrl: '/src/images/image6.png',
     tags: ['Interior']
   },
   {
     id: '23',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/1UsyJ8X.jpg',
+    imageUrl: '/src/images/image23.jpeg',
     tags: ['Interior']
   },
   {
     id: '24',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/cnaVZTw.jpg',
+    imageUrl: '/src/images/image24.jpeg',
     tags: ['Interior']
   },
   {
     id: '25',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/EyipMyi.jpg',
+    imageUrl: '/src/images/image25.jpeg',
     tags: ['Interior']
   },
   // Interior pictures 39-42 kept
@@ -82,21 +81,21 @@ export const galleryImages: GalleryImage[] = [
     id: '39',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/4XT7fcV.jpg',
+    imageUrl: '/src/images/image39.jpeg',
     tags: ['Interior']
   },
   {
     id: '40',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/HWtrQCW.jpg',
+    imageUrl: '/src/images/image40.jpeg',
     tags: ['Interior']
   },
   {
     id: '41',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/gzW8AuI.jpg',
+    imageUrl: '/src/images/image41.jpeg',
     tags: ['Interior']
   },
   
@@ -105,84 +104,84 @@ export const galleryImages: GalleryImage[] = [
     id: '7',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/cJnKknJ.jpg',
+    imageUrl: '/src/images/image7.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '11',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/GC8P4Cs.jpg',
+    imageUrl: '/src/images/image11.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '12',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/v0ReBG3.jpg',
+    imageUrl: '/src/images/image12.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '13',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/MYH921i.jpg',
+    imageUrl: '/src/images/image13.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '14',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/SQ5ymrP.jpg',
+    imageUrl: '/src/images/image14.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '22',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/MLLScuV.jpg',
+    imageUrl: '/src/images/image22.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '28',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/o2AmxY9.jpg',
+    imageUrl: '/src/images/image28.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '29',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/t0DPKuC.jpg',
+    imageUrl: '/src/images/image29.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '43',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/hqQLxvh.jpg',
+    imageUrl: '/src/images/image43.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '44',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/7ziMVlN.jpg',
+    imageUrl: '/src/images/image44.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '45',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/xwJu9vO.jpg',
+    imageUrl: '/src/images/image45.jpeg',
     tags: ['Garten & Umgebung']
   },
   {
     id: '46',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/azqdNfb.jpg',
+    imageUrl: '/src/images/image46.jpeg',
     tags: ['Garten & Umgebung']
   },
   
@@ -191,84 +190,84 @@ export const galleryImages: GalleryImage[] = [
     id: '8',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/uxyoic3.jpg',
+    imageUrl: '/src/images/image8.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '9',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/cQPT9Oe.jpg',
+    imageUrl: '/src/images/image9.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '10',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/hEPDWAw.jpg',
+    imageUrl: '/src/images/image10.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '15',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/vKf0AhZ.jpg',
+    imageUrl: '/src/images/image15.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '16',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/tWAJwzF.jpg',
+    imageUrl: '/src/images/image16.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '17',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/HJfsdjk.jpg',
+    imageUrl: '/src/images/image17.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '18',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/fWB8nPL.jpg',
+    imageUrl: '/src/images/image18.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '19',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/Ra7t2Jm.jpg',
+    imageUrl: '/src/images/image19.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '20',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/q3e67S1.jpg',
+    imageUrl: '/src/images/image20.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '21',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/tJ12hM9.jpg',
+    imageUrl: '/src/images/image21.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '47',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/1wpvnQ7.jpg',
+    imageUrl: '/src/images/image47.jpeg',
     tags: ['Aktivitäten']
   },
   {
     id: '48',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/BNOP5og.jpg',
+    imageUrl: '/src/images/image48.jpeg',
     tags: ['Aktivitäten']
   },
   
@@ -277,84 +276,84 @@ export const galleryImages: GalleryImage[] = [
     id: '30',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/JkOHdeF.jpg',
+    imageUrl: '/src/images/image30.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '31',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/Co1LxKZ.jpg',
+    imageUrl: '/src/images/image31.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '32',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/JVQfzJz.jpg',
+    imageUrl: '/src/images/image32.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '33',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/qdmaXTj.jpg',
+    imageUrl: '/src/images/image33.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '34',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/PCSHD1y.jpg',
+    imageUrl: '/src/images/image34.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '35',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/PJ8Xi9e.jpg',
+    imageUrl: '/src/images/image35.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '36',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/PPWMrDM.jpg',
+    imageUrl: '/src/images/image36.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '37',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/fhS3lyy.jpg',
+    imageUrl: '/src/images/image37.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '38',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/kJPXBt1.jpg',
+    imageUrl: '/src/images/image38.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '49',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/P2qRgNy.jpg',
+    imageUrl: '/src/images/image49.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '50',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/ZS5mdRh.jpg',
+    imageUrl: '/src/images/image50.jpeg',
     tags: ['Jahreszeiten']
   },
   {
     id: '51',
     title: '',
     description: '',
-    imageUrl: 'https://imgur.com/48mruQI.jpg',
+    imageUrl: '/src/images/image51.jpeg',
     tags: ['Jahreszeiten']
   }
 ];
