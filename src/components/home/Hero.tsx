@@ -1,69 +1,37 @@
 
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 import { useIsMobile } from '../../hooks/use-mobile';
+import { useRef } from 'react';
 
 const Hero = () => {
-  const playerRef = useRef<YT.Player | null>(null);
   const isMobile = useIsMobile();
   
-  // Different video IDs for desktop and mobile
-  const desktopVideoId = 'PUHPuK7RdBs';
-  const mobileVideoId = 'FDJ-mfKRQgs'; // Updated mobile video ID for YouTube short
+  // GIF paths for desktop and mobile
+  const desktopGifPath = '/lovable-uploads/emilymobile.gif';
+  const mobileGifPath = '/lovable-uploads/emilymobile.gif';
 
-  useEffect(() => {
-    // Load YouTube API if not already loaded
-    if (!window.YT) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      const firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
-      
-      window.onYouTubeIframeAPIReady = initPlayer;
-    } else {
-      initPlayer();
-    }
-
-    function initPlayer() {
-      // Use different video ID based on device type
-      const videoId = isMobile ? mobileVideoId : desktopVideoId;
-      
-      playerRef.current = new window.YT.Player('youtube-player', {
-        videoId: videoId,
-        playerVars: {
-          autoplay: 1,
-          loop: 1,
-          controls: 0,
-          showinfo: 0,
-          rel: 0,
-          enablejsapi: 1,
-          modestbranding: 1,
-          mute: 1,
-          playsinline: 1,
-          playlist: videoId, // Also updated here for looping
-        },
-        events: {
-          onReady: (event) => {
-            event.target.setPlaybackRate(0.5);
-            event.target.playVideo();
-          }
-        }
-      });
-    }
-
-    return () => {
-      if (playerRef.current) {
-        playerRef.current = null;
-      }
-    };
-  }, [isMobile]); // Add isMobile as a dependency to re-initialize when it changes
+  // Handle scroll to next section
+  const handleScrollDown = () => {
+    // Get the height of the viewport
+    const viewportHeight = window.innerHeight;
+    
+    // Scroll down by the height of the viewport (to the next section)
+    window.scrollTo({
+      top: viewportHeight,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* YouTube Video Background */}
+      {/* GIF Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-full h-full">
-          <div id="youtube-player" className="w-full h-full"></div>
+          <img 
+            src={isMobile ? mobileGifPath : desktopGifPath} 
+            alt="Villa Morgenthau" 
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
       
@@ -92,7 +60,12 @@ const Hero = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-0 right-0 mx-auto flex flex-col items-center animate-bounce w-max z-10">
+      <div 
+        className="absolute bottom-8 left-0 right-0 mx-auto flex flex-col items-center animate-bounce w-max z-10 cursor-pointer hover:opacity-80 transition-opacity"
+        onClick={handleScrollDown}
+        role="button"
+        aria-label="Scroll down"
+      >
         <span className="text-white text-sm mb-2">Nach unten scrollen</span>
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
