@@ -7,7 +7,7 @@ const Hero = () => {
   const isMobile = useIsMobile();
   
   // GIF paths for desktop and mobile
-  const desktopGifPath = '/lovable-uploads/emilydesktop.jpeg';
+  const desktopGifPath = '/lovable-uploads/newemilydesktop.gif';
   const mobileGifPath = '/lovable-uploads/emilymobile.gif';
 
   // Handle scroll to next section
